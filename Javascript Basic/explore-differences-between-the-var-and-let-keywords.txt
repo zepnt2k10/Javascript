@@ -1,0 +1,24 @@
+/* 
+Một trong những vấn đề lớn nhất khi khai báo biến với vartừ khóa là bạn có thể dễ dàng ghi đè khai báo biến:
+
+var camper = "James";
+var camper = "David";
+console.log(camper);
+Trong đoạn mã trên, camperbiến ban đầu được khai báo là James, và sau đó được ghi đè thành David. Bảng điều khiển sau đó sẽ hiển thị chuỗi David.
+
+Trong một ứng dụng nhỏ, bạn có thể không gặp phải loại sự cố này. Nhưng khi cơ sở mã của bạn trở nên lớn hơn, bạn có thể vô tình ghi đè một biến mà bạn không có ý định. Bởi vì hành vi này không tạo ra lỗi, việc tìm kiếm và sửa lỗi trở nên khó khăn hơn.
+
+Một từ khóa được gọi là letđã được giới thiệu trong ES6, một bản cập nhật lớn cho JavaScript, để giải quyết vấn đề tiềm ẩn này với vartừ khóa. Bạn sẽ tìm hiểu về các tính năng khác của ES6 trong các thử thách sau này.
+
+Nếu bạn thay thế varbằng lettrong đoạn mã trên, nó sẽ dẫn đến lỗi:
+
+let camper = "James";
+let camper = "David";
+Lỗi có thể được nhìn thấy trong bảng điều khiển trình duyệt của bạn.
+
+Vì vậy, không giống như varkhi bạn sử dụng let, một biến có cùng tên chỉ có thể được khai báo một lần.
+
+Cập nhật mã để nó chỉ sử dụng lettừ khóa.
+*/
+let catName = "Oliver";
+let catSound = "Meow!";

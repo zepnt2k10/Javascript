@@ -1,0 +1,6 @@
+// My name is Hiep
+
+/*
+Nguyen Thai Hiep
+Hoc Javascript
+*/

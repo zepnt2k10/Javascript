@@ -1,0 +1,21 @@
+/*
+Từ khóa letkhông phải là cách mới duy nhất để khai báo biến. Trong ES6, bạn cũng có thể khai báo các biến bằng cách sử dụng consttừ khóa.
+
+constcó tất cả các tính năng tuyệt vời letcó, với phần thưởng bổ sung là các biến được khai báo bằng cách sử dụng constlà chỉ đọc. Chúng là một giá trị không đổi, có nghĩa là một khi một biến được gán const, nó không thể được gán lại:
+
+const FAV_PET = "Cats";
+FAV_PET = "Dogs";
+Bảng điều khiển sẽ hiển thị lỗi do gán lại giá trị của FAV_PET.
+
+Bạn nên luôn đặt tên cho các biến mà bạn không muốn chỉ định lại bằng cách sử dụng consttừ khóa. Điều này hữu ích khi bạn vô tình cố gắng gán lại một biến có nghĩa là không đổi.
+
+Lưu ý: Các nhà phát triển thường sử dụng các mã định danh biến viết hoa cho các giá trị bất biến và chữ thường hoặc camelCase cho các giá trị có thể thay đổi (đối tượng và mảng). Bạn sẽ tìm hiểu thêm về các đối tượng, mảng và các giá trị bất biến và có thể thay đổi trong các thử thách sau này. Ngoài ra trong các thử thách sau này, bạn sẽ thấy các ví dụ về số nhận dạng biến số viết hoa, viết thường hoặc camelCase.
+
+Thay đổi mã để tất cả các biến được khai báo bằng cách sử dụng lethoặc const. Sử dụng letkhi bạn muốn biến thay đổi và constkhi bạn muốn biến không đổi. Ngoài ra, đổi tên các biến được khai báo với constđể phù hợp với các thông lệ chung.
+*/
+
+
+const FCC = "freeCodeCamp"; // Change this line
+let fact = "is cool!"; // Change this line
+fact = "is awesome!";
+console.log(FCC, fact); // Change this line

@@ -1,0 +1,18 @@
+/*
+Trong khoa học máy tính, dữ liệu là bất cứ thứ gì có ý nghĩa đối với máy tính. JavaScript cung cấp tám kiểu dữ liệu khác nhau là undefined và null boolean string symbol bigint number object
+
+Ví dụ: máy tính phân biệt giữa các số, chẳng hạn như số 12và strings, chẳng hạn như "12", "dog"hoặc "123 cats", là tập hợp các ký tự. Máy tính có thể thực hiện các phép toán trên một số, nhưng không thực hiện trên một chuỗi.
+
+Các biến cho phép máy tính lưu trữ và thao tác dữ liệu theo kiểu động. Họ thực hiện điều này bằng cách sử dụng "nhãn" để trỏ đến dữ liệu thay vì sử dụng chính dữ liệu đó. Bất kỳ kiểu dữ liệu nào trong tám kiểu dữ liệu đều có thể được lưu trữ trong một biến.
+
+Các biến tương tự như các biến x và y mà bạn sử dụng trong toán học, có nghĩa là chúng là một cái tên đơn giản để đại diện cho dữ liệu mà chúng tôi muốn đề cập đến. Các biến máy tính khác với các biến toán học ở chỗ chúng có thể lưu trữ các giá trị khác nhau tại các thời điểm khác nhau.
+
+Chúng tôi yêu cầu JavaScript tạo hoặc khai báo một biến bằng cách đặt từ khóa vartrước nó, như sau:
+
+var ourName;
+tạo một biến được gọi ourName. Trong JavaScript, chúng ta kết thúc các câu lệnh bằng dấu chấm phẩy. Tên biến có thể được tạo thành từ số, chữ cái và $hoặc _, nhưng không được chứa khoảng trắng hoặc bắt đầu bằng số.
+
+Sử dụng vartừ khóa để tạo một biến được gọi là myName.
+*/
+
+var myName;

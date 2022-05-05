@@ -1,0 +1,15 @@
+/*
+Trước đây, bạn đã sử dụng đoạn mã sau để khai báo một biến:
+
+var myName;
+Nhưng bạn cũng có thể khai báo một biến chuỗi như thế này:
+
+var myName = "your name";
+"your name"được gọi là một chuỗi ký tự . Một chuỗi ký tự, hoặc chuỗi, là một chuỗi không hoặc nhiều ký tự được đặt trong dấu ngoặc kép hoặc đơn.
+
+Tạo hai biến chuỗi mới: myFirstNamevà myLastNamegán cho chúng các giá trị của họ và tên của bạn tương ứng.
+
+*/
+
+var myFirstName = "Hiep";
+var myLastName = "Nguyen";

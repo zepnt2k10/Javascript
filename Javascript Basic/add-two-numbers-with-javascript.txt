@@ -1,0 +1,16 @@
+/*
+Numberlà một kiểu dữ liệu trong JavaScript đại diện cho dữ liệu số.
+
+Bây giờ chúng ta hãy thử thêm hai số bằng JavaScript.
+
+JavaScript sử dụng +biểu tượng như một toán tử bổ sung khi được đặt giữa hai số.
+
+Ví dụ:
+
+const myVar = 5 + 10;
+myVarbây giờ có giá trị 15.
+
+Thay đổi 0để tổng sẽ bằng nhau 20.
+*/
+
+const sum = 10 + 10;

@@ -1,0 +1,27 @@
+/*
+Trong JavaScript tất cả các biến và tên hàm đều phân biệt chữ hoa chữ thường. Điều này có nghĩa là viết hoa quan trọng.
+
+MYVARkhông giống như MyVarcũng không myvar. Có thể có nhiều biến phân biệt có cùng tên nhưng khác cách viết hoa. Chúng tôi đặc biệt khuyến nghị rằng vì lý do rõ ràng, bạn không sử dụng tính năng ngôn ngữ này.
+
+Thực hành tốt nhất
+
+Viết tên biến trong JavaScript trong camelCase . Trong camelCase , tên biến nhiều từ có từ đầu tiên viết thường và chữ cái đầu tiên của mỗi từ tiếp theo được viết hoa.
+
+Ví dụ:
+
+var someVariable;
+var anotherVariableName;
+var thisVariableNameIsSoLong;
+Sửa đổi các khai báo và bài tập hiện có để tên của chúng sử dụng camelCase .
+
+Không tạo bất kỳ biến mới nào.
+*/
+// Variable declarations
+var studlyCapVar;
+var properCamelCase;
+var titleCaseOver;
+
+// Variable assignments
+studlyCapVar = 10;
+properCamelCase = "A String";
+titleCaseOver = 9000;

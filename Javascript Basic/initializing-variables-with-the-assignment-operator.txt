@@ -1,0 +1,10 @@
+/*
+Thông thường khi khởi tạo một biến thành một giá trị ban đầu trong cùng một dòng như nó được khai báo.
+
+var myVar = 0;
+Tạo một biến mới được gọi myVarvà gán cho nó một giá trị ban đầu là 0.
+
+Xác định một biến avới varvà khởi tạo nó với giá trị 9.
+*/
+
+var a = 9;

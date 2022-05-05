@@ -1,0 +1,16 @@
+/*
+Khi các biến JavaScript được khai báo, chúng có giá trị ban đầu là undefined. Nếu bạn thực hiện một phép toán trên một undefinedbiến, kết quả của bạn sẽ có NaNnghĩa là "Không phải là một số" . Nếu bạn nối một chuỗi với một undefinedbiến, bạn sẽ nhận được một chuỗiundefined .
+
+Khởi tạo ba biến a, bvà cvới 5, 10và "I am a"tương ứng để chúng không bị như vậy undefined.
+
+*/
+
+// Only change code below this line
+var a =5;
+var b =10;
+var c ="I am a";
+// Only change code above this line
+
+a = a + 1;
+b = b + 5;
+c = c + " String!";

@@ -1,0 +1,19 @@
+/*
+Trong JavaScript, bạn có thể lưu trữ một giá trị trong một biến bằng toán tử gán ( =).
+
+myVariable = 5;
+Điều này chỉ định Numbergiá trị 5cho myVariable.
+
+Nếu có bất kỳ phép tính nào ở bên phải của =toán tử, chúng được thực hiện trước khi giá trị được gán cho biến ở bên trái của toán tử.
+
+var myVar;
+myVar = 5;
+Đầu tiên, mã này tạo một biến có tên myVar. Sau đó, mã chỉ định 5cho myVar. Bây giờ, nếu nó myVarxuất hiện một lần nữa trong mã, chương trình sẽ coi nó như thể nó đang tồn tại 5.
+
+Gán giá trị 7cho biến a.
+*/
+
+// Setup
+var a;
+a = 7;
+// Only change code below this line

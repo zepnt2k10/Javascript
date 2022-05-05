@@ -1,0 +1,19 @@
+/*
+Sau khi một giá trị được gán cho một biến bằng toán tử gán , bạn có thể gán giá trị của biến đó cho một biến khác bằng toán tử gán .
+
+var myVar;
+myVar = 5;
+var myNum;
+myNum = myVar;
+Ở trên khai báo một myVarbiến không có giá trị, sau đó gán giá trị cho nó 5. Tiếp theo, một biến có tên myNumđược khai báo không có giá trị. Sau đó, nội dung của myVar(là 5) được gán cho biến myNum. Bây giờ, myNumcũng có giá trị của 5.
+
+Gán nội dung của acho biến b.
+*/
+
+// Setup
+var a;
+a = 7;
+var b;
+b= a;
+
+// Only change code below this line
