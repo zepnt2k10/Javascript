@@ -12,7 +12,7 @@ thirdToLastLettersẽ có một giá trị của chuỗi s.
 
 Sử dụng ký hiệu dấu ngoặc để tìm ký tự thứ hai đến cuối cùng trong lastNamechuỗi.
 
-Gợi ý: Hãy thử nhìn vào ví dụ trên nếu bạn gặp khó khăn.
+Gợi ý: Hãy thử nhìn vào ví dụ trên nếu bạn gặp khó khăn
 */
 // Setup
 const lastName = "Lovelace";

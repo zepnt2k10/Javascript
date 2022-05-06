@@ -12,7 +12,7 @@ lastLettersẽ có một giá trị của chuỗi a.
 
 Sử dụng ký hiệu dấu ngoặc để tìm ký tự cuối cùng trong lastNamebiến.
 
-Gợi ý: Hãy thử nhìn vào ví dụ trên nếu bạn gặp khó khăn.
+Gợi ý: Hãy thử nhìn vào ví dụ trên nếu bạn gặp khó khăn
 */
 
 // Setup
