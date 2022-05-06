@@ -1,0 +1,20 @@
+/*
+Trong JavaScript, Stringcác giá trị là bất biến , có nghĩa là không thể thay đổi chúng sau khi được tạo.
+
+Ví dụ, đoạn mã sau:
+
+let myStr = "Bob";
+myStr[0] = "J";
+không thể thay đổi giá trị của myStrthành Job, vì myStrkhông thể thay đổi nội dung của. Lưu ý rằng điều này không có nghĩa là myStrkhông thể thay đổi, chỉ là không thể thay đổi các ký tự riêng lẻ của một chuỗi ký tự . Cách duy nhất để thay đổi myStrlà gán nó bằng một chuỗi mới, như sau:
+
+let myStr = "Bob";
+myStr = "Job";
+Hãy sửa lại phép gán để myStrnó chứa giá trị chuỗi Hello Worldbằng cách sử dụng cách tiếp cận được hiển thị trong ví dụ trên.
+*/
+
+// Setup
+let myStr = "Jello World";
+
+// Only change code below this line
+myStr = "Hello World"; // Change this line
+// Only change code above this line

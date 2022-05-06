@@ -1,0 +1,29 @@
+/*
+Dấu ngoặc kép không phải là ký tự duy nhất có thể được thoát bên trong một chuỗi. Có hai lý do để sử dụng các ký tự thoát:
+
+Để cho phép bạn sử dụng các ký tự, bạn có thể không gõ ra được, chẳng hạn như ký tự xuống dòng.
+Để cho phép bạn biểu diễn nhiều dấu ngoặc kép trong một chuỗi mà JavaScript không hiểu sai ý bạn.
+Chúng tôi đã học được điều này trong thử thách trước.
+
+Mã số	Đầu ra
+\'	trích dẫn duy nhất
+\"	dấu ngoặc kép
+\\	dấu gạch chéo ngược
+\n	dòng mới
+\r	vận chuyển trở lại
+\t	chuyển hướng
+\b	Ranh giới từ
+\f	thức ăn dạng
+Lưu ý rằng bản thân dấu gạch chéo ngược phải được thoát ra để hiển thị dưới dạng dấu gạch chéo ngược.
+
+Gán ba dòng văn bản sau vào một biến duy nhất myStrbằng cách sử dụng trình tự thoát.
+
+FirstLine
+    \ SecondLine
+ThirdLine
+Bạn sẽ cần sử dụng trình tự thoát để chèn các ký tự đặc biệt một cách chính xác. Bạn cũng sẽ cần tuân theo khoảng cách như ở trên, không có khoảng cách giữa các chuỗi hoặc từ thoát.
+
+Lưu ý: Thụt lề cho SecondLineđạt được với ký tự thoát tab, không phải dấu cách.
+*/
+
+const myStr = "FirstLine\n\t\\SecondLine\nThirdLine"; // Change this line

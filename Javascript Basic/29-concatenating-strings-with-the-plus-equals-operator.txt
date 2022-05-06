@@ -1,0 +1,16 @@
+/*
+Chúng ta cũng có thể sử dụng +=toán tử để nối một chuỗi vào cuối một biến chuỗi hiện có. Điều này có thể rất hữu ích để ngắt một chuỗi dài trên nhiều dòng.
+
+Lưu ý: Hãy để ý khoảng trống. Nối không thêm khoảng trắng giữa các chuỗi được nối, vì vậy bạn sẽ cần phải tự thêm chúng.
+
+Ví dụ:
+
+let ourStr = "I come first. ";
+ourStr += "I come second.";
+ourStrbây giờ có một giá trị của chuỗi I come first. I come second..
+
+Xây dựng myStrtrên một số dòng bằng cách nối hai chuỗi này: This is the first sentence.và This is the second sentence.sử dụng +=toán tử. Sử dụng +=toán tử tương tự như cách nó được hiển thị trong ví dụ và đảm bảo bao gồm một khoảng trắng giữa hai chuỗi. Bắt đầu bằng cách gán chuỗi đầu tiên cho myStr, sau đó thêm vào chuỗi thứ hai.
+*/
+
+let myStr = "This is the first sentence.";
+myStr += " This is the second sentence.";

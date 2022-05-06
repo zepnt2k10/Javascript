@@ -1,0 +1,20 @@
+/*
+Bạn cũng có thể sử dụng ký hiệu ngoặc để lấy ký tự ở các vị trí khác trong một chuỗi.
+
+Hãy nhớ rằng máy tính bắt đầu đếm lúc 0, vì vậy ký tự đầu tiên thực sự là ký tự số không.
+
+Ví dụ:
+
+const firstName = "Ada";
+const secondLetterOfFirstName = firstName[1];
+secondLetterOfFirstNamesẽ có một giá trị của chuỗi d.
+
+Hãy thử đặt thirdLetterOfLastNamebằng chữ cái thứ ba của lastNamebiến bằng cách sử dụng ký hiệu dấu ngoặc.
+
+Gợi ý: Hãy thử nhìn vào ví dụ trên nếu bạn gặp khó khăn.
+*/
+// Setup
+const lastName = "Lovelace";
+
+// Only change code below this line
+const thirdLetterOfLastName = lastName[2]; // Change this line

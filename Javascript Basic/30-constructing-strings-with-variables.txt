@@ -1,0 +1,16 @@
+
+/*
+Đôi khi bạn sẽ cần phải xây dựng một chuỗi, theo phong cách Mad Libs . Bằng cách sử dụng toán tử nối ( +), bạn có thể chèn một hoặc nhiều biến vào một chuỗi mà bạn đang xây dựng.
+
+Ví dụ:
+
+const ourName = "freeCodeCamp";
+const ourStr = "Hello, our name is " + ourName + ", how are you?";
+ourStrsẽ có một giá trị của chuỗi Hello, our name is freeCodeCamp, how are you?.
+
+Đặt myNamethành một chuỗi bằng tên của bạn và xây dựng myStrvới myNamegiữa các chuỗi My name is và and I am well!
+*/
+
+// Only change code below this line
+const myName = "Hiep";
+const myStr = "My name is" + myName + " and I am well!";

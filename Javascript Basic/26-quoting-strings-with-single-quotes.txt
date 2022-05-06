@@ -1,0 +1,24 @@
+/*
+Giá trị chuỗi trong JavaScript có thể được viết bằng dấu ngoặc kép hoặc đơn, miễn là bạn bắt đầu và kết thúc bằng cùng một loại dấu ngoặc kép. Không giống như một số ngôn ngữ lập trình khác, dấu ngoặc đơn và dấu ngoặc kép hoạt động giống nhau trong JavaScript.
+
+const doubleQuoteStr = "This is a string"; 
+const singleQuoteStr = 'This is also a string';
+Lý do tại sao bạn có thể muốn sử dụng một loại dấu ngoặc kép này là nếu bạn muốn sử dụng cả hai trong một chuỗi. Điều này có thể xảy ra nếu bạn muốn lưu một cuộc hội thoại trong một chuỗi và đặt cuộc hội thoại trong dấu ngoặc kép. Một cách sử dụng khác cho nó là lưu một <a>thẻ với các thuộc tính khác nhau trong dấu ngoặc kép, tất cả đều nằm trong một chuỗi.
+
+const conversation = 'Finn exclaims to Jake, "Algebraic!"';
+Tuy nhiên, điều này sẽ trở thành một vấn đề nếu bạn cần sử dụng dấu ngoặc kép bên trong nó. Hãy nhớ rằng, một chuỗi có cùng một loại dấu ngoặc kép ở đầu và cuối. Nhưng nếu bạn có cùng một câu trích dẫn ở đâu đó ở giữa, chuỗi sẽ dừng sớm và gây ra lỗi.
+
+const goodStr = 'Jake asks Finn, "Hey, let\'s go on an adventure?"'; 
+const badStr = 'Finn responds, "Let's go!"';
+Ở đây badStrsẽ xuất hiện một lỗi.
+
+Trong goodStr ở trên, bạn có thể sử dụng cả hai dấu ngoặc kép một cách an toàn bằng cách sử dụng dấu gạch chéo ngược \làm ký tự thoát.
+
+Lưu ý:\ Không nên nhầm lẫn dấu gạch chéo ngược với dấu gạch chéo về phía trước /. Họ không làm điều tương tự.
+
+Thay đổi chuỗi được cung cấp thành chuỗi có dấu ngoặc kép ở đầu và cuối và không có ký tự thoát.
+
+Ngay bây giờ, <a>thẻ trong chuỗi sử dụng dấu ngoặc kép ở mọi nơi. Bạn sẽ cần thay đổi các dấu ngoặc kép bên ngoài thành dấu ngoặc kép để có thể xóa các ký tự thoát.
+*/
+
+const myStr = '<a href="http://www.example.com" target="_blank">Link</a>';

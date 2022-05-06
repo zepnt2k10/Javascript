@@ -1,0 +1,17 @@
+/*
+Bạn có thể tìm độ dài của một Stringgiá trị bằng cách viết .lengthsau biến chuỗi hoặc chuỗi ký tự.
+
+console.log("Alan Peter".length);
+Giá trị 10sẽ được hiển thị trong bảng điều khiển. Lưu ý rằng ký tự khoảng trắng giữa "Alan" và "Peter" cũng được tính.
+
+Ví dụ: nếu chúng tôi đã tạo một biến const firstName = "Ada", chúng tôi có thể tìm hiểu độ dài của chuỗi Adabằng cách sử dụng thuộc firstName.lengthtính.
+
+Sử dụng thuộc .lengthtính để đặt lastNameLengthsố ký tự trong lastName.
+*/
+
+// Setup
+let lastNameLength = 0;
+const lastName = "Lovelace";
+
+// Only change code below this line
+lastNameLength = lastName.length;

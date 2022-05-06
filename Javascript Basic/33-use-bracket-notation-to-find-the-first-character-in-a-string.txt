@@ -1,0 +1,21 @@
+
+/*
+Ký hiệu dấu ngoặc là một cách để lấy một ký tự tại một chỉ mục cụ thể trong một chuỗi.
+
+Hầu hết các ngôn ngữ lập trình hiện đại, như JavaScript, không bắt đầu đếm bằng 1 như con người. Chúng bắt đầu từ 0. Đây được gọi là lập chỉ mục dựa trên Zero .
+
+Ví dụ, ký tự ở chỉ mục 0 trong từ Charleslà C. Vì vậy, nếu const firstName = "Charles", bạn có thể lấy giá trị của ký tự đầu tiên của chuỗi bằng cách sử dụng firstName[0].
+
+Ví dụ:
+
+const firstName = "Charles";
+const firstLetter = firstName[0];
+firstLettersẽ có một giá trị của chuỗi C.
+*/
+
+// Setup
+let firstLetterOfLastName = "";
+const lastName = "Lovelace";
+
+// Only change code below this line
+firstLetterOfLastName = lastName[0]; // Change this line

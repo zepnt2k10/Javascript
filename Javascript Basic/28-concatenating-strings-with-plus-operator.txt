@@ -1,0 +1,17 @@
+/*
+Trong JavaScript, khi +toán tử được sử dụng với một Stringgiá trị, nó được gọi là toán tử nối . Bạn có thể tạo một chuỗi mới từ các chuỗi khác bằng cách nối chúng lại với nhau.
+
+Ví dụ
+
+'My name is Alan,' + ' I concatenate.'
+Lưu ý: Hãy để ý khoảng trống. Nối không thêm khoảng trắng giữa các chuỗi được nối, vì vậy bạn sẽ cần phải tự thêm chúng.
+
+Ví dụ:
+
+const ourStr = "I come first. " + "I come second.";
+Chuỗi I come first. I come second.sẽ được hiển thị trong bảng điều khiển.
+
+Xây dựng myStrtừ các chuỗi This is the start.và This is the end.sử dụng +toán tử. Đảm bảo bao gồm một khoảng trắng giữa hai chuỗi.
+*/
+
+const myStr = "This is the start."+ " This is the end." ; // Change this line

@@ -1,0 +1,17 @@
+/*
+Cũng giống như chúng ta có thể tạo một chuỗi trên nhiều dòng ngoài các ký tự của chuỗi , chúng ta cũng có thể nối các biến vào một chuỗi bằng cách sử dụng +=toán tử cộng bằng ().
+
+Ví dụ:
+
+const anAdjective = "awesome!";
+let ourStr = "freeCodeCamp is ";
+ourStr += anAdjective;
+ourStrsẽ có giá trị freeCodeCamp is awesome!.
+
+Đặt someAdjectivethành một chuỗi có ít nhất 3 ký tự và thêm nó vào myStrbằng +=toán tử.
+*/
+
+// Change code below this line
+const someAdjective = "funny";
+let myStr = "Learning to code is ";
+myStr += someAdjective;
