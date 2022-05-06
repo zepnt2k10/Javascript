@@ -1,0 +1,22 @@
+/*
+Sử dụng ký hiệu ngoặc để tìm ký tự cuối cùng trong chuỗi
+Để nhận được ký tự cuối cùng của một chuỗi, bạn có thể trừ một ký tự từ chiều dài của chuỗi.
+
+Ví dụ, nếu const firstName = "Ada", bạn có thể lấy giá trị của ký tự cuối cùng của chuỗi bằng cách sử dụng firstName[firstName.length - 1].
+
+Ví dụ:
+
+const firstName = "Ada";
+const lastLetter = firstName[firstName.length - 1];
+lastLettersẽ có một giá trị của chuỗi a.
+
+Sử dụng ký hiệu dấu ngoặc để tìm ký tự cuối cùng trong lastNamebiến.
+
+Gợi ý: Hãy thử nhìn vào ví dụ trên nếu bạn gặp khó khăn.
+*/
+
+// Setup
+const lastName = "Lovelace";
+
+// Only change code below this line
+const lastLetterOfLastName = lastName[lastName.length -1]; // Change this line

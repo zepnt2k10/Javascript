@@ -1,0 +1,21 @@
+/*
+Sử dụng ký hiệu ngoặc để tìm ký tự thứ N đến cuối cùng trong một chuỗi
+Bạn có thể sử dụng nguyên tắc tương tự mà chúng ta vừa sử dụng để truy xuất ký tự cuối cùng trong một chuỗi để truy xuất ký tự thứ N đến cuối cùng.
+
+Ví dụ: bạn có thể nhận giá trị của chữ cái từ thứ ba đến cuối cùng của const firstName = "Augusta"chuỗi bằng cách sử dụngfirstName[firstName.length - 3]
+
+Ví dụ:
+
+const firstName = "Augusta";
+const thirdToLastLetter = firstName[firstName.length - 3];
+thirdToLastLettersẽ có một giá trị của chuỗi s.
+
+Sử dụng ký hiệu dấu ngoặc để tìm ký tự thứ hai đến cuối cùng trong lastNamechuỗi.
+
+Gợi ý: Hãy thử nhìn vào ví dụ trên nếu bạn gặp khó khăn.
+*/
+// Setup
+const lastName = "Lovelace";
+
+// Only change code below this line
+const secondToLastLetterOfLastName = lastName[lastName.length-2]; // Change this line
