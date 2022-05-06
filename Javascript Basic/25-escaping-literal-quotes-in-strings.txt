@@ -1,0 +1,15 @@
+/*
+Khi bạn xác định một chuỗi, bạn phải bắt đầu và kết thúc bằng một dấu ngoặc kép hoặc đơn. Điều gì xảy ra khi bạn cần một câu trích dẫn theo nghĩa đen: "hoặc 'bên trong chuỗi của bạn?
+
+Trong JavaScript, bạn có thể thoát khỏi một câu trích dẫn khỏi việc coi nó như một câu trích dẫn cuối chuỗi bằng cách đặt dấu gạch chéo ngược ( \) trước câu trích dẫn.
+
+const sampleStr = "Alan said, \"Peter is learning JavaScript\".";
+Điều này báo hiệu cho JavaScript rằng câu trích dẫn sau không phải là phần cuối của chuỗi, mà thay vào đó sẽ xuất hiện bên trong chuỗi. Vì vậy, nếu bạn in nó ra bảng điều khiển, bạn sẽ nhận được:
+
+Alan said, "Peter is learning JavaScript".
+Sử dụng dấu gạch chéo ngược để gán một chuỗi cho myStrbiến để nếu bạn in nó ra bảng điều khiển, bạn sẽ thấy:
+
+I am a "double quoted" string inside "double quotes".
+*/
+
+const myStr = "I am a \"double quoted\" string inside \"double quotes\"."; // Change this line
