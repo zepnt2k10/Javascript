@@ -1,0 +1,18 @@
+
+/*
+Không giống như chuỗi, các mục của mảng có thể thay đổi và có thể thay đổi tùy ý, ngay cả khi mảng được khai báo bằng const.
+
+Ví dụ
+
+const ourArray = [50, 40, 30];
+ourArray[0] = 15;
+ourArraybây giờ có giá trị [15, 40, 30].
+
+Lưu ý: Không được có bất kỳ khoảng cách nào giữa tên mảng và dấu ngoặc vuông, chẳng hạn như array [0]. Mặc dù JavaScript có thể xử lý điều này một cách chính xác, nhưng điều này có thể gây nhầm lẫn cho các lập trình viên khác khi đọc mã của bạn.
+
+Sửa đổi dữ liệu được lưu trữ tại chỉ mục 0thành myArraygiá trị 45.
+*/
+// Setup
+const myArray = [18, 64, 99];
+myArray[0] = 45;
+// Only change code below this line

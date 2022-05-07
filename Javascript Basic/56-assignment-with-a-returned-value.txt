@@ -1,0 +1,20 @@
+/*
+Bài tập với giá trị trả lại
+Nếu bạn nhớ lại từ cuộc thảo luận của chúng tôi về Lưu trữ giá trị với Toán tử chỉ định, mọi thứ ở bên phải của dấu bằng sẽ được giải quyết trước khi giá trị được chỉ định. Điều này có nghĩa là chúng ta có thể lấy giá trị trả về của một hàm và gán nó cho một biến.
+
+Giả sử chúng ta đã xác định trước một hàm sumcộng hai số với nhau, sau đó:
+
+ourSum = sum(5, 12);
+sẽ gọi sumhàm, hàm này trả về giá trị 17và gán nó cho ourSumbiến.
+
+Gọi processArghàm với đối số là 7và gán giá trị trả về của nó cho biến processed.
+*/
+// Setup
+let processed = 0;
+
+function processArg(num) {
+  return (num + 3) / 5;
+}
+
+// Only change code below this line
+processed = processArg(7);

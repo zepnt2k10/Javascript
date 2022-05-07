@@ -1,0 +1,21 @@
+/*
+Một cách dễ dàng để nối dữ liệu vào cuối mảng là thông qua push()hàm.
+
+.push()nhận một hoặc nhiều tham số và "đẩy" chúng vào cuối mảng.
+
+Ví dụ:
+
+const arr1 = [1, 2, 3];
+arr1.push(4);
+
+const arr2 = ["Stimpson", "J", "cat"];
+arr2.push(["happy", "joy"]);
+arr1bây giờ có giá trị [1, 2, 3, 4]và arr2có giá trị ["Stimpson", "J", "cat", ["happy", "joy"]].
+
+Đẩy ["dog", 3]vào cuối myArraybiến.
+*/
+// Setup
+const myArray = [["John", 23], ["cat", 2]];
+
+// Only change code below this line
+myArray.push(["dog",3]);

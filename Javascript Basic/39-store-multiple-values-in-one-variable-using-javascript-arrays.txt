@@ -1,0 +1,13 @@
+
+/*
+Lưu trữ nhiều giá trị trong một biến bằng cách sử dụng Mảng JavaScript
+Với các biến JavaScript array, chúng ta có thể lưu trữ một số phần dữ liệu ở một nơi.
+
+Bạn bắt đầu khai báo mảng bằng dấu ngoặc vuông mở, kết thúc bằng dấu ngoặc vuông đóng và đặt dấu phẩy giữa mỗi mục nhập, như sau:
+
+const sandwich = ["peanut butter", "jelly", "bread"];
+Sửa đổi mảng mới myArrayđể nó chứa cả chuỗi và số (theo thứ tự đó).
+*/
+
+// Only change code below this line
+const myArray = ["Nguyen", 2];

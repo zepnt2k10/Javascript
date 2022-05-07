@@ -1,0 +1,25 @@
+/*
+Trong Khoa học Máy tính, hàng đợi là một Cấu trúc dữ liệu trừu tượng , nơi các mục được giữ theo thứ tự. Các mục mới có thể được thêm vào phía sau hàng đợi và các mục cũ được lấy ra ở phía trước hàng đợi.
+
+Viết một hàm nextInLinenhận một mảng ( arr) và một số ( item) làm đối số.
+
+Thêm số vào cuối mảng, sau đó xóa phần tử đầu tiên của mảng.
+
+Sau nextInLineđó, hàm sẽ trả về phần tử đã bị loại bỏ.
+*/
+
+function nextInLine(arr, item) {
+  // Only change code below this line
+  arr.push(item);
+  item = arr.shift();
+  return item;
+  // Only change code above this line
+}
+
+// Setup
+const testArr = [1, 2, 3, 4, 5];
+
+// Display code
+console.log("Before: " + JSON.stringify(testArr));
+console.log(nextInLine(testArr, 6));
+console.log("After: " + JSON.stringify(testArr));

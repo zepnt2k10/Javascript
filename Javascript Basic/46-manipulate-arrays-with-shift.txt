@@ -1,0 +1,20 @@
+/*
+Thao tác mảng với shift ()
+pop()luôn loại bỏ phần tử cuối cùng của một mảng. Nếu bạn muốn xóa cái đầu tiên thì sao?
+
+Đó là nơi .shift()xuất hiện. Nó hoạt động giống như vậy .pop(), ngoại trừ nó loại bỏ phần tử đầu tiên thay vì phần tử cuối cùng.
+
+Ví dụ:
+
+const ourArray = ["Stimpson", "J", ["cat"]];
+const removedFromOurArray = ourArray.shift();
+removedFromOurArraysẽ có một giá trị của chuỗi Stimpson, và ourArraysẽ có ["J", ["cat"]].
+
+Sử dụng .shift()hàm để xóa mục đầu tiên khỏi myArrayvà gán giá trị "đã dịch chuyển khỏi" cho một biến mới removedFromMyArray,.
+*/
+
+// Setup
+const myArray = [["John", 23], ["dog", 3]];
+
+// Only change code below this line
+const removedFromMyArray = myArray.shift();

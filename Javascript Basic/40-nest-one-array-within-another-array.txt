@@ -1,0 +1,12 @@
+/*
+Lồng một mảng trong một mảng khác
+Bạn cũng có thể lồng các mảng trong các mảng khác, như bên dưới:
+
+const teams = [["Bulls", 23], ["White Sox", 45]];
+Đây còn được gọi là mảng nhiều chiều .
+
+Tạo một mảng lồng nhau được gọi là myArray.
+*/
+
+// Only change code below this line
+const myArray = [[2,4], [3,6]];

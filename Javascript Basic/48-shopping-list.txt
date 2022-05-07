@@ -1,0 +1,11 @@
+/*
+Danh sách mua sắm
+Tạo danh sách mua sắm trong biến myList. Danh sách phải là một mảng nhiều chiều chứa một số mảng con.
+
+Phần tử đầu tiên trong mỗi mảng con phải chứa một chuỗi với tên của mục. Phần tử thứ hai phải là một số đại diện cho số lượng
+
+["Chocolate Bar", 15]
+Nên có ít nhất 5 mảng con trong danh sách.
+*/
+
+const myList = [["Nguyen",2],["Tran", 1], ["Pham", 3], ["Phan",1],["Vu",1]];

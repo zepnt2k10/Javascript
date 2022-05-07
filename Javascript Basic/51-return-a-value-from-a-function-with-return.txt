@@ -1,0 +1,23 @@
+/*
+Trả về một giá trị từ một hàm với Return
+Chúng ta có thể truyền các giá trị vào một hàm với các đối số . Bạn có thể sử dụng một returncâu lệnh để gửi một giá trị trở lại một hàm.
+
+Ví dụ
+
+function plusThree(num) {
+  return num + 3;
+}
+
+const answer = plusThree(5);
+answercó giá trị 8.
+
+plusThreenhận đối số cho numvà trả về giá trị bằng num + 3.
+
+Tạo một hàm timesFivechấp nhận một đối số, nhân nó với 5và trả về giá trị mới.
+*/
+
+function timesFive(arg){
+  return arg*5;
+}
+
+timesFive(5);

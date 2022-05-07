@@ -1,0 +1,30 @@
+/*
+Truy cập Mảng đa chiều có chỉ mục
+Một cách để nghĩ về mảng nhiều chiều , là như một mảng của các mảng . Khi bạn sử dụng dấu ngoặc để truy cập vào mảng của mình, tập hợp dấu ngoặc đầu tiên đề cập đến các mục nhập trong mảng ngoài cùng (cấp đầu tiên) và mỗi cặp ngoặc bổ sung đề cập đến cấp tiếp theo của các mục bên trong.
+
+Ví dụ
+
+const arr = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+  [[10, 11, 12], 13, 14]
+];
+
+arr[3];
+arr[3][0];
+arr[3][0][1];
+arr[3]là [[10, 11, 12], 13, 14], arr[3][0]đang [10, 11, 12], và arr[3][0][1]là 11.
+
+Lưu ý: Không được có bất kỳ khoảng cách nào giữa tên mảng và dấu ngoặc vuông, chẳng hạn như array [0][0]và thậm chí điều này array [0] [0]không được phép. Mặc dù JavaScript có thể xử lý điều này một cách chính xác, nhưng điều này có thể gây nhầm lẫn cho các lập trình viên khác khi đọc mã của bạn.
+
+Sử dụng ký hiệu dấu ngoặc chọn một phần tử từ myArrayđó myDatacó giá trị bằng 8.
+*/
+const myArray = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+  [[10, 11, 12], 13, 14],
+];
+
+const myData = myArray[2][1];

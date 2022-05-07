@@ -1,0 +1,21 @@
+/*
+Một cách khác để thay đổi dữ liệu trong một mảng là sử dụng .pop()hàm.
+
+.pop()được sử dụng để bật một giá trị ở cuối một mảng. Chúng ta có thể lưu trữ giá trị bật ra này bằng cách gán nó cho một biến. Nói cách khác, .pop()xóa phần tử cuối cùng khỏi một mảng và trả về phần tử đó.
+
+Bất kỳ loại mục nhập nào cũng có thể được bật ra khỏi một mảng - số, chuỗi, thậm chí cả các mảng lồng nhau.
+
+const threeArr = [1, 4, 6];
+const oneDown = threeArr.pop();
+console.log(oneDown);
+console.log(threeArr);
+Đầu tiên console.logsẽ hiển thị giá trị 6và thứ hai sẽ hiển thị giá trị [1, 4].
+
+Sử dụng .pop()hàm để xóa mục cuối cùng myArrayvà gán giá trị bật ra cho một biến mới removedFromMyArray,.
+*/
+
+// Setup
+const myArray = [["John", 23], ["cat", 2]];
+
+// Only change code below this line
+const removedFromMyArray = myArray.pop();

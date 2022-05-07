@@ -1,0 +1,20 @@
+/*
+Viết JavaScript có thể sử dụng lại với các hàm
+Trong JavaScript, chúng ta có thể chia mã của mình thành các phần có thể sử dụng lại được gọi là các hàm .
+
+Đây là một ví dụ về một hàm:
+
+function functionName() {
+  console.log("Hello World");
+}
+Bạn có thể gọi hoặc gọi hàm này bằng cách sử dụng tên của nó, theo sau là dấu ngoặc đơn, như sau: functionName();Mỗi lần gọi hàm, nó sẽ in ra thông báo Hello Worldtrên bảng điều khiển dành cho nhà phát triển. Tất cả mã giữa các dấu ngoặc nhọn sẽ được thực thi mỗi khi hàm được gọi.
+
+Tạo một hàm được gọi là reusableFunctionđể in chuỗi Hi Worldra bảng điều khiển dành cho nhà phát triển.
+Gọi hàm.
+*/
+
+function reusableFunction (){
+  console.log("Hi World");
+}
+
+reusableFunction();

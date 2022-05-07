@@ -1,0 +1,33 @@
+/*
+Hiểu giá trị không xác định được trả về từ một hàm
+Một hàm có thể bao gồm returncâu lệnh nhưng nó không nhất thiết phải như vậy. Trong trường hợp hàm không có returncâu lệnh, khi bạn gọi nó, hàm sẽ xử lý mã bên trong nhưng giá trị trả về là undefined.
+
+Ví dụ
+
+let sum = 0;
+
+function addSum(num) {
+  sum = sum + num;
+}
+
+addSum(3);
+addSumlà một hàm không có returncâu lệnh. Hàm sẽ thay đổi biến toàn sumcục nhưng giá trị trả về của hàm là undefined.
+
+Tạo một hàm addFivemà không có bất kỳ đối số nào. Hàm này thêm 5 vào sumbiến, nhưng giá trị trả về của nó là undefined.
+*/
+// Setup
+let sum = 0;
+
+function addThree() {
+  sum = sum + 3;
+}
+
+// Only change code below this line
+function addFive(){
+  sum+=5;
+}
+
+// Only change code above this line
+
+addThree();
+addFive();

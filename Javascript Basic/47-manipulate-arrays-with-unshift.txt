@@ -1,0 +1,22 @@
+/*
+Thao tác mảng với unshift ()
+Bạn không chỉ có thể thêm shiftcác phần tử ở đầu mảng mà còn có thể thêm unshiftcác phần tử vào đầu mảng, tức là thêm các phần tử vào trước mảng.
+
+.unshift()hoạt động giống hệt như vậy .push(), nhưng thay vì thêm phần tử vào cuối mảng, hãy unshift()thêm phần tử vào đầu mảng.
+
+Ví dụ:
+
+const ourArray = ["Stimpson", "J", "cat"];
+ourArray.shift();
+ourArray.unshift("Happy");
+Sau shift, ourArraysẽ có giá trị ["J", "cat"]. Sau unshift, ourArraysẽ có giá trị ["Happy", "J", "cat"].
+
+Thêm ["Paul", 35]vào đầu myArraybiến bằng cách sử dụng unshift().
+*/
+
+// Setup
+const myArray = [["John", 23], ["dog", 3]];
+myArray.shift();
+
+// Only change code below this line
+myArray.unshift(["Paul", 35]);

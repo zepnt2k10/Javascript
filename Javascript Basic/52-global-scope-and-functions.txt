@@ -1,0 +1,31 @@
+/*
+Phạm vi và chức năng toàn cầu
+Trong JavaScript, phạm vi đề cập đến khả năng hiển thị của các biến. Các biến được xác định bên ngoài một khối chức năng có phạm vi Toàn cục . Điều này có nghĩa là, chúng có thể được nhìn thấy ở mọi nơi trong mã JavaScript của bạn.
+
+Các biến được khai báo mà không có từ khóa lethoặc được tạo tự động trong phạm vi. Điều này có thể tạo ra hậu quả không mong muốn ở những nơi khác trong mã của bạn hoặc khi chạy lại một chức năng. Bạn phải luôn khai báo các biến của mình bằng hoặc .constgloballetconst
+
+Sử dụng lethoặc const, khai báo một biến toàn cục có tên myGlobalbên ngoài bất kỳ hàm nào. Khởi tạo nó với giá trị là 10.
+
+Hàm bên trong fun1, gán 5cho oopsGlobal mà không sử dụng lethoặc consttừ khóa.
+*/
+
+// Declare the myGlobal variable below this line
+let myGlobal = 10;
+
+function fun1() {
+  // Assign 5 to oopsGlobal Here
+  oopsGlobal = 5;
+}
+
+// Only change code above this line
+
+function fun2() {
+  var output = "";
+  if (typeof myGlobal != "undefined") {
+    output += "myGlobal: " + myGlobal;
+  }
+  if (typeof oopsGlobal != "undefined") {
+    output += " oopsGlobal: " + oopsGlobal;
+  }
+  console.log(output);
+}

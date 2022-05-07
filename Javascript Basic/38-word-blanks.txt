@@ -1,0 +1,24 @@
+/*
+Khoảng trống từ
+Bây giờ chúng ta sẽ sử dụng kiến ​​thức của mình về chuỗi để xây dựng một trò chơi xếp chữ theo phong cách " Mad Libs " mà chúng ta gọi là "Word Blanks". Bạn sẽ tạo một câu kiểu "Điền vào chỗ trống" (tùy ý hài hước).
+
+Trong trò chơi "Mad Libs", bạn được cung cấp các câu có một số từ còn thiếu, như danh từ, động từ, tính từ và trạng từ. Sau đó, bạn điền vào các phần còn thiếu bằng các từ bạn chọn theo cách mà câu đã hoàn thành có ý nghĩa.
+
+Hãy xem xét câu này - Đó thực sự là ____ , và chúng ta ____ chính chúng ta ____ . Câu này có ba phần còn thiếu - một tính từ, một động từ và một trạng từ, và chúng ta có thể thêm các từ mà chúng ta chọn để hoàn thành nó. Sau đó, chúng ta có thể gán câu đã hoàn thành cho một biến như sau:
+
+const sentence = "It was really " + "hot" + ", and we " + "laughed" + " ourselves " + "silly" + ".";
+Trong thử thách này, chúng tôi cung cấp cho bạn một danh từ, một động từ, một tính từ và một trạng từ. Bạn cần tạo thành một câu hoàn chỉnh bằng cách sử dụng các từ bạn chọn, cùng với những từ mà chúng tôi cung cấp.
+
+Bạn sẽ cần sử dụng toán tử nối chuỗi +để tạo một chuỗi mới, sử dụng các biến được cung cấp : myNoun,, và . Sau đó, bạn sẽ gán chuỗi đã hình thành cho biến. Bạn không nên thay đổi các từ được gán cho các biến.myAdjectivemyVerbmyAdverbwordBlanks
+
+Bạn cũng sẽ cần tính đến khoảng trắng trong chuỗi của mình, để câu cuối cùng có khoảng trắng giữa tất cả các từ. Kết quả phải là một câu hoàn chỉnh.
+*/
+
+const myNoun = "dog";
+const myAdjective = "big";
+const myVerb = "ran";
+const myAdverb = "quickly";
+
+// Only change code below this line
+const wordBlanks = myAdjective +" "+ myNoun +" " + myVerb + " " + myAdverb + "."; // Change this line
+// Only change code above this line

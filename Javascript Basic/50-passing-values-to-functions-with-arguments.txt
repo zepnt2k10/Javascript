@@ -1,0 +1,17 @@
+/*
+Chuyển các giá trị cho các hàm bằng các đối số
+Tham số là các biến hoạt động như trình giữ chỗ cho các giá trị sẽ được nhập vào một hàm khi nó được gọi. Khi một hàm được xác định, nó thường được xác định cùng với một hoặc nhiều tham số. Các giá trị thực tế được nhập (hoặc "được truyền" ) vào một hàm khi nó được gọi được gọi là các đối số .
+
+Đây là một hàm có hai tham số param1và param2:
+
+function testFun(param1, param2) {
+  console.log(param1, param2);
+}
+Sau đó, chúng ta có thể gọi như thế này testFun:. testFun("Hello", "World");Chúng tôi đã chuyển hai đối số chuỗi, Hellovà World. Bên trong hàm, param1sẽ bằng chuỗi Hellovà param2sẽ bằng chuỗi World. Lưu ý rằng bạn có thể gọi testFunlại với các đối số khác nhau và các tham số sẽ nhận giá trị của các đối số mới.
+*/
+
+function functionWithArgs(arg1, arg2){
+  console.log(arg1 + arg2);
+}
+
+functionWithArgs(1,3);

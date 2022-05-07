@@ -1,0 +1,29 @@
+/*
+Các biến được khai báo trong một hàm, cũng như các tham số hàm, có phạm vi cục bộ . Điều đó có nghĩa là chúng chỉ hiển thị trong chức năng đó.
+
+Đây là một hàm myTestvới một biến cục bộ được gọi loc.
+
+function myTest() {
+  const loc = "foo";
+  console.log(loc);
+}
+
+myTest();
+console.log(loc);
+Lệnh myTest()gọi hàm sẽ hiển thị chuỗi footrong bảng điều khiển. Dòng console.log(loc)(bên ngoài myTesthàm) sẽ tạo ra một lỗi, vì locnó không được xác định bên ngoài hàm.
+
+Trình chỉnh sửa có hai console.logmục để giúp bạn xem điều gì đang xảy ra. Kiểm tra bảng điều khiển khi bạn viết mã để xem nó thay đổi như thế nào. Khai báo một biến cục bộ myVarbên trong myLocalScopevà chạy các bài kiểm tra.
+
+Lưu ý: Giao diện điều khiển sẽ vẫn hiển thị ReferenceError: myVar is not defined, nhưng điều này sẽ không làm cho quá trình kiểm tra không thành công.
+*/
+
+function myLocalScope() {
+  // Only change code below this line
+  let myVar = 5;
+  console.log('inside myLocalScope', myVar);
+}
+myLocalScope();
+
+// Run and check the console
+// myVar is not defined outside of myLocalScope
+console.log('outside myLocalScope', myVar);

@@ -1,0 +1,17 @@
+/*
+Hiểu các giá trị Boolean
+Một kiểu dữ liệu khác là Boolean . Boolean chỉ có thể là một trong hai giá trị: truehoặc false. Về cơ bản, chúng là những công tắc bật-tắt nhỏ, truebật và falsetắt ở đâu. Hai trạng thái này loại trừ lẫn nhau.
+
+Lưu ý: Các giá trị Boolean không bao giờ được viết bằng dấu ngoặc kép. Các chuỗi "true"và "false"không phải là Boolean và không có ý nghĩa đặc biệt trong JavaScript.
+
+Sửa đổi welcomeToBooleanshàm để nó trả về truethay vì falsekhi bấm vào nút chạy.
+
+
+*/
+function welcomeToBooleans() {
+  // Only change code below this line
+
+  return true; // Change this line
+
+  // Only change code above this line
+}
