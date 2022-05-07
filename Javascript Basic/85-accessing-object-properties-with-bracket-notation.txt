@@ -1,0 +1,34 @@
+/*
+Truy cập thuộc tính đối tượng với ký hiệu dấu ngoặc
+Cách thứ hai để truy cập các thuộc tính của một đối tượng là ký hiệu ngoặc vuông ( []). Nếu thuộc tính của đối tượng bạn đang cố gắng truy cập có khoảng trắng trong tên của nó, bạn sẽ cần sử dụng ký hiệu dấu ngoặc.
+
+Tuy nhiên, bạn vẫn có thể sử dụng ký hiệu ngoặc trên các thuộc tính đối tượng không có khoảng trắng.
+
+Đây là một ví dụ về cách sử dụng ký hiệu ngoặc để đọc thuộc tính của một đối tượng:
+
+const myObj = {
+  "Space Name": "Kirk",
+  "More Space": "Spock",
+  "NoSpace": "USS Enterprise"
+};
+
+myObj["Space Name"];
+myObj['More Space'];
+myObj["NoSpace"];
+myObj["Space Name"]sẽ là chuỗi Kirk, myObj['More Space']sẽ là chuỗi Spock, và myObj["NoSpace"]sẽ là chuỗi USS Enterprise.
+
+Lưu ý rằng tên thuộc tính có khoảng trắng trong chúng phải nằm trong dấu ngoặc kép (đơn hoặc kép).
+
+Đọc các giá trị của các thuộc tính an entreevà the drinkcủa testObjviệc sử dụng ký hiệu dấu ngoặc và gán chúng cho entreeValuevà drinkValuetương ứng.
+*/
+
+// Setup
+const testObj = {
+  "an entree": "hamburger",
+  "my side": "veggies",
+  "the drink": "water"
+};
+
+// Only change code below this line
+const entreeValue = testObj["an entree"];   // Change this line
+const drinkValue = testObj["the drink"];    // Change this line

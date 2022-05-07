@@ -1,0 +1,42 @@
+/*
+Mã chơi gôn
+Trong trò chơi gôn , mỗi lỗ gôn có một parý nghĩa là số lượng trung bình strokesmột gôn thủ dự kiến ​​thực hiện để đánh chìm bóng trong lỗ để hoàn thành cuộc chơi. Tùy thuộc vào mức độ cao hơn hoặc thấp hơn parcủa bạn strokes, có một biệt hiệu khác nhau.
+
+Hàm của bạn sẽ được truyền parvà strokescác đối số. Trả về chuỗi đúng theo bảng này liệt kê các nét theo thứ tự ưu tiên; top (cao nhất) đến bottom (thấp nhất):
+
+Nét	Trở về
+1	"Lỗ trong một!"
+<= par - 2	"Chim ưng"
+mệnh - 1	"Birdie"
+ngang bằng	"Par"
+mệnh + 1	"Bogey"
+mệnh + 2	"Double Bogey"
+> = mệnh + 3	"Về nhà!"
+parvà strokessẽ luôn ở dạng số và dương. Chúng tôi đã thêm một loạt các tên để bạn tiện theo dõi.
+*/
+
+const names = ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home!"];
+
+function golfScore(par, strokes) {
+  // Only change code below this line
+  if(strokes == 1){
+    return names[0];
+  } else if(strokes <= par -2){
+    return names[1];
+  } else if(strokes == par -1){
+    return names[2];
+  } else if(strokes == par){
+    return names[3];
+  } else if(strokes == par +1){
+    return names[4];
+  } else if(strokes == par + 2){
+    return names[5];
+  } else{
+    return names[6];
+  }
+
+  return "Change Me";
+  // Only change code above this line
+}
+
+golfScore(5, 4);

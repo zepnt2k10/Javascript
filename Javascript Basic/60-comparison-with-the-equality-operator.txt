@@ -1,0 +1,30 @@
+/*
+So sánh với Toán tử bình đẳng
+Có nhiều toán tử so sánh trong JavaScript. trueTất cả các toán tử này trả về một giá trị hoặc boolean false.
+
+Toán tử cơ bản nhất là toán tử bình đẳng ==. Toán tử bình đẳng so sánh hai giá trị và trả về truenếu chúng tương đương hoặc falsenếu chúng không tương đương. Lưu ý rằng đẳng thức khác với gán ( =), gán giá trị ở bên phải của toán tử cho một biến ở bên trái.
+
+function equalityTest(myVal) {
+  if (myVal == 10) {
+    return "Equal";
+  }
+  return "Not Equal";
+}
+Nếu myVallà bằng 10, toán tử bình đẳng sẽ trả về true, vì vậy mã trong dấu ngoặc nhọn sẽ thực thi và hàm sẽ trả về Equal. Nếu không, hàm sẽ trả về Not Equal. Để JavaScript có thể so sánh hai kiểu dữ liệu khác nhau (ví dụ: numbersvà strings), nó phải chuyển đổi kiểu này sang kiểu khác. Điều này được gọi là Loại cưỡng chế. Tuy nhiên, khi đã làm như vậy, nó có thể so sánh các điều khoản như sau:
+
+1   ==  1  // true
+1   ==  2  // false
+1   == '1' // true
+"3" ==  3  // true
+Thêm toán tử bình đẳng vào dòng được chỉ định để hàm sẽ trả về chuỗi Equalkhi valtương đương với 12.
+*/
+
+// Setup
+function testEqual(val) {
+  if (val==12) { // Change this line
+    return "Equal";
+  }
+  return "Not Equal";
+}
+
+testEqual(10);

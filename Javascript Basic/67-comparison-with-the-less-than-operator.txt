@@ -1,0 +1,29 @@
+/*
+So sánh với nhà điều hành nhỏ hơn
+Toán tử less than ( <) so sánh giá trị của hai số. Nếu số bên trái nhỏ hơn số bên phải, nó sẽ trả về true. Nếu không, nó sẽ trả về false. Giống như toán tử bình đẳng, toán tử less than chuyển đổi kiểu dữ liệu trong khi so sánh.
+
+Các ví dụ
+
+2   < 5 // true
+'3' < 7 // true
+5   < 5 // false
+3   < 2 // false
+'8' < 4 // false
+Thêm toán tử less than vào các dòng được chỉ định để các câu lệnh trả về có ý nghĩa.
+
+
+*/
+
+function testLessThan(val) {
+  if (val < 25) {  // Change this line
+    return "Under 25";
+  }
+
+  if (val < 55) {  // Change this line
+    return "Under 55";
+  }
+
+  return "55 or Over";
+}
+
+testLessThan(10);

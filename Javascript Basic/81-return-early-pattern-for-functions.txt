@@ -1,0 +1,33 @@
+/*
+Trả lại mẫu sớm cho các chức năng
+Khi returnđạt đến một câu lệnh, việc thực thi chức năng hiện tại sẽ dừng lại và điều khiển quay trở lại vị trí đang gọi.
+
+Ví dụ
+
+function myFun() {
+  console.log("Hello");
+  return "World";
+  console.log("byebye")
+}
+myFun();
+Ở trên sẽ hiển thị chuỗi Hellotrong bảng điều khiển và trả về chuỗi World. Chuỗi byebyesẽ không bao giờ hiển thị trong bảng điều khiển, vì hàm thoát tại returncâu lệnh.
+
+Sửa đổi hàm abTestđể nếu ahoặc bnhỏ hơn 0hàm sẽ thoát ngay lập tức với giá trị là undefined.
+
+Gợi ý
+Hãy nhớ rằng đó undefinedlà một từ khóa , không phải một chuỗi.
+*/
+
+// Setup
+function abTest(a, b) {
+  // Only change code below this line
+  if( a< 0 | b <0)
+    return undefined;
+
+
+  // Only change code above this line
+
+  return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));
+}
+
+abTest(2,2);

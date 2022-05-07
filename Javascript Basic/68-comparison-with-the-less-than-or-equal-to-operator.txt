@@ -1,0 +1,27 @@
+/*
+So sánh với toán tử nhỏ hơn hoặc ngang bằng
+Toán tử nhỏ hơn hoặc bằng ( <=) so sánh giá trị của hai số. Nếu số bên trái nhỏ hơn hoặc bằng số bên phải, nó sẽ trả về true. Nếu số bên trái lớn hơn số bên phải, nó sẽ trả về false. Giống như toán tử bình đẳng, toán tử nhỏ hơn hoặc bằng với chuyển đổi kiểu dữ liệu.
+
+Các ví dụ
+
+4   <= 5 // true
+'7' <= 7 // true
+5   <= 5 // true
+3   <= 2 // false
+'8' <= 4 // false
+Thêm toán tử nhỏ hơn hoặc bằng với vào các dòng được chỉ định để các câu lệnh trả về có ý nghĩa.
+*/
+
+function testLessOrEqual(val) {
+  if (val <= 12) {  // Change this line
+    return "Smaller Than or Equal to 12";
+  }
+
+  if (val <= 24) {  // Change this line
+    return "Smaller Than or Equal to 24";
+  }
+
+  return "More Than 24";
+}
+
+testLessOrEqual(10);

@@ -1,0 +1,35 @@
+/*
+So sánh với toán tử logic hoặc toán tử
+Toán tử hoặc lôgic ( ||) trả về truenếu một trong hai toán hạng là true. Nếu không, nó sẽ trả về false.
+
+Toán tử hoặc lôgic bao gồm hai ký hiệu ống: ( ||). Điều này thường có thể được tìm thấy giữa phím Backspace và Enter của bạn.
+
+Mẫu bên dưới sẽ trông quen thuộc so với các quan điểm trước:
+
+if (num > 10) {
+  return "No";
+}
+if (num < 5) {
+  return "No";
+}
+return "Yes";
+sẽ Yeschỉ trả về nếu numnằm giữa 5và 10(bao gồm 5 và 10). Logic tương tự có thể được viết là:
+
+if (num > 10 || num < 5) {
+  return "No";
+}
+return "Yes";
+Kết hợp hai ifcâu lệnh thành một câu lệnh trả về chuỗi Outsidenếu valkhông nằm giữa 10và 20, bao gồm. Nếu không, hãy trả về chuỗi Inside.
+*/
+
+function testLogicalOr(val) {
+  // Only change code below this line
+
+  if (val <10 || val > 20) {
+    return "Outside";
+  }
+  // Only change code above this line
+  return "Inside";
+}
+
+testLogicalOr(15);

@@ -1,0 +1,47 @@
+/*
+Trong trò chơi sòng bạc Blackjack, người chơi có thể giành được lợi thế hơn nhà cái bằng cách theo dõi số lượng quân bài cao và thấp tương đối còn lại trong bộ bài. Đây được gọi là Đếm thẻ .
+
+Có nhiều thẻ cao hơn còn lại trong bộ bài sẽ có lợi cho người chơi. Mỗi thẻ được gán một giá trị theo bảng dưới đây. Khi số đếm là dương, người chơi nên đặt cược cao. Khi số đếm bằng 0 hoặc âm, người chơi nên đặt cược thấp.
+
+Đếm thay đổi	thẻ
++1	2, 3, 4, 5, 6
+0	7, 8, 9
+-1	10, 'J', 'Q', 'K', 'A'
+Bạn sẽ viết hàm đếm thẻ. Nó sẽ nhận một cardtham số, có thể là một số hoặc một chuỗi, và tăng hoặc giảm biến toàn countcục theo giá trị của thẻ (xem bảng). Sau đó, hàm sẽ trả về một chuỗi có số đếm hiện tại và chuỗi Betnếu số đếm là dương hoặc Holdnếu số đếm bằng 0 hoặc âm. Số lượng hiện tại và quyết định ( Bethoặc Hold) của người chơi phải được phân tách bằng một dấu cách.
+
+Kết quả Ví dụ: -3 Hold hoặc5 Bet
+
+Gợi ý
+KHÔNG đặt lại countvề 0 khi giá trị là 7, 8 hoặc 9.
+KHÔNG trả về một mảng.
+KHÔNG bao gồm dấu ngoặc kép (đơn hoặc kép) trong đầu ra.
+*/
+
+let count = 0;
+
+function cc(card) {
+  // Only change code below this line
+  switch(card){
+      case 2:
+      case 3:
+      case 4:
+      case 5:
+      case 6:
+        count ++;
+        break;
+      case 7:
+      case 8:
+      case 9:
+        break;
+      default:
+        count --;
+        break;
+  }
+  if(count>0)
+    return count + " Bet";
+  else
+    return count + " Hold";
+  // Only change code above this line
+}
+
+cc(2); cc(3); cc(7); cc('K'); cc('A');

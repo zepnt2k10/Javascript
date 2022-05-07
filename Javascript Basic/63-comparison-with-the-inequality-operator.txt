@@ -1,0 +1,23 @@
+/*
+So sánh với Toán tử Bất bình đẳng
+Toán tử bất đẳng thức ( !=) ngược lại với toán tử đẳng thức. Nó có nghĩa là không bình đẳng và trả về falsenơi bình đẳng sẽ trở lại truevà ngược lại . Giống như toán tử bình đẳng, toán tử bất bình đẳng sẽ chuyển đổi các kiểu dữ liệu của giá trị trong khi so sánh.
+
+Các ví dụ
+
+1 !=  2    // true
+1 != "1"   // false
+1 != '1'   // false
+1 != true  // false
+0 != false // false
+Thêm toán tử bất đẳng thức !=trong ifcâu lệnh để hàm sẽ trả về chuỗi Not Equalkhi valkhông tương đương với 99.
+*/
+
+// Setup
+function testNotEqual(val) {
+  if (val != 99) { // Change this line
+    return "Not Equal";
+  }
+  return "Equal";
+}
+
+testNotEqual(10);

@@ -1,0 +1,30 @@
+/*
+Truy cập thuộc tính đối tượng với ký hiệu dấu chấm
+Có hai cách để truy cập các thuộc tính của một đối tượng: ký hiệu dấu chấm ( .) và ký hiệu dấu ngoặc ( []), tương tự như một mảng.
+
+Ký hiệu dấu chấm là những gì bạn sử dụng khi bạn biết tên của thuộc tính mà bạn đang cố gắng truy cập trước thời hạn.
+
+Đây là một ví dụ về cách sử dụng ký hiệu dấu chấm ( .) để đọc thuộc tính của một đối tượng:
+
+const myObj = {
+  prop1: "val1",
+  prop2: "val2"
+};
+
+const prop1val = myObj.prop1;
+const prop2val = myObj.prop2;
+prop1valsẽ có một giá trị của chuỗi val1và prop2valsẽ có một giá trị của chuỗi val2.
+
+Đọc các giá trị thuộc tính của testObjviệc sử dụng ký hiệu dấu chấm. Đặt biến hatValuebằng thuộc tính của đối tượng hatvà đặt biến shirtValuebằng thuộc tính của đối tượng shirt.
+*/
+
+// Setup
+const testObj = {
+  "hat": "ballcap",
+  "shirt": "jersey",
+  "shoes": "cleats"
+};
+
+// Only change code below this line
+const hatValue = testObj.hat;      // Change this line
+const shirtValue = testObj.shirt;    // Change this line

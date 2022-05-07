@@ -1,0 +1,45 @@
+/*
+Chọn từ nhiều tùy chọn với các câu lệnh chuyển đổi
+Nếu bạn có nhiều tùy chọn để chọn, hãy sử dụng câu lệnh chuyển đổi . Một switchcâu lệnh kiểm tra một giá trị và có thể có nhiều câu lệnh trường hợp xác định nhiều giá trị có thể có. caseCác câu lệnh được thực thi từ giá trị khớp đầu tiên cho đến khi breakgặp a.
+
+Đây là một ví dụ về một switchcâu lệnh:
+
+switch(lowercaseLetter) {
+  case "a":
+    console.log("A");
+    break;
+  case "b":
+    console.log("B");
+    break;
+}
+casecác giá trị được kiểm tra với sự bình đẳng nghiêm ngặt ( ===). Lệnh breakcho JavaScript ngừng thực thi các câu lệnh. Nếu breakbỏ qua, câu lệnh tiếp theo sẽ được thực hiện.
+
+Viết một câu lệnh switch kiểm tra valvà thiết lập answercác điều kiện sau:
+1- alpha
+2- beta
+3- gamma
+4-delta
+*/
+
+function caseInSwitch(val) {
+  let answer = "";
+  // Only change code below this line
+    switch(val){
+      case 1:
+        answer = "alpha";
+        break;
+      case 2:
+        answer = "beta";
+        break;
+      case 3:
+        answer = "gamma";
+        break;
+      case 4:
+        answer = "delta";
+        break;
+    }
+  // Only change code above this line
+  return answer;
+}
+
+caseInSwitch(1);

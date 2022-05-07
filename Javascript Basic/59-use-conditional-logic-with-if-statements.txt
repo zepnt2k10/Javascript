@@ -1,0 +1,41 @@
+/*
+Sử dụng logic có điều kiện với câu lệnh If
+ifcác câu lệnh được sử dụng để đưa ra quyết định trong mã. Từ khóa ifyêu cầu JavaScript thực thi mã trong dấu ngoặc nhọn trong các điều kiện nhất định, được xác định trong dấu ngoặc đơn. Những điều kiện này được gọi là Booleanđiều kiện và chúng có thể chỉ là truehoặc false.
+
+Khi điều kiện được đánh giá là true, chương trình thực hiện câu lệnh bên trong dấu ngoặc nhọn. Khi điều kiện Boolean được đánh giá là false, câu lệnh bên trong dấu ngoặc nhọn sẽ không thực thi.
+
+Mã giả
+
+if ( điều kiện là đúng ) {
+  câu lệnh được thực thi
+}
+Ví dụ
+
+function test (myCondition) {
+  if (myCondition) {
+    return "It was true";
+  }
+  return "It was false";
+}
+
+test(true);
+test(false);
+test(true)trả về chuỗi It was truevà test(false)trả về chuỗi It was false.
+
+Khi testđược gọi với giá trị là true, ifcâu lệnh sẽ đánh giá myConditionxem nó có đúng truehay không. Vì nó là true, hàm trả về It was true. Khi chúng ta gọi testvới giá trị là , falsekhông và câu lệnh trong dấu ngoặc nhọn không được thực thi và hàm trả về .myCondition trueIt was false
+
+Tạo một ifcâu lệnh bên trong hàm để trả về Yes, that was truenếu là tham số wasThatTruevà truetrả về No, that was falsenếu không.
+*/
+
+function trueOrFalse(wasThatTrue) {
+  // Only change code below this line
+  if(wasThatTrue){
+    return "Yes, that was true";
+  }else{
+    return "No, that was false";
+  }
+
+
+  // Only change code above this line
+
+}

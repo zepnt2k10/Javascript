@@ -1,0 +1,23 @@
+/*
+So sánh với Toán tử Bất bình đẳng Nghiêm ngặt
+Toán tử bất đẳng thức chặt chẽ ( !==) là đối lập logic với toán tử bình đẳng nghiêm ngặt. Nó có nghĩa là "Không bình đẳng nghiêm ngặt" và trả về falsenơi bình đẳng nghiêm ngặt sẽ trả về truevà ngược lại . Toán tử bất bình đẳng nghiêm ngặt sẽ không chuyển đổi kiểu dữ liệu.
+
+Các ví dụ
+
+3 !==  3  // false
+3 !== '3' // true
+4 !==  3  // true
+Thêm toán tử bất đẳng thức nghiêm ngặt vào ifcâu lệnh để hàm sẽ trả về chuỗi Not Equalkhi valkhông hoàn toàn bằng17
+
+
+*/
+
+// Setup
+function testStrictNotEqual(val) {
+  if (val!== 17) { // Change this line
+    return "Not Equal";
+  }
+  return "Equal";
+}
+
+testStrictNotEqual(10);

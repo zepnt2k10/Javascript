@@ -1,0 +1,27 @@
+/*
+Thực hành so sánh các giá trị khác nhau
+Trong hai thử thách cuối cùng, chúng ta đã học về toán tử bình đẳng ( ==) và toán tử bình đẳng nghiêm ngặt ( ===). Chúng ta hãy xem xét nhanh và thực hành sử dụng các toán tử này thêm một số nữa.
+
+Nếu các giá trị được so sánh không cùng kiểu, toán tử bình đẳng sẽ thực hiện chuyển đổi kiểu và sau đó đánh giá các giá trị. Tuy nhiên, toán tử bình đẳng nghiêm ngặt sẽ so sánh cả kiểu dữ liệu và giá trị nguyên trạng, mà không chuyển đổi kiểu này sang kiểu kia.
+
+Các ví dụ
+
+3 == '3'trả về truevì JavaScript thực hiện chuyển đổi kiểu từ chuỗi thành số. 3 === '3'trả về false vì các kiểu khác nhau và việc chuyển đổi kiểu không được thực hiện.
+
+Lưu ý: Trong JavaScript, bạn có thể xác định loại của một biến hoặc một giá trị bằng typeoftoán tử, như sau:
+
+typeof 3
+typeof '3'
+typeof 3trả về chuỗi numbervà typeof '3'trả về chuỗi string.
+
+Hàm compareEqualitytrong trình soạn thảo so sánh hai giá trị bằng cách sử dụng toán tử bình đẳng. Sửa đổi hàm để nó chỉ trả về chuỗi Equalkhi các giá trị hoàn toàn bằng nhau.
+*/
+// Setup
+function compareEquality(a, b) {
+  if (a === b) { // Change this line
+    return "Equal";
+  }
+  return "Not Equal";
+}
+
+compareEquality(10, "10");

@@ -1,0 +1,28 @@
+/*
+Trả lại giá trị Boolean từ các hàm
+Bạn có thể nhớ lại từ So sánh với Toán tử bình đẳngtrue rằng tất cả các toán tử so sánh đều trả về giá trị hoặc boolean false.
+
+Đôi khi mọi người sử dụng một if/elsecâu lệnh để so sánh, như sau:
+
+function isEqual(a, b) {
+  if (a === b) {
+    return true;
+  } else {
+    return false;
+  }
+}
+Nhưng có một cách tốt hơn để làm điều này. Vì ===trả về truehoặc false, chúng tôi có thể trả về kết quả của phép so sánh:
+
+function isEqual(a, b) {
+  return a === b;
+}
+Sửa chức năng isLessloại bỏ các if/elsecâu lệnh.
+*/
+
+function isLess(a, b) {
+  // Only change code below this line
+    return a < b;
+  // Only change code above this line
+}
+
+isLess(10, 15);

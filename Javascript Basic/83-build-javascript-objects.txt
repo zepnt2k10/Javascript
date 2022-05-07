@@ -1,0 +1,38 @@
+/*
+Xây dựng các đối tượng JavaScript
+Bạn có thể đã nghe thuật ngữ này objecttrước đây.
+
+Các đối tượng tương tự như arrays, ngoại trừ việc thay vì sử dụng các chỉ mục để truy cập và sửa đổi dữ liệu của chúng, bạn truy cập dữ liệu trong các đối tượng thông qua những gì được gọi properties.
+
+Các đối tượng hữu ích để lưu trữ dữ liệu theo cách có cấu trúc và có thể đại diện cho các đối tượng trong thế giới thực, chẳng hạn như một con mèo.
+
+Đây là một đối tượng mèo mẫu:
+
+const cat = {
+  "name": "Whiskers",
+  "legs": 4,
+  "tails": 1,
+  "enemies": ["Water", "Dogs"]
+};
+Trong ví dụ này, tất cả các thuộc tính được lưu trữ dưới dạng chuỗi, chẳng hạn như name, legsvà tails. Tuy nhiên, bạn cũng có thể sử dụng số làm thuộc tính. Bạn thậm chí có thể bỏ qua dấu ngoặc kép cho các thuộc tính chuỗi một từ, như sau:
+
+const anotherObject = {
+  make: "Ford",
+  5: "five",
+  "model": "focus"
+};
+Tuy nhiên, nếu đối tượng của bạn có bất kỳ thuộc tính không phải chuỗi nào, JavaScript sẽ tự động nhập chúng dưới dạng chuỗi.
+
+Tạo một đối tượng đại diện cho một con chó được gọi là myDogcó chứa các thuộc tính name(một chuỗi) legs, tailsvà friends.
+
+Bạn có thể đặt các thuộc tính đối tượng này thành bất kỳ giá trị nào bạn muốn, miễn namelà một chuỗi, là số và legslà một mảng.tailsfriends
+*/
+
+const myDog = {
+  // Only change code below this line
+  name: "Bon",
+  legs: 4,
+  tails: 1,
+  friends: ["gau", "meo"]
+  // Only change code above this line
+};

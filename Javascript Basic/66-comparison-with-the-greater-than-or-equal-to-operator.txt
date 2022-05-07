@@ -1,0 +1,28 @@
+/*
+So sánh với nhà điều hành Lớn hơn hoặc ngang bằng
+Toán tử lớn hơn hoặc bằng ( >=) so sánh giá trị của hai số. Nếu số bên trái lớn hơn hoặc bằng số bên phải, nó sẽ trả về true. Nếu không, nó sẽ trả về false.
+
+Giống như toán tử bình đẳng, toán tử lớn hơn hoặc bằng với sẽ chuyển đổi kiểu dữ liệu trong khi so sánh.
+
+Các ví dụ
+
+6   >=  6  // true
+7   >= '3' // true
+2   >=  3  // false
+'7' >=  9  // false
+Thêm toán tử lớn hơn hoặc bằng với vào các dòng được chỉ định để các câu lệnh trả về có ý nghĩa.
+*/
+
+function testGreaterOrEqual(val) {
+  if (val >=20) {  // Change this line
+    return "20 or Over";
+  }
+
+  if (val >= 10) {  // Change this line
+    return "10 or Over";
+  }
+
+  return "Less than 10";
+}
+
+testGreaterOrEqual(10);

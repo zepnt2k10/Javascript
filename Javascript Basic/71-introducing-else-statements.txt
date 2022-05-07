@@ -1,0 +1,27 @@
+/*
+Giới thiệu các tuyên bố khác
+Khi một điều kiện cho một ifcâu lệnh là đúng, khối mã theo sau nó sẽ được thực thi. Còn khi điều kiện đó là sai thì sao? Bình thường sẽ không có gì xảy ra. Với một elsecâu lệnh, một khối mã thay thế có thể được thực thi.
+
+if (num > 10) {
+  return "Bigger than 10";
+} else {
+  return "10 or Less";
+}
+Kết hợp các ifcâu lệnh thành một câu lệnh duy nhất if/else.
+*/
+
+function testElse(val) {
+  let result = "";
+  // Only change code below this line
+
+  if (val > 5) {
+    result = "Bigger than 5";
+  }
+  else {
+    result = "5 or Smaller";
+  }
+  // Only change code above this line
+  return result;
+}
+
+testElse(4);

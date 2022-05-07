@@ -1,0 +1,45 @@
+/*
+Thêm một tùy chọn mặc định trong các câu lệnh chuyển đổi
+Trong một switchcâu lệnh, bạn có thể không chỉ định được tất cả các giá trị có thể làm casecâu lệnh. Thay vào đó, bạn có thể thêm defaultcâu lệnh sẽ được thực thi nếu không casetìm thấy câu lệnh nào phù hợp. Hãy coi nó giống như elsetuyên bố cuối cùng trong một if/elsechuỗi.
+
+Một defaulttuyên bố nên là trường hợp cuối cùng.
+
+switch (num) {
+  case value1:
+    statement1;
+    break;
+  case value2:
+    statement2;
+    break;
+...
+  default:
+    defaultStatement;
+    break;
+}
+Viết câu lệnh switch để thiết lập answercác điều kiện sau:
+a- apple
+b- bird
+c- cat
+default-stuff
+*/
+function switchOfStuff(val) {
+  let answer = "";
+  // Only change code below this line
+  switch(val){
+      case "a":
+        answer = "apple";
+        break;
+      case "b":
+        answer = "bird";
+        break;
+      case "c":
+        answer = "cat";
+        break;
+      default:
+        answer = "stuff";
+  }
+  // Only change code above this line
+  return answer;
+}
+
+switchOfStuff(1);

@@ -1,0 +1,24 @@
+/*
+So sánh với Nhà điều hành bình đẳng nghiêm ngặt
+Đẳng thức chặt chẽ ( ===) là đối trọng của toán tử đẳng thức ( ==). Tuy nhiên, không giống như toán tử bình đẳng cố gắng chuyển đổi cả hai giá trị được so sánh với một kiểu chung, toán tử bình đẳng nghiêm ngặt không thực hiện chuyển đổi kiểu.
+
+Nếu các giá trị được so sánh có các kiểu khác nhau, chúng được coi là không bằng nhau và toán tử bình đẳng nghiêm ngặt sẽ trả về false.
+
+Các ví dụ
+
+3 ===  3  // true
+3 === '3' // false
+Trong ví dụ thứ hai, 3là một Numberloại và '3'là một Stringloại.
+
+Sử dụng toán tử bình đẳng nghiêm ngặt trong ifcâu lệnh để hàm sẽ trả về chuỗi Equalkhi valhoàn toàn bằng 7.
+*/
+
+// Setup
+function testStrict(val) {
+  if (val===7) { // Change this line
+    return "Equal";
+  }
+  return "Not Equal";
+}
+
+testStrict(10);

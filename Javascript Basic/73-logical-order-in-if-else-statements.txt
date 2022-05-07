@@ -1,0 +1,50 @@
+/*
+Thứ tự lôgic trong Câu lệnh If Khác
+Thứ tự là quan trọng trong if, else iftuyên bố.
+
+Hàm được thực thi từ trên xuống dưới nên bạn sẽ muốn cẩn thận về câu lệnh nào xuất hiện trước.
+
+Lấy hai chức năng này làm ví dụ.
+
+Đây là cái đầu tiên:
+
+function foo(x) {
+  if (x < 1) {
+    return "Less than one";
+  } else if (x < 2) {
+    return "Less than two";
+  } else {
+    return "Greater than or equal to two";
+  }
+}
+Và thứ hai chỉ chuyển đổi thứ tự của các câu lệnh:
+
+function bar(x) {
+  if (x < 2) {
+    return "Less than two";
+  } else if (x < 1) {
+    return "Less than one";
+  } else {
+    return "Greater than or equal to two";
+  }
+}
+Trong khi hai hàm này trông gần giống nhau nếu chúng ta chuyển một số cho cả hai, chúng ta sẽ nhận được các kết quả đầu ra khác nhau.
+
+foo(0)
+bar(0)
+foo(0)sẽ trả về chuỗi Less than one, và bar(0)sẽ trả về chuỗi Less than two.
+
+Thay đổi thứ tự logic trong hàm để nó sẽ trả về các câu lệnh đúng trong mọi trường hợp.
+*/
+
+function orderMyLogic(val) {
+  if (val < 5) {
+    return "Less than 5";
+  } else if (val < 10) {
+    return "Less than 10";
+  } else {
+    return "Greater than or equal to 10";
+  }
+}
+
+orderMyLogic(7);

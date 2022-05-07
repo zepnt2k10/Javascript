@@ -1,0 +1,32 @@
+/*
+So sánh với toán tử logic và toán tử
+Đôi khi bạn sẽ cần phải kiểm tra nhiều thứ cùng một lúc. Toán tử và logic ( &&) trả về truenếu và chỉ nếu các toán hạng ở bên trái và bên phải của nó là true.
+
+Hiệu ứng tương tự có thể đạt được bằng cách lồng một câu lệnh if vào bên trong một if khác:
+
+if (num > 5) {
+  if (num < 10) {
+    return "Yes";
+  }
+}
+return "No";
+sẽ chỉ trả về Yesnếu numlớn hơn 5và nhỏ hơn 10. Logic tương tự có thể được viết là:
+
+if (num > 5 && num < 10) {
+  return "Yes";
+}
+return "No";
+Thay thế hai câu lệnh if bằng một câu lệnh, sử dụng &&toán tử, sẽ trả về chuỗi Yesif valnhỏ hơn hoặc bằng 50và lớn hơn hoặc bằng 25. Nếu không, sẽ trả về chuỗi No.
+*/
+
+function testLogicalAnd(val) {
+  // Only change code below this line
+
+  if (val<= 50 && val >=25) {
+      return "Yes";
+  }
+  // Only change code above this line
+  return "No";
+}
+
+testLogicalAnd(10);
