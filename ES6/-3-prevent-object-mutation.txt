@@ -1,0 +1,35 @@
+/*
+Ngăn chặn đột biến đối tượng
+Như đã thấy trong thử thách trước, constchỉ khai báo không thực sự bảo vệ dữ liệu của bạn khỏi đột biến. Để đảm bảo dữ liệu của bạn không thay đổi, JavaScript cung cấp một chức năng Object.freezeđể ngăn chặn đột biến dữ liệu.
+
+Mọi nỗ lực thay đổi đối tượng sẽ bị từ chối, với một lỗi được đưa ra nếu tập lệnh đang chạy ở chế độ nghiêm ngặt.
+
+let obj = {
+  name:"FreeCodeCamp",
+  review:"Awesome"
+};
+Object.freeze(obj);
+obj.review = "bad";
+obj.newProp = "Test";
+console.log(obj); 
+Các phép gán obj.reviewvà obj.newPropsẽ dẫn đến lỗi, vì trình soạn thảo của chúng tôi chạy ở chế độ nghiêm ngặt theo mặc định và bảng điều khiển sẽ hiển thị giá trị { name: "FreeCodeCamp", review: "Awesome" }.
+
+Trong thử thách này, bạn sẽ sử dụng Object.freezeđể ngăn các hằng số toán học thay đổi. Bạn cần phải đóng băng MATH_CONSTANTSđối tượng để không ai có thể thay đổi giá trị PI, thêm hoặc xóa các thuộc tính.
+*/
+
+function freezeObj() {
+  const MATH_CONSTANTS = {
+    PI: 3.14
+  };
+  // Only change code below this line
+  Object.freeze(MATH_CONSTANTS);
+
+  // Only change code above this line
+  try {
+    MATH_CONSTANTS.PI = 99;
+  } catch(ex) {
+    console.log(ex);
+  }
+  return MATH_CONSTANTS.PI;
+}
+const PI = freezeObj();

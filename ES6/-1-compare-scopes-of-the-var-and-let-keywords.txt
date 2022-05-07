@@ -1,0 +1,72 @@
+/*
+So sánh các phạm vi của var và để Từ khóa
+Nếu bạn không quen let, hãy xem thử thách này .
+
+Khi bạn khai báo một biến với vartừ khóa, nó được khai báo trên toàn cục hoặc cục bộ nếu được khai báo bên trong một hàm.
+
+Từ letkhóa hoạt động tương tự, nhưng với một số tính năng bổ sung. Khi bạn khai báo một biến với lettừ khóa bên trong một khối, câu lệnh hoặc biểu thức, phạm vi của nó được giới hạn trong khối, câu lệnh hoặc biểu thức đó.
+
+Ví dụ:
+
+var numArray = [];
+for (var i = 0; i < 3; i++) {
+  numArray.push(i);
+}
+console.log(numArray);
+console.log(i);
+Tại đây bàn điều khiển sẽ hiển thị các giá trị [0, 1, 2]và 3.
+
+Với vartừ khóa, iđược khai báo trên toàn cục. Vì vậy, khi i++được thực thi, nó sẽ cập nhật biến toàn cục. Mã này tương tự như sau:
+
+var numArray = [];
+var i;
+for (i = 0; i < 3; i++) {
+  numArray.push(i);
+}
+console.log(numArray);
+console.log(i);
+Tại đây bàn điều khiển sẽ hiển thị các giá trị [0, 1, 2]và 3.
+
+Hành vi này sẽ gây ra sự cố nếu bạn tạo một hàm và lưu trữ nó để sử dụng sau này bên trong một forvòng lặp sử dụng ibiến. Điều này là do hàm được lưu trữ sẽ luôn tham chiếu đến giá trị của ibiến toàn cục được cập nhật.
+
+var printNumTwo;
+for (var i = 0; i < 3; i++) {
+  if (i === 2) {
+    printNumTwo = function() {
+      return i;
+    };
+  }
+}
+console.log(printNumTwo());
+Tại đây giao diện điều khiển sẽ hiển thị giá trị 3.
+
+Như bạn có thể thấy, printNumTwo()in 3 chứ không phải 2. Điều này là do giá trị được gán cho iđã được cập nhật và printNumTwo()trả về igiá trị chung chứ không phải giá trị icó khi hàm được tạo trong vòng lặp for. Từ letkhóa không tuân theo hành vi này:
+
+let printNumTwo;
+for (let i = 0; i < 3; i++) {
+  if (i === 2) {
+    printNumTwo = function() {
+      return i;
+    };
+  }
+}
+console.log(printNumTwo());
+console.log(i);
+Tại đây bảng điều khiển sẽ hiển thị giá trị 2và lỗi đó i is not defined.
+
+ikhông được xác định vì nó không được khai báo trong phạm vi toàn cục. Nó chỉ được khai báo trong forcâu lệnh lặp. printNumTwo()đã trả về giá trị đúng vì ba ibiến khác nhau có giá trị duy nhất (0, 1 và 2) đã được tạo bởi lettừ khóa trong câu lệnh lặp.
+
+Sửa mã để ikhai báo trong ifcâu lệnh là một biến riêng biệt hơn được ikhai báo trong dòng đầu tiên của hàm. Hãy chắc chắn không sử dụng vartừ khóa ở bất kỳ đâu trong mã của bạn.
+
+Bài tập này được thiết kế để minh họa sự khác biệt giữa cách varvà lettừ khóa gán phạm vi cho biến được khai báo. Khi lập trình một hàm tương tự như hàm được sử dụng trong bài tập này, tốt hơn là sử dụng các tên biến khác nhau để tránh nhầm lẫn.
+*/
+
+function checkScope() {
+  let i = 'function scope';
+  if (true) {
+    let i = 'block scope';
+    console.log('Block scope i is: ', i);
+  }
+  console.log('Function scope i is: ', i);
+  return i;
+}

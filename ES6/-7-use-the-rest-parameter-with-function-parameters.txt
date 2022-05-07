@@ -1,0 +1,21 @@
+/*
+Sử dụng Tham số còn lại với Tham số chức năng
+Để giúp chúng ta tạo các hàm linh hoạt hơn, ES6 giới thiệu tham số nghỉ cho các tham số hàm. Với tham số còn lại, bạn có thể tạo các hàm sử dụng một số lượng đối số thay đổi. Các đối số này được lưu trữ trong một mảng có thể được truy cập sau này từ bên trong hàm.
+
+Kiểm tra mã này:
+
+function howMany(...args) {
+  return "You have passed " + args.length + " arguments.";
+}
+console.log(howMany(0, 1, 2));
+console.log(howMany("string", null, [1, 2, 3], { }));
+Bảng điều khiển sẽ hiển thị các chuỗi You have passed 3 arguments.và You have passed 4 arguments..
+
+Tham số còn lại loại bỏ sự cần thiết phải kiểm tra argsmảng và cho phép chúng tôi áp dụng map()và filter()trên reduce()mảng tham số.
+
+Sửa đổi hàm sumbằng cách sử dụng tham số còn lại theo cách mà hàm sumcó thể nhận bất kỳ số lượng đối số nào và trả về tổng của chúng.
+*/
+const sum = (...args) => {
+  // const args = [x, y, z];
+  return args.reduce((a, b) => a + b, 0);
+}

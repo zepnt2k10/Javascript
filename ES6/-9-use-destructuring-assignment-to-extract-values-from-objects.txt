@@ -1,0 +1,35 @@
+/*
+Sử dụng phân công cấu trúc để trích xuất giá trị từ các đối tượng
+Gán hủy cấu trúc là cú pháp đặc biệt được giới thiệu trong ES6, để chỉ định gọn gàng các giá trị được lấy trực tiếp từ một đối tượng.
+
+Hãy xem xét mã ES5 sau:
+
+const user = { name: 'John Doe', age: 34 };
+
+const name = user.name;
+const age = user.age;
+namesẽ có một giá trị của chuỗi John Doevà agesẽ có số 34.
+
+Đây là một câu lệnh gán tương đương sử dụng cú pháp cấu trúc ES6:
+
+const { name, age } = user;
+Một lần nữa, namesẽ có một giá trị của chuỗi John Doevà agesẽ có số 34.
+
+Tại đây, các biến namevà agesẽ được tạo và gán giá trị của các giá trị tương ứng của chúng từ userđối tượng. Bạn có thể thấy điều này sạch hơn bao nhiêu.
+
+Bạn có thể trích xuất nhiều hoặc ít giá trị từ đối tượng tùy thích.
+
+Thay thế hai nhiệm vụ bằng một nhiệm vụ tái cấu trúc tương đương. Nó vẫn nên gán các biến todayvà tomorrowgiá trị của todayvà tomorrowtừ HIGH_TEMPERATURESđối tượng.
+*/
+
+const HIGH_TEMPERATURES = {
+  yesterday: 75,
+  today: 77,
+  tomorrow: 80
+};
+
+// Only change code below this line
+
+const {today,tomorrow} = HIGH_TEMPERATURES;
+
+// Only change code above this line

@@ -1,0 +1,26 @@
+/*
+Sử dụng phép gán cấu trúc để chỉ định các biến từ các đối tượng
+Hủy cấu trúc cho phép bạn chỉ định một tên biến mới khi trích xuất các giá trị. Bạn có thể thực hiện việc này bằng cách đặt tên mới sau dấu hai chấm khi gán giá trị.
+
+Sử dụng cùng một đối tượng từ ví dụ cuối cùng:
+
+const user = { name: 'John Doe', age: 34 };
+Đây là cách bạn có thể đặt tên biến mới trong bài tập:
+
+const { name: userName, age: userAge } = user;
+Bạn có thể đọc nó là "lấy giá trị của user.namevà gán nó cho một biến mới có tên userName", v.v. Giá trị của userNamesẽ là chuỗi John Doevà giá trị của userAgesẽ là số 34.
+
+Thay thế hai nhiệm vụ bằng một nhiệm vụ tái cấu trúc tương đương. Nó vẫn nên gán các biến highTodayvà highTomorrowgiá trị của todayvà tomorrowtừ HIGH_TEMPERATURESđối tượng.
+*/
+
+const HIGH_TEMPERATURES = {
+  yesterday: 75,
+  today: 77,
+  tomorrow: 80
+};
+
+// Only change code below this line
+  
+const {today: highToday, tomorrow: highTomorrow} = HIGH_TEMPERATURES; 
+
+// Only change code above this line

@@ -1,0 +1,24 @@
+/*
+Sử dụng các hàm mũi tên để viết hàm ẩn danh súc tích
+Trong JavaScript, chúng ta thường không cần đặt tên cho các hàm của mình, đặc biệt là khi truyền một hàm làm đối số cho một hàm khác. Thay vào đó, chúng tôi tạo các hàm nội tuyến. Chúng ta không cần đặt tên cho các hàm này vì chúng ta không sử dụng lại chúng ở bất kỳ nơi nào khác.
+
+Để đạt được điều này, chúng tôi thường sử dụng cú pháp sau:
+
+const myFunc = function() {
+  const myVar = "value";
+  return myVar;
+}
+ES6 cung cấp cho chúng ta cú pháp để không phải viết các hàm ẩn danh theo cách này. Thay vào đó, bạn có thể sử dụng cú pháp hàm mũi tên :
+
+const myFunc = () => {
+  const myVar = "value";
+  return myVar;
+}
+Khi không có nội dung hàm và chỉ có giá trị trả về, cú pháp hàm mũi tên cho phép bạn bỏ qua từ khóa returncũng như các dấu ngoặc bao quanh mã. Điều này giúp đơn giản hóa các hàm nhỏ hơn thành các câu lệnh một dòng:
+
+const myFunc = () => "value";
+Mã này sẽ vẫn trả về chuỗi valuetheo mặc định.
+
+Viết lại hàm được gán cho biến magictrả về a new Date()để sử dụng cú pháp hàm mũi tên. Ngoài ra, hãy đảm bảo rằng không có gì được xác định bằng từ khóa var.
+*/
+  const magic = () => new Date();

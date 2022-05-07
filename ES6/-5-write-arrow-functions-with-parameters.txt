@@ -1,0 +1,22 @@
+/*
+Viết các hàm mũi tên với các tham số
+Cũng giống như một hàm thông thường, bạn có thể truyền các đối số vào một hàm mũi tên.
+
+const doubler = (item) => item * 2;
+doubler(4);
+doubler(4)sẽ trả về giá trị 8.
+
+Nếu một hàm mũi tên có một tham số duy nhất, thì dấu ngoặc đơn bao quanh tham số có thể bị bỏ qua.
+
+const doubler = item => item * 2;
+Có thể truyền nhiều hơn một đối số vào một hàm mũi tên.
+
+const multiplier = (item, multi) => item * multi;
+multiplier(4, 2);
+multiplier(4, 2)sẽ trả về giá trị 8.
+
+Viết lại myConcathàm gắn nội dung arr2vào arr1để hàm sử dụng cú pháp hàm mũi tên.
+*/
+const myConcat = (arr1, arr2) => arr1.concat(arr2);
+
+console.log(myConcat([1, 2], [3, 4, 5]));

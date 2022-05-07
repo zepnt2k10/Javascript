@@ -1,0 +1,32 @@
+/*
+Thay đổi một mảng được khai báo với const
+Nếu bạn không quen const, hãy xem thử thách này .
+
+Khai báo constcó nhiều trường hợp sử dụng trong JavaScript hiện đại.
+
+Một số nhà phát triển thích gán tất cả các biến của họ bằng cách sử dụng consttheo mặc định, trừ khi họ biết rằng họ sẽ cần gán lại giá trị. Chỉ trong trường hợp đó, họ sử dụng let.
+
+Tuy nhiên, điều quan trọng là phải hiểu rằng các đối tượng (bao gồm cả mảng và hàm) được gán cho một biến constđang sử dụng vẫn có thể thay đổi được. Việc sử dụng constkhai báo chỉ ngăn chặn việc gán lại mã định danh biến.
+
+const s = [5, 6, 7];
+s = [1, 2, 3];
+s[2] = 45;
+console.log(s);
+s = [1, 2, 3]sẽ dẫn đến lỗi. Giá console.logtrị sẽ hiển thị [5, 6, 45].
+
+Như bạn thấy, bạn có thể thay đổi [5, 6, 7]chính đối tượng và biến svẫn sẽ trỏ đến mảng đã thay đổi [5, 6, 45]. Giống như tất cả các mảng, các phần tử mảng trong scó thể thay đổi, nhưng vì constđã được sử dụng, bạn không thể sử dụng mã định danh biến sđể trỏ đến một mảng khác bằng toán tử gán.
+
+Một mảng được khai báo là const s = [5, 7, 2]. Thay đổi mảng thành [2, 5, 7]sử dụng các phép gán phần tử khác nhau.
+*/
+
+const s = [5, 7, 2];
+function editInPlace() {
+  // Only change code below this line
+  s[0]=2;
+  s[1]=5;
+  s[2]=7;
+  // Using s = [2, 5, 7] would be invalid
+  return s;
+  // Only change code above this line
+}
+editInPlace();
