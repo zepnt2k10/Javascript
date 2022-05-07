@@ -1,0 +1,27 @@
+/*
+Cập nhật thuộc tính đối tượng
+Sau khi bạn đã tạo một đối tượng JavaScript, bạn có thể cập nhật các thuộc tính của nó bất kỳ lúc nào giống như bạn cập nhật bất kỳ biến nào khác. Bạn có thể sử dụng ký hiệu dấu chấm hoặc dấu ngoặc để cập nhật.
+
+Ví dụ, hãy xem ourDog:
+
+const ourDog = {
+  "name": "Camper",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["everything!"]
+};
+Vì nó là một con chó đặc biệt vui vẻ, hãy đổi tên của nó thành chuỗi Happy Camper. Đây là cách chúng tôi cập nhật thuộc tính tên đối tượng của anh ấy: ourDog.name = "Happy Camper";hoặc ourDog["name"] = "Happy Camper";Bây giờ khi chúng tôi đánh giá ourDog.name, thay vì nhận Camper, chúng tôi sẽ lấy tên mới của anh ấy , Happy Camper.
+
+Cập nhật thuộc myDogtính tên của đối tượng. Hãy đổi tên cô ấy từ Coderthành Happy Coder. Bạn có thể sử dụng ký hiệu dấu chấm hoặc dấu ngoặc.
+*/
+
+// Setup
+const myDog = {
+  "name": "Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"]
+};
+
+// Only change code below this line
+myDog.name = "Happy Coder";

@@ -1,0 +1,42 @@
+/*
+Lặp lại với JavaScript Do ... While Loops
+Loại vòng lặp tiếp theo mà bạn sẽ học được gọi là do...whilevòng lặp. Nó được gọi là do...whilevòng lặp vì trước tiên nó sẽ dotruyền một đoạn mã bên trong vòng lặp bất kể điều gì, và sau đó tiếp tục chạy vòng lặp whilemà điều kiện được chỉ định sẽ đánh giá true.
+
+const ourArray = [];
+let i = 0;
+
+do {
+  ourArray.push(i);
+  i++;
+} while (i < 5);
+Ví dụ trên hoạt động tương tự như các loại vòng lặp khác và mảng kết quả sẽ như thế nào [0, 1, 2, 3, 4]. Tuy nhiên, điều tạo nên sự do...whilekhác biệt so với các vòng lặp khác là cách nó hoạt động khi điều kiện không thành công trong lần kiểm tra đầu tiên. Hãy xem điều này thực tế: Đây là một whilevòng lặp thông thường sẽ chạy mã trong vòng lặp miễn là i < 5:
+
+const ourArray = []; 
+let i = 5;
+
+while (i < 5) {
+  ourArray.push(i);
+  i++;
+}
+Trong ví dụ này, chúng tôi khởi tạo giá trị của ourArraythành một mảng trống và giá trị là i5. Khi chúng tôi thực hiện whilevòng lặp, điều kiện đánh giá là falsebởi vì ikhông nhỏ hơn 5, vì vậy chúng tôi không thực thi mã bên trong vòng lặp. Kết quả là ourArraysẽ không có giá trị nào được thêm vào nó và nó sẽ vẫn trông giống như []khi tất cả mã trong ví dụ trên đã chạy xong. Bây giờ, hãy xem một do...whilevòng lặp:
+
+const ourArray = []; 
+let i = 5;
+
+do {
+  ourArray.push(i);
+  i++;
+} while (i < 5);
+Trong trường hợp này, chúng tôi khởi tạo giá trị là i5, giống như chúng tôi đã làm với whilevòng lặp. Khi chúng ta đến dòng tiếp theo, không có điều kiện để đánh giá, vì vậy chúng ta đi đến đoạn mã bên trong dấu ngoặc nhọn và thực thi nó. Chúng tôi sẽ thêm một phần tử duy nhất vào mảng và sau đó tăng dần itrước khi chúng tôi kiểm tra điều kiện. Cuối cùng khi chúng ta đánh giá điều kiện i < 5ở dòng cuối cùng, chúng ta thấy rằng ibây giờ là 6, điều này không thành công trong việc kiểm tra điều kiện, vì vậy chúng ta thoát khỏi vòng lặp và đã hoàn tất. Ở cuối ví dụ trên, giá trị của ourArraylà [5]. Về cơ bản, một do...whilevòng lặp đảm bảo rằng mã bên trong vòng lặp sẽ chạy ít nhất một lần. Hãy thử làm cho một do...whilevòng lặp hoạt động bằng cách đẩy các giá trị vào một mảng.
+
+Thay đổi whilevòng lặp trong mã thành một do...whilevòng lặp để vòng lặp sẽ chỉ đẩy số 10đến myArrayvà isẽ bằng 11khi mã của bạn chạy xong.
+*/
+// Setup
+const myArray = [];
+let i = 10;
+
+// Only change code below this line
+do {
+  myArray.push(i);
+  i++;
+} while (i < 11)

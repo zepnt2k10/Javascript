@@ -1,0 +1,17 @@
+/*
+Tạo các số nguyên ngẫu nhiên trong một phạm vi
+Thay vì tạo một số nguyên ngẫu nhiên giữa số 0 và một số nhất định như chúng ta đã làm trước đây, chúng ta có thể tạo một số nguyên ngẫu nhiên nằm trong phạm vi hai số cụ thể.
+
+Để làm điều này, chúng tôi sẽ xác định một số tối thiểu minvà một số tối đa max.
+
+Đây là công thức chúng tôi sẽ sử dụng. Hãy dành một chút thời gian để đọc nó và cố gắng hiểu mã này đang làm gì:
+
+Math.floor(Math.random() * (max - min + 1)) + min
+Tạo một hàm được gọi là randomRangenhận một phạm vi myMinvà myMaxtrả về một số nguyên ngẫu nhiên lớn hơn hoặc bằng myMinvà nhỏ hơn hoặc bằng myMax, bao gồm cả.
+*/
+
+function randomRange(myMin, myMax) {
+  // Only change code below this line
+  return Math.floor(Math.random() * (myMax - myMin + 1)) + myMin;
+  // Only change code above this line
+}

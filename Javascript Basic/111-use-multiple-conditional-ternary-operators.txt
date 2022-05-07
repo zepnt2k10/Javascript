@@ -1,0 +1,37 @@
+/*
+Sử dụng nhiều toán tử có điều kiện (bậc ba)
+Trong thử thách trước, bạn đã sử dụng một toán tử điều kiện duy nhất. Bạn cũng có thể xâu chuỗi chúng lại với nhau để kiểm tra nhiều điều kiện.
+
+Hàm sau sử dụng ifvà else ifcác elsecâu lệnh để kiểm tra nhiều điều kiện:
+
+function findGreaterOrEqual(a, b) {
+  if (a === b) {
+    return "a and b are equal";
+  }
+  else if (a > b) {
+    return "a is greater";
+  }
+  else {
+    return "b is greater";
+  }
+}
+Hàm trên có thể được viết lại bằng nhiều toán tử điều kiện:
+
+function findGreaterOrEqual(a, b) {
+  return (a === b) ? "a and b are equal" 
+    : (a > b) ? "a is greater" 
+    : "b is greater";
+}
+Phương pháp hay nhất được coi là định dạng nhiều toán tử điều kiện sao cho mỗi điều kiện nằm trên một dòng riêng biệt, như được hiển thị ở trên. Việc sử dụng nhiều toán tử có điều kiện mà không có thụt lề thích hợp có thể khiến mã của bạn khó đọc. Ví dụ:
+
+function findGreaterOrEqual(a, b) {
+  return (a === b) ? "a and b are equal" : (a > b) ? "a is greater" : "b is greater";
+}
+Trong checkSignhàm, hãy sử dụng nhiều toán tử có điều kiện - theo định dạng khuyến nghị được sử dụng trong findGreaterOrEqual- để kiểm tra xem một số là số dương, số âm hay số không. Hàm sẽ trả về positive, negativehoặc zero.
+*/
+
+function checkSign(num) {
+  return num == 0 ? "zero" : (num > 0)? "positive" : "negative";
+}
+
+checkSign(10);

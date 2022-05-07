@@ -1,0 +1,59 @@
+/*
+Tra cứu hồ sơ
+Chúng tôi có một loạt các đối tượng đại diện cho những người khác nhau trong danh sách liên hệ của chúng tôi.
+
+Một lookUpProfilehàm nhận namevà một thuộc tính ( prop) làm đối số đã được viết trước cho bạn.
+
+Hàm sẽ kiểm tra xem có phải namelà một địa chỉ liên hệ thực hay không firstNamevà thuộc tính đã cho ( prop) có phải là thuộc tính của địa chỉ liên hệ đó hay không.
+
+Nếu cả hai đều đúng, thì trả về "giá trị" của thuộc tính đó.
+
+Nếu namekhông tương ứng với bất kỳ địa chỉ liên hệ nào thì trả về chuỗi No such contact.
+
+Nếu propkhông tương ứng với bất kỳ thuộc tính hợp lệ nào của một liên hệ được tìm thấy để khớp namethì hãy trả về chuỗi No such property.
+*/
+
+// Setup
+const contacts = [
+  {
+    firstName: "Akira",
+    lastName: "Laine",
+    number: "0543236543",
+    likes: ["Pizza", "Coding", "Brownie Points"],
+  },
+  {
+    firstName: "Harry",
+    lastName: "Potter",
+    number: "0994372684",
+    likes: ["Hogwarts", "Magic", "Hagrid"],
+  },
+  {
+    firstName: "Sherlock",
+    lastName: "Holmes",
+    number: "0487345643",
+    likes: ["Intriguing Cases", "Violin"],
+  },
+  {
+    firstName: "Kristian",
+    lastName: "Vos",
+    number: "unknown",
+    likes: ["JavaScript", "Gaming", "Foxes"],
+  },
+];
+
+function lookUpProfile(name, prop) {
+  // Only change code below this line
+  for(let i = 0; i < contacts.length; i++){
+    if(contacts[i].firstName == name){
+      if(contacts[i].hasOwnProperty(prop)){
+        return contacts[i][prop];
+      }
+      return ("No such property");
+    }
+  
+  }
+  return("No such contact");
+  // Only change code above this line
+}
+
+lookUpProfile("Akira", "likes");

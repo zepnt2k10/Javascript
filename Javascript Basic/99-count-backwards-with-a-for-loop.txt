@@ -1,0 +1,25 @@
+/*
+Đếm ngược với một vòng lặp
+Vòng lặp for cũng có thể đếm ngược, miễn là chúng ta có thể xác định các điều kiện phù hợp.
+
+Để giảm hai lần mỗi lần lặp, chúng ta sẽ cần thay đổi cách khởi tạo, điều kiện và biểu thức cuối cùng của mình.
+
+Chúng tôi sẽ bắt đầu i = 10và lặp lại trong khi i > 0. Chúng tôi sẽ giảm i2 mỗi vòng lặp với i -= 2.
+
+const ourArray = [];
+
+for (let i = 10; i > 0; i -= 2) {
+  ourArray.push(i);
+}
+ourArraybây giờ sẽ chứa [10, 8, 6, 4, 2]. Hãy thay đổi cách khởi tạo và biểu thức cuối cùng của chúng ta để chúng ta có thể đếm ngược hai lần để tạo ra một mảng các số lẻ giảm dần.
+
+Đẩy các số lẻ từ 9 đến 1 để myArraysử dụng một forvòng lặp.
+*/
+
+// Setup
+const myArray = [];
+
+// Only change code below this line
+for(let i = 9; i>0; i-=2){
+  myArray.push(i);
+}

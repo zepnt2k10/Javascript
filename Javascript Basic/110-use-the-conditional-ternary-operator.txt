@@ -1,0 +1,29 @@
+/*
+Sử dụng toán tử có điều kiện (bậc ba)
+Toán tử điều kiện , còn được gọi là toán tử bậc ba , có thể được sử dụng như một biểu thức if-else một dòng.
+
+Cú pháp là a ? b : c, đâu alà điều kiện, blà mã để chạy khi điều kiện trả về truevà clà mã để chạy khi điều kiện trả về false.
+
+Hàm sau sử dụng một if/elsecâu lệnh để kiểm tra một điều kiện:
+
+function findGreater(a, b) {
+  if(a > b) {
+    return "a is greater";
+  }
+  else {
+    return "b is greater or equal";
+  }
+}
+Điều này có thể được viết lại bằng cách sử dụng toán tử điều kiện:
+
+function findGreater(a, b) {
+  return a > b ? "a is greater" : "b is greater or equal";
+}
+Sử dụng toán tử điều kiện trong checkEqualhàm để kiểm tra xem hai số có bằng nhau hay không. Hàm phải trả về chuỗi Equalhoặc chuỗi Not Equal.
+*/
+
+function checkEqual(a, b) {
+  return a == b ? "Equal" : "Not Equal";
+}
+
+checkEqual(1, 2);

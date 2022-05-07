@@ -1,0 +1,22 @@
+/*
+Lặp lại qua một mảng với vòng lặp For
+Một nhiệm vụ phổ biến trong JavaScript là lặp qua nội dung của một mảng. Một cách để làm điều đó là với một forvòng lặp. Đoạn mã này sẽ xuất từng phần tử của mảng arrra bảng điều khiển:
+
+const arr = [10, 9, 8, 7, 6];
+
+for (let i = 0; i < arr.length; i++) {
+   console.log(arr[i]);
+}
+Hãy nhớ rằng mảng có lập chỉ mục dựa trên 0, có nghĩa là chỉ số cuối cùng của mảng là length - 1. Điều kiện của chúng tôi cho vòng lặp này là i < arr.length, dừng vòng lặp khi ibằng length. Trong trường hợp này, lần lặp cuối cùng i === 4tức là khi itrở thành bằng arr.length - 1và xuất ra 6bảng điều khiển. Sau đó ităng lên 5, và vòng lặp kết thúc vì i < arr.lengthlà false.
+
+Khai báo và khởi tạo một biến totalthành 0. Sử dụng một forvòng lặp để thêm giá trị của từng phần tử của myArrmảng vào total.
+*/
+
+// Setup
+const myArr = [2, 3, 4, 5, 6];
+
+// Only change code below this line
+let total = 0;
+for(let i = 0; i < myArr.length ; i++){
+  total += myArr[i];
+}

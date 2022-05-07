@@ -1,0 +1,26 @@
+/*
+Kiểm tra đối tượng cho thuộc tính
+Đôi khi rất hữu ích để kiểm tra xem thuộc tính của một đối tượng nhất định có tồn tại hay không. Chúng ta có thể sử dụng .hasOwnProperty(propname)phương thức của các đối tượng để xác định xem đối tượng đó có tên thuộc tính đã cho hay không. .hasOwnProperty()trả lại truehoặc falsenếu tài sản được tìm thấy hay không.
+
+Ví dụ
+
+const myObj = {
+  top: "hat",
+  bottom: "pants"
+};
+
+myObj.hasOwnProperty("top");
+myObj.hasOwnProperty("middle");
+Lần đầu tiên hasOwnPropertytrả về true, trong khi lần thứ hai trở lại false.
+
+Sửa đổi hàm checkObjđể kiểm tra xem một đối tượng được truyền cho hàm ( obj) có chứa một thuộc tính cụ thể ( checkProp) hay không. Nếu tài sản được tìm thấy, hãy trả lại giá trị của tài sản đó. Nếu không, hãy quay lại "Not Found".
+*/
+
+function checkObj(obj, checkProp) {
+  // Only change code below this line
+  if(obj.hasOwnProperty(checkProp))
+    return obj[checkProp];
+  else
+    return "Not Found";
+  // Only change code above this line
+}

@@ -1,0 +1,36 @@
+/*
+Sử dụng đệ quy để tạo đếm ngược
+Trong một thử thách trước , bạn đã học cách sử dụng đệ quy để thay thế một forvòng lặp. Bây giờ, chúng ta hãy xem xét một hàm phức tạp hơn trả về một mảng các số nguyên liên tiếp bắt đầu bằng 1số được truyền vào hàm.
+
+Như đã đề cập trong thử thách trước, sẽ có một trường hợp cơ sở . Trường hợp cơ sở cho hàm đệ quy biết khi nào nó không cần gọi chính nó nữa. Đây là một trường hợp đơn giản mà giá trị trả về đã được biết trước. Cũng sẽ có một cuộc gọi đệ quy thực thi hàm ban đầu với các đối số khác nhau. Nếu hàm được viết đúng, cuối cùng sẽ đạt được trường hợp cơ sở.
+
+Ví dụ: giả sử bạn muốn viết một hàm đệ quy trả về một mảng chứa các số 1thông qua n. Hàm này sẽ cần phải chấp nhận một đối số n, đại diện cho số cuối cùng. Sau đó, nó sẽ cần phải gọi chính nó với các giá trị nhỏ dần ncho đến khi nó đạt đến 1. Bạn có thể viết hàm như sau:
+
+function countup(n) {
+  if (n < 1) {
+    return [];
+  } else {
+    const countArray = countup(n - 1);
+    countArray.push(n);
+    return countArray;
+  }
+}
+console.log(countup(5));
+Giá trị [1, 2, 3, 4, 5]sẽ được hiển thị trong bảng điều khiển.
+
+Lúc đầu, điều này có vẻ phản trực giác vì giá trị của n giảm , nhưng các giá trị trong mảng cuối cùng đang tăng lên . Điều này xảy ra bởi vì lần đẩy xảy ra cuối cùng, sau khi cuộc gọi đệ quy đã trở lại. Tại điểm nđược đẩy vào mảng, countup(n - 1)đã được đánh giá và trả về [1, 2, ..., n - 1].
+
+Chúng tôi đã định nghĩa một hàm được gọi countdownvới một tham số ( n). Hàm nên sử dụng đệ quy để trả về một mảng chứa các số nguyên dựa trên ntham số. Nếu hàm được gọi với một số nhỏ hơn 1, hàm sẽ trả về một mảng trống. Ví dụ: gọi hàm này với sẽ trả về mảng . Hàm của bạn phải sử dụng đệ quy bằng cách gọi chính nó và không được sử dụng bất kỳ loại vòng lặp nào.1nn = 5[5, 4, 3, 2, 1]
+*/
+
+// Only change code below this line
+function countdown(n){
+  if (n < 1)
+    return [];
+  else{
+    const arr = countdown(n-1);
+    arr.unshift(n);
+    return arr; 
+  } 
+}
+// Only change code above this line

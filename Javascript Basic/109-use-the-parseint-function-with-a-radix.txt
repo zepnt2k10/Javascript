@@ -1,0 +1,20 @@
+/*
+Sử dụng Hàm parseInt với một Radix
+Hàm parseInt()phân tích cú pháp một chuỗi và trả về một số nguyên. Nó cần một đối số thứ hai cho cơ số, chỉ định cơ số của số trong chuỗi. Cơ số có thể là một số nguyên từ 2 đến 36.
+
+Lệnh gọi hàm có dạng như sau:
+
+parseInt(string, radix);
+Và đây là một ví dụ:
+
+const a = parseInt("11", 2);
+Biến cơ số cho biết nó 11nằm trong hệ nhị phân, hoặc cơ số 2. Ví dụ này chuyển đổi chuỗi 11thành số nguyên 3.
+
+Sử dụng parseInt()trong convertToIntegerhàm để nó chuyển đổi một số nhị phân thành một số nguyên và trả về nó.
+*/
+
+function convertToInteger(str) {
+  return parseInt(str, 2);
+}
+
+convertToInteger("10011");

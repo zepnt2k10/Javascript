@@ -1,0 +1,35 @@
+/*
+Lặp lại với JavaScript For Loops
+Bạn có thể chạy cùng một mã nhiều lần bằng cách sử dụng một vòng lặp.
+
+Loại vòng lặp JavaScript phổ biến nhất được gọi là forvòng lặp vì nó chạy trong một số lần cụ thể.
+
+Vòng lặp for được khai báo với ba biểu thức tùy chọn được phân tách bằng dấu chấm phẩy:
+
+for (a; b; c), đâu alà câu lệnh khởi tạo, đâu là bcâu lệnh điều kiện và clà biểu thức cuối cùng.
+
+Câu lệnh khởi tạo chỉ được thực hiện một lần trước khi vòng lặp bắt đầu. Nó thường được sử dụng để xác định và thiết lập biến vòng lặp của bạn.
+
+Câu lệnh điều kiện được đánh giá ở đầu mỗi lần lặp vòng lặp và sẽ tiếp tục miễn là nó được đánh giá là true. Khi điều kiện falsebắt đầu lặp, vòng lặp sẽ ngừng thực hiện. Điều này có nghĩa là nếu điều kiện bắt đầu là false, vòng lặp của bạn sẽ không bao giờ thực thi.
+
+Biểu thức cuối cùng được thực hiện ở cuối mỗi lần lặp vòng lặp, trước khi kiểm tra điều kiện tiếp theo và thường được sử dụng để tăng hoặc giảm bộ đếm vòng lặp của bạn.
+
+Trong ví dụ sau, chúng tôi khởi tạo với i = 0và lặp lại trong khi điều kiện của chúng tôi i < 5là đúng. Chúng tôi sẽ tăng dần itrong 1mỗi lần lặp vòng lặp với i++như là biểu thức cuối cùng của chúng tôi.
+
+const ourArray = [];
+
+for (let i = 0; i < 5; i++) {
+  ourArray.push(i);
+}
+ourArraybây giờ sẽ có giá trị [0, 1, 2, 3, 4].
+
+Sử dụng một forvòng lặp để đẩy các giá trị từ 1 đến 5 lên myArray.
+*/
+
+// Setup
+const myArray = [];
+
+// Only change code below this line
+for(let i = 1; i <=5; i++){
+  myArray.push(i);
+}

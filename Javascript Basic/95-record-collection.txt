@@ -1,0 +1,48 @@
+/*
+Bộ sưu tập bản ghi
+Bạn được đưa cho một đối tượng theo nghĩa đen đại diện cho một phần của bộ sưu tập album âm nhạc của bạn. Mỗi anbom có ​​một số id duy nhất làm khóa của nó và một số thuộc tính khác. Không phải tất cả các album đều có thông tin đầy đủ.
+
+Bạn bắt đầu với một updateRecordshàm nhận một đối tượng theo nghĩa đen, recordschứa bộ sưu tập album nhạc, an id, a prop(like artistor tracks) và a value. Hoàn thành hàm bằng cách sử dụng các quy tắc bên dưới để sửa đổi đối tượng được truyền vào hàm.
+
+Hàm của bạn phải luôn trả về toàn bộ đối tượng thu thập bản ghi.
+Nếu propkhông phải tracksvà valuekhông phải là một chuỗi trống, hãy cập nhật hoặc đặt album đó propthành value.
+Nếu propcó tracksnhưng album không có thuộc trackstính, hãy tạo một mảng trống và thêm valuevào đó.
+Nếu propcó tracksvà valuekhông phải là một chuỗi trống, hãy thêm vào cuối mảng valuehiện có của album .tracks
+Nếu valuelà một chuỗi trống, hãy xóa thuộc tính đã cho propkhỏi anbom.
+Lưu ý: Một bản sao của recordCollectionđối tượng được sử dụng cho các bài kiểm tra.
+*/
+
+// Setup
+const recordCollection = {
+  2548: {
+    albumTitle: 'Slippery When Wet',
+    artist: 'Bon Jovi',
+    tracks: ['Let It Rock', 'You Give Love a Bad Name']
+  },
+  2468: {
+    albumTitle: '1999',
+    artist: 'Prince',
+    tracks: ['1999', 'Little Red Corvette']
+  },
+  1245: {
+    artist: 'Robert Palmer',
+    tracks: []
+  },
+  5439: {
+    albumTitle: 'ABBA Gold'
+  }
+};
+
+// Only change code below this line
+function updateRecords(records, id, prop, value) {
+  if (value === '') {
+    delete records[id][prop];
+  } else if (prop === 'tracks') {
+    records[id][prop] = records[id][prop] || []; // this is called shortcircuit evaluation, see below for explanation
+    records[id][prop].push(value);
+  } else {
+    records[id][prop] = value;
+  }
+  return records;
+}
+updateRecords(recordCollection, 5439, 'artist', 'ABBA');

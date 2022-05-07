@@ -1,0 +1,15 @@
+/*
+Sử dụng hàm parseInt
+Hàm parseInt()phân tích cú pháp một chuỗi và trả về một số nguyên. Đây là một ví dụ:
+
+const a = parseInt("007");
+Hàm trên chuyển đổi chuỗi 007thành số nguyên 7. Nếu ký tự đầu tiên trong chuỗi không thể chuyển đổi thành số, thì nó sẽ trả về NaN.
+
+Sử dụng parseInt()trong convertToIntegerhàm để nó chuyển đổi chuỗi đầu strvào thành một số nguyên và trả về nó.
+*/
+
+function convertToInteger(str) {
+  return parseInt(str);
+}
+
+convertToInteger("56");

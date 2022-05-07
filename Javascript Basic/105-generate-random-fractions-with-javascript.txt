@@ -1,0 +1,18 @@
+/*
+Tạo phân số ngẫu nhiên bằng JavaScript
+Số ngẫu nhiên rất hữu ích để tạo ra hành vi ngẫu nhiên.
+
+JavaScript có một Math.random()chức năng tạo ra một số thập phân ngẫu nhiên giữa 0(bao gồm) và 1(độc quyền). Do đó Math.random()có thể trả về a 0nhưng không bao giờ trả về a 1.
+
+Lưu ý: Giống như Lưu trữ Giá trị với Toán tử Gán , tất cả các lệnh gọi hàm sẽ được giải quyết trước khi returnthực thi, vì vậy chúng ta có thể returnxác định giá trị của Math.random()hàm.
+
+Thay đổi randomFractionđể trả về một số ngẫu nhiên thay vì trả về 0.
+*/
+function randomFraction() {
+
+  // Only change code below this line
+
+  return Math.random();
+
+  // Only change code above this line
+}

@@ -1,0 +1,28 @@
+/*
+Lặp lại với JavaScript While Loops
+Bạn có thể chạy cùng một mã nhiều lần bằng cách sử dụng một vòng lặp.
+
+Loại vòng lặp đầu tiên chúng ta sẽ học được gọi là whilevòng lặp vì nó chạy trong khi một điều kiện được chỉ định là đúng và dừng lại khi điều kiện đó không còn đúng nữa.
+
+const ourArray = [];
+let i = 0;
+
+while (i < 5) {
+  ourArray.push(i);
+  i++;
+}
+Trong ví dụ mã ở trên, whilevòng lặp sẽ thực thi 5 lần và nối các số từ 0 đến 4 vào ourArray.
+
+Hãy thử làm cho một vòng lặp while hoạt động bằng cách đẩy các giá trị vào một mảng.
+
+Thêm các số từ 5 đến 0 (bao gồm) theo thứ tự giảm dần để myArraysử dụng một whilevòng lặp.
+*/
+// Setup
+const myArray = [];
+
+// Only change code below this line
+let i =5;
+while(i>= 0){
+  myArray.push(i);
+  i--;
+}

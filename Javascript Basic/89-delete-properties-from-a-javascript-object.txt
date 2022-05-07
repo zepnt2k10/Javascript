@@ -1,0 +1,38 @@
+/*
+Xóa các thuộc tính khỏi một đối tượng JavaScript
+Chúng tôi cũng có thể xóa các thuộc tính khỏi các đối tượng như thế này:
+
+delete ourDog.bark;
+Ví dụ:
+
+const ourDog = {
+  "name": "Camper",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["everything!"],
+  "bark": "bow-wow"
+};
+
+delete ourDog.bark;
+Sau dòng cuối cùng được hiển thị ở trên, ourDogtrông giống như:
+
+{
+  "name": "Camper",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["everything!"]
+}
+Xóa thuộc tailstính khỏi myDog. Bạn có thể sử dụng ký hiệu dấu chấm hoặc dấu ngoặc.
+*/
+
+// Setup
+const myDog = {
+  "name": "Happy Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"],
+  "bark": "woof"
+};
+
+// Only change code below this line
+delete myDog.tails;

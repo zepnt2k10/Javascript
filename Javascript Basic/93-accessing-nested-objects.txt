@@ -1,0 +1,39 @@
+/*
+Truy cập các đối tượng lồng nhau
+Các thuộc tính con của các đối tượng có thể được truy cập bằng cách xâu chuỗi ký hiệu dấu chấm hoặc dấu ngoặc vuông lại với nhau.
+
+Đây là một đối tượng lồng nhau:
+
+const ourStorage = {
+  "desk": {
+    "drawer": "stapler"
+  },
+  "cabinet": {
+    "top drawer": { 
+      "folder1": "a file",
+      "folder2": "secrets"
+    },
+    "bottom drawer": "soda"
+  }
+};
+
+ourStorage.cabinet["top drawer"].folder2;
+ourStorage.desk.drawer;
+ourStorage.cabinet["top drawer"].folder2sẽ là chuỗi secrets, và ourStorage.desk.drawersẽ là chuỗi stapler.
+
+Truy cập myStorageđối tượng và gán nội dung của thuộc glove boxtính cho gloveBoxContentsbiến. Sử dụng ký hiệu dấu chấm cho tất cả các thuộc tính nếu có thể, nếu không, hãy sử dụng ký hiệu dấu ngoặc.
+*/
+
+const myStorage = {
+  "car": {
+    "inside": {
+      "glove box": "maps",
+      "passenger seat": "crumbs"
+     },
+    "outside": {
+      "trunk": "jack"
+    }
+  }
+};
+
+const gloveBoxContents = myStorage.car.inside["glove box"];

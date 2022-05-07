@@ -1,0 +1,52 @@
+/*
+Truy cập Mảng lồng nhau
+Như chúng ta đã thấy trong các ví dụ trước đó, các đối tượng có thể chứa cả các đối tượng lồng nhau và các mảng lồng nhau. Tương tự như truy cập các đối tượng lồng nhau, ký hiệu dấu ngoặc mảng có thể được xâu chuỗi để truy cập các mảng lồng nhau.
+
+Dưới đây là một ví dụ về cách truy cập một mảng lồng nhau:
+
+const ourPets = [
+  {
+    animalType: "cat",
+    names: [
+      "Meowzer",
+      "Fluffy",
+      "Kit-Cat"
+    ]
+  },
+  {
+    animalType: "dog",
+    names: [
+      "Spot",
+      "Bowser",
+      "Frankie"
+    ]
+  }
+];
+
+ourPets[0].names[1];
+ourPets[1].names[0];
+ourPets[0].names[1]sẽ là chuỗi Fluffy, và ourPets[1].names[0]sẽ là chuỗi Spot.
+
+Sử dụng ký hiệu dấu chấm và dấu ngoặc, đặt biến secondTreethành mục thứ hai trong treesdanh sách từ myPlantsđối tượng.
+*/
+
+const myPlants = [
+  {
+    type: "flowers",
+    list: [
+      "rose",
+      "tulip",
+      "dandelion"
+    ]
+  },
+  {
+    type: "trees",
+    list: [
+      "fir",
+      "pine",
+      "birch"
+    ]
+  }
+];
+
+const secondTree = myPlants[1].list[1];

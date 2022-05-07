@@ -1,0 +1,22 @@
+/*
+Lặp lại các số lẻ với vòng lặp For
+Đối với các vòng lặp không cần phải lặp lại từng cái một. Bằng cách thay đổi của chúng tôi final-expression, chúng tôi có thể đếm bằng số chẵn.
+
+Chúng tôi sẽ bắt đầu i = 0và lặp lại trong khi i < 10. Chúng tôi sẽ tăng thêm i2 mỗi vòng lặp với i += 2.
+
+const ourArray = [];
+
+for (let i = 0; i < 10; i += 2) {
+  ourArray.push(i);
+}
+ourArraybây giờ sẽ chứa [0, 2, 4, 6, 8]. Hãy thay đổi của chúng tôi initializationđể chúng tôi có thể đếm bằng số lẻ.
+
+Đẩy các số lẻ từ 1 đến 9 myArraybằng cách sử dụng một forvòng lặp.
+*/
+// Setup
+const myArray = [];
+
+// Only change code below this line
+for(let i = 1; i <10; i +=2){
+  myArray.push(i);
+}

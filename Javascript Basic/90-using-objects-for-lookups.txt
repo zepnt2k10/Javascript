@@ -1,0 +1,47 @@
+/*
+Sử dụng đối tượng để tra cứu
+Các đối tượng có thể được coi như một kho lưu trữ khóa / giá trị, giống như một từ điển. Nếu bạn có dữ liệu dạng bảng, bạn có thể sử dụng một đối tượng để tra cứu giá trị thay vì một switchcâu lệnh hoặc một if/elsechuỗi. Điều này hữu ích nhất khi bạn biết rằng dữ liệu đầu vào của bạn bị giới hạn trong một phạm vi nhất định.
+
+Đây là một ví dụ về cách tra cứu bảng chữ cái đảo ngược đơn giản:
+
+const alpha = {
+  1:"Z",
+  2:"Y",
+  3:"X",
+  4:"W",
+  ...
+  24:"C",
+  25:"B",
+  26:"A"
+};
+
+alpha[2];
+alpha[24];
+
+const value = 2;
+alpha[value];
+alpha[2]là chuỗi Y, alpha[24]là chuỗi C, và alpha[value]là chuỗi Y.
+
+Chuyển câu lệnh switch thành một đối tượng được gọi lookup. Sử dụng nó để tra cứu valvà gán chuỗi liên kết cho resultbiến.
+*/
+
+// Setup
+function phoneticLookup(val) {
+  let result = "";
+
+  // Only change code below this line
+  const lookup = {
+    "alpha": "Adams",
+    "bravo": "Boston",
+    "charlie": "Chicago",
+    "delta": "Denver",
+    "echo": "Easy",
+    "foxtrot": "Frank"
+  }
+  
+  result = lookup[val];
+  // Only change code above this line
+  return result;
+}
+
+phoneticLookup("charlie");

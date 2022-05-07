@@ -1,0 +1,60 @@
+/*
+Thao tác với các đối tượng phức tạp
+Đôi khi bạn có thể muốn lưu trữ dữ liệu trong một Cấu trúc dữ liệu linh hoạt . Đối tượng JavaScript là một cách để xử lý dữ liệu linh hoạt. Chúng cho phép kết hợp tùy ý các chuỗi , số , boolean , mảng , hàm và đối tượng .
+
+Đây là một ví dụ về cấu trúc dữ liệu phức tạp:
+
+const ourMusic = [
+  {
+    "artist": "Daft Punk",
+    "title": "Homework",
+    "release_year": 1997,
+    "formats": [ 
+      "CD", 
+      "Cassette", 
+      "LP"
+    ],
+    "gold": true
+  }
+];
+Đây là một mảng chứa một đối tượng bên trong. Đối tượng có nhiều phần siêu dữ liệu khác nhau về một album. formatsNó cũng có một mảng lồng nhau . Nếu bạn muốn thêm nhiều bản ghi album hơn, bạn có thể thực hiện việc này bằng cách thêm bản ghi vào mảng cấp cao nhất. Các đối tượng giữ dữ liệu trong một thuộc tính, có định dạng khóa-giá trị. Trong ví dụ trên, "artist": "Daft Punk"là một thuộc tính có khóa là artistvà giá trị là Daft Punk. JavaScript Object Notation hoặc JSONlà một định dạng trao đổi dữ liệu có liên quan được sử dụng để lưu trữ dữ liệu.
+
+{
+  "artist": "Daft Punk",
+  "title": "Homework",
+  "release_year": 1997,
+  "formats": [ 
+    "CD",
+    "Cassette",
+    "LP"
+  ],
+  "gold": true
+}
+Lưu ý: Bạn sẽ cần đặt dấu phẩy sau mỗi đối tượng trong mảng, trừ khi nó là đối tượng cuối cùng trong mảng.
+
+Thêm một album mới vào myMusicmảng. Thêm artistvà titlechuỗi, release_yearsố và một formatsmảng chuỗi.
+*/
+
+const myMusic = [
+  {
+    "artist": "Billy Joel",
+    "title": "Piano Man",
+    "release_year": 1973,
+    "formats": [
+      "CD",
+      "8T",
+      "LP"
+    ],
+    "gold": true
+  },
+  {
+    "artist": "Zep",
+    "title": "Dinoda",
+    "release_year": 1995,
+    "formats": [
+      "CD",
+      "DVD",
+      "VCD"
+    ]
+  }
+];

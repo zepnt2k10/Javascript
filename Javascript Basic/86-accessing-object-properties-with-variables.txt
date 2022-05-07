@@ -1,0 +1,46 @@
+/*
+Một cách sử dụng khác của ký hiệu dấu ngoặc trên các đối tượng là để truy cập một thuộc tính được lưu trữ dưới dạng giá trị của một biến. Điều này có thể rất hữu ích để lặp qua các thuộc tính của một đối tượng hoặc khi truy cập vào một bảng tra cứu.
+
+Dưới đây là một ví dụ về việc sử dụng một biến để truy cập một thuộc tính:
+
+const dogs = {
+  Fido: "Mutt",
+  Hunter: "Doberman",
+  Snoopie: "Beagle"
+};
+
+const myDog = "Hunter";
+const myBreed = dogs[myDog];
+console.log(myBreed);
+Chuỗi Dobermansẽ được hiển thị trong bảng điều khiển.
+
+Một cách khác bạn có thể sử dụng khái niệm này là khi tên của thuộc tính được thu thập động trong quá trình thực thi chương trình, như sau:
+
+const someObj = {
+  propName: "John"
+};
+
+function propPrefix(str) {
+  const s = "prop";
+  return s + str;
+}
+
+const someProp = propPrefix("Name");
+console.log(someObj[someProp]);
+somePropsẽ có một giá trị của chuỗi propNamevà chuỗi Johnsẽ được hiển thị trong bảng điều khiển.
+
+Lưu ý rằng chúng tôi không sử dụng dấu ngoặc kép xung quanh tên biến khi sử dụng nó để truy cập thuộc tính vì chúng tôi đang sử dụng giá trị của biến chứ không phải tên .
+
+Đặt playerNumberbiến thành 16. Sau đó, sử dụng biến để tra cứu tên của người chơi và gán nó cho player.
+*/
+
+// Setup
+const testObj = {
+  12: "Namath",
+  16: "Montana",
+  19: "Unitas"
+};
+
+// Only change code below this line
+const playerNumber = 16;  // Change this line
+const player = testObj[playerNumber];   // Change this line

@@ -1,0 +1,23 @@
+/*
+Tạo số nguyên ngẫu nhiên bằng JavaScript
+Thật tuyệt khi chúng ta có thể tạo các số thập phân ngẫu nhiên, nhưng nó thậm chí còn hữu ích hơn nếu chúng ta sử dụng nó để tạo các số nguyên ngẫu nhiên.
+
+Sử dụng Math.random()để tạo một số thập phân ngẫu nhiên.
+Nhân số thập phân ngẫu nhiên đó với 20.
+Sử dụng một hàm khác Math.floor()để làm tròn số đến số nguyên gần nhất của nó.
+Hãy nhớ rằng điều đó Math.random()không bao giờ hoàn toàn có thể trả lại a 1và bởi vì chúng ta đang làm tròn số, nên thực sự không thể đạt được 20. Kỹ thuật này sẽ cung cấp cho chúng ta một số nguyên giữa 0và 19.
+
+Kết hợp mọi thứ lại với nhau, đây là mã của chúng tôi trông như thế nào:
+
+Math.floor(Math.random() * 20);
+Chúng tôi đang gọi Math.random(), nhân kết quả với 20, sau đó chuyển giá trị cho Math.floor()hàm để làm tròn giá trị xuống số nguyên gần nhất.
+
+Sử dụng kỹ thuật này để tạo và trả về một số nguyên ngẫu nhiên giữa 0và 9.
+*/
+
+function randomWholeNum() {
+
+  // Only change code below this line
+
+  return Math.floor(Math.random()*10);
+}
