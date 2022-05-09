@@ -1,0 +1,16 @@
+/*
+Sử dụng * để nhập mọi thứ từ tệp
+Giả sử bạn có một tệp và bạn muốn nhập tất cả nội dung của nó vào tệp hiện tại. Điều này có thể được thực hiện với import * ascú pháp. Đây là một ví dụ trong đó nội dung của một tệp có tên math_functions.jsđược nhập vào một tệp trong cùng một thư mục:
+
+import * as myMathModule from "./math_functions.js";
+Câu lệnh trên importsẽ tạo một đối tượng được gọi myMathModule. Đây chỉ là một tên biến, bạn có thể đặt tên cho nó bất cứ thứ gì. Đối tượng sẽ chứa tất cả các xuất từ math_functions.js​​trong đó, vì vậy bạn có thể truy cập các chức năng giống như bạn làm với bất kỳ thuộc tính đối tượng nào khác. Đây là cách bạn có thể sử dụng các hàm addvà subtractcác hàm đã được nhập:
+
+myMathModule.add(2,3);
+myMathModule.subtract(5,3);
+Mã trong tệp này yêu cầu nội dung của tệp : string_functions.js, nằm trong cùng thư mục với tệp hiện tại. Sử dụng import * ascú pháp để nhập mọi thứ từ tệp vào một đối tượng được gọi stringFunctions.
+*/
+import * as stringFunctions from './string_functions.js';
+// Only change code above this line
+
+stringFunctions.uppercaseString("hello");
+stringFunctions.lowercaseString("WORLD!");

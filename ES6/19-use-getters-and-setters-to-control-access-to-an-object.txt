@@ -1,0 +1,64 @@
+/*
+Sử dụng getters và setters để Kiểm soát quyền truy cập vào một đối tượng
+Bạn có thể lấy các giá trị từ một đối tượng và đặt giá trị của một thuộc tính trong một đối tượng.
+
+Chúng được gọi theo kiểu cổ điển là getters và setters .
+
+Các hàm Getter chỉ đơn giản là trả về (nhận) giá trị của biến private của một đối tượng cho người dùng mà không cần người dùng truy cập trực tiếp vào biến private.
+
+Hàm setter có nghĩa là sửa đổi (thiết lập) giá trị của biến riêng của một đối tượng dựa trên giá trị được truyền vào hàm setter. Thay đổi này có thể liên quan đến tính toán hoặc thậm chí ghi đè hoàn toàn giá trị trước đó.
+
+class Book {
+  constructor(author) {
+    this._author = author;
+  }
+  // getter
+  get writer() {
+    return this._author;
+  }
+  // setter
+  set writer(updatedAuthor) {
+    this._author = updatedAuthor;
+  }
+}
+const novel = new Book('anonymous');
+console.log(novel.writer);
+novel.writer = 'newAuthor';
+console.log(novel.writer);
+Bảng điều khiển sẽ hiển thị các chuỗi anonymousvà newAuthor.
+
+Lưu ý cú pháp được sử dụng để gọi getter và setter. Chúng thậm chí không giống như các chức năng. Getters và setters rất quan trọng vì chúng ẩn các chi tiết triển khai nội bộ.
+
+Lưu ý: Theo quy ước phải đặt trước tên của một biến private bằng một dấu gạch dưới ( _). Tuy nhiên, bản thân việc thực hành không làm cho một biến riêng tư.
+
+Sử dụng classtừ khóa để tạo một Thermostatlớp học. Nhiệt constructorđộ chấp nhận một Fahrenheit.
+
+Trong lớp, hãy tạo a getterđể có nhiệt độ tính bằng C và a setterđể đặt nhiệt độ tính bằng C.
+
+Hãy nhớ rằng C = 5/9 * (F - 32)và F = C * 9.0 / 5 + 32, đâu Flà giá trị của nhiệt độ tính bằng F và Clà giá trị của cùng nhiệt độ tính bằng độ C.
+
+Lưu ý: Khi bạn thực hiện điều này, bạn sẽ theo dõi nhiệt độ bên trong lớp theo một thang đo, độ F hoặc độ C.
+
+Đây là sức mạnh của một getter và một setter. Bạn đang tạo một API cho người dùng khác, người này có thể nhận được kết quả chính xác bất kể bạn theo dõi cái nào.
+
+Nói cách khác, bạn đang trừu tượng hóa các chi tiết triển khai từ người dùng.
+*/
+
+// Only change code below this line
+class Thermostat{
+  constructor(temp){
+    this.temp = temp;
+  }
+  get temperature(){
+    return 5/9 * (this.temp - 32);
+  }
+  set temperature(temp){
+    this.temp = temp * 9.0 / 5 + 32;
+  }
+}
+// Only change code above this line
+
+const thermos = new Thermostat(76); // Setting in Fahrenheit scale
+let temp = thermos.temperature; // 24.44 in Celsius
+thermos.temperature = 26;
+temp = thermos.temperature; // 26 in Celsius

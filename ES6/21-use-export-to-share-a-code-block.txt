@@ -1,0 +1,29 @@
+/*
+Sử dụng tính năng xuất để chia sẻ khối mã
+Hãy tưởng tượng một tệp có tên math_functions.jschứa một số hàm liên quan đến các phép toán. Một trong số chúng được lưu trữ trong một biến, addnhận vào hai số và trả về tổng của chúng. Bạn muốn sử dụng chức năng này trong một số tệp JavaScript khác nhau. Để chia sẻ nó với các tệp khác này, trước tiên bạn cần có exportnó.
+
+export const add = (x, y) => {
+  return x + y;
+}
+Trên đây là cách phổ biến để xuất một hàm duy nhất, nhưng bạn có thể đạt được điều tương tự như sau:
+
+const add = (x, y) => {
+  return x + y;
+}
+
+export { add };
+Khi bạn xuất một biến hoặc hàm, bạn có thể nhập nó vào một tệp khác và sử dụng nó mà không cần phải viết lại mã. Bạn có thể xuất nhiều thứ bằng cách lặp lại ví dụ đầu tiên cho mỗi thứ bạn muốn xuất hoặc bằng cách đặt tất cả chúng vào câu lệnh xuất của ví dụ thứ hai, như sau:
+
+export { add, subtract };
+Có hai hàm liên quan đến chuỗi trong trình chỉnh sửa. Xuất cả hai bằng cách sử dụng phương pháp bạn chọn.
+*/
+
+const uppercaseString = (string) => {
+  return string.toUpperCase();
+}
+
+const lowercaseString = (string) => {
+  return string.toLowerCase()
+}
+
+export{uppercaseString, lowercaseString};

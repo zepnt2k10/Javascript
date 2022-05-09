@@ -1,0 +1,25 @@
+/*
+Hoàn thành một Lời hứa với sự kiên quyết và từ chối
+Một lời hứa có ba trạng thái pending:, fulfilledvà rejected. Lời hứa mà bạn đã tạo ra trong thử thách vừa rồi sẽ mãi mãi bị mắc kẹt trong pendingtình trạng vì bạn đã không thêm cách để hoàn thành lời hứa. Các tham số resolvevà rejecttham số được cung cấp cho đối số Hứa hẹn được sử dụng để thực hiện việc này. resolveđược sử dụng khi bạn muốn lời hứa của mình thành công và rejectđược sử dụng khi bạn muốn nó thất bại. Đây là những phương thức sử dụng một đối số, như được thấy bên dưới.
+
+const myPromise = new Promise((resolve, reject) => {
+  if(condition here) {
+    resolve("Promise was fulfilled");
+  } else {
+    reject("Promise was rejected");
+  }
+});
+Ví dụ trên sử dụng chuỗi cho đối số của các hàm này, nhưng nó thực sự có thể là bất cứ thứ gì. Thông thường, nó có thể là một đối tượng mà bạn sẽ sử dụng dữ liệu từ đó để đưa lên trang web của mình hoặc ở những nơi khác.
+
+Thực hiện lời hứa thành công và thất bại. Nếu responseFromServercó true, hãy gọi resolvephương thức để hoàn thành thành công lời hứa. Truyền resolvemột chuỗi với giá trị We got the data. Nếu responseFromServercó false, hãy sử dụng phương thức thay thế và chuyển nó vào rejectchuỗi:.Data not received
+*/
+const makeServerRequest = new Promise((resolve, reject) => {
+  // responseFromServer represents a response from a server
+  let responseFromServer;
+    
+  if(responseFromServer) {
+    resolve("We got the data");
+  } else {  
+    reject("Data not received");
+  }
+});

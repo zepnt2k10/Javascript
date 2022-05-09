@@ -1,0 +1,11 @@
+/*
+Tạo một lời hứa JavaScript
+Một lời hứa trong JavaScript chính xác như âm thanh của nó - bạn sử dụng nó để thực hiện một lời hứa thực hiện một điều gì đó, thường là không đồng bộ. Khi nhiệm vụ hoàn thành, bạn có thể thực hiện lời hứa của mình hoặc không thực hiện. Promiselà một hàm tạo, vì vậy bạn cần sử dụng newtừ khóa để tạo một. Nó nhận một hàm, làm đối số của nó, với hai tham số - resolvevà reject. Đây là những phương pháp được sử dụng để xác định kết quả của lời hứa. Cú pháp có dạng như sau:
+
+const myPromise = new Promise((resolve, reject) => {
+
+});
+Tạo một lời hứa mới được gọi là makeServerRequest. Truyền một hàm với resolvevà rejectcác tham số cho hàm tạo.
+*/
+
+const makeServerRequest = new Promise((resolve, reject) => {});

@@ -1,0 +1,17 @@
+/*
+Sử dụng lại mã JavaScript bằng cách sử dụng nhập
+importcho phép bạn chọn các phần của tệp hoặc mô-đun để tải. Trong bài học trước, các ví dụ xuất addtừ math_functions.js​​tệp. Đây là cách bạn có thể nhập nó để sử dụng trong một tệp khác:
+
+import { add } from './math_functions.js';
+Tại đây, importsẽ tìm thấy addtrong math_functions.js, chỉ nhập hàm đó để bạn sử dụng và bỏ qua phần còn lại. Lệnh ./cho phép nhập tìm kiếm math_functions.jstệp trong cùng thư mục với tệp hiện tại. Đường dẫn tệp tương đối ( ./) và phần mở rộng tệp ( .js) là bắt buộc khi sử dụng nhập theo cách này.
+
+Bạn có thể nhập nhiều mục từ tệp bằng cách thêm chúng vào importcâu lệnh như sau:
+
+import { add, subtract } from './math_functions.js';
+Thêm importcâu lệnh thích hợp sẽ cho phép tệp hiện tại sử dụng uppercaseStringvà lowercaseStringcác chức năng bạn đã xuất trong bài học trước. Các hàm này nằm trong một tệp được gọi string_functions.js, nằm trong cùng thư mục với tệp hiện tại.
+*/
+import{uppercaseString, lowercaseString} from './string_functions.js'
+// Only change code above this line
+
+uppercaseString("hello");
+lowercaseString("WORLD!");

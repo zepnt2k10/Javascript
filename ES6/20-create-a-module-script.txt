@@ -1,0 +1,15 @@
+/*
+Tạo tập lệnh mô-đun
+JavaScript bắt đầu với một vai trò nhỏ trên một trang web khác chủ yếu là HTML. Ngày nay, nó rất lớn và một số trang web được xây dựng gần như hoàn toàn bằng JavaScript. Để làm cho JavaScript trở nên mô-đun hơn, sạch sẽ và dễ bảo trì hơn; ES6 đã giới thiệu một cách để dễ dàng chia sẻ mã giữa các tệp JavaScript. Điều này liên quan đến việc xuất các phần của tệp để sử dụng trong một hoặc nhiều tệp khác và nhập các phần bạn cần vào nơi bạn cần. Để tận dụng chức năng này, bạn cần tạo một tập lệnh trong tài liệu HTML của mình typevới module. Đây là một ví dụ:
+
+<script type="module" src="filename.js"></script>
+Một tập lệnh sử dụng moduleloại này hiện có thể sử dụng các tính năng importvà exportđặc điểm mà bạn sẽ tìm hiểu trong các thử thách sắp tới.
+
+Thêm một tập lệnh vào loại tài liệu HTML modulevà cung cấp cho nó tệp nguồn củaindex.js
+*/<html>
+  <body>
+    <!-- Only change code below this line -->
+    <script type="module" src="index.js"></script>
+    <!-- Only change code above this line -->
+  </body>
+</html>

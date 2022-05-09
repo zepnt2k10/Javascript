@@ -1,0 +1,40 @@
+/*
+Sử dụng cú pháp lớp để xác định một hàm tạo
+ES6 cung cấp một cú pháp mới để tạo các đối tượng, sử dụng từ khóa class .
+
+Cần lưu ý rằng classcú pháp chỉ là cú pháp và không phải là một triển khai dựa trên lớp chính thức của một mô hình hướng đối tượng, không giống như trong các ngôn ngữ như Java, Python, Ruby, v.v.
+
+Trong ES5, chúng tôi thường xác định một constructorhàm và sử dụng newtừ khóa để khởi tạo một đối tượng.
+
+var SpaceShuttle = function(targetPlanet){
+  this.targetPlanet = targetPlanet;
+}
+var zeus = new SpaceShuttle('Jupiter');
+Cú classpháp chỉ đơn giản thay thế việc constructortạo hàm:
+
+class SpaceShuttle {
+  constructor(targetPlanet) {
+    this.targetPlanet = targetPlanet;
+  }
+}
+const zeus = new SpaceShuttle('Jupiter');
+Cần lưu ý rằng classtừ khóa khai báo một hàm mới, mà một hàm tạo được thêm vào. Hàm tạo này được gọi khi newđược gọi để tạo một đối tượng mới.
+
+Lưu ý: UpperCamelCase nên được sử dụng theo quy ước cho các tên lớp ES6, như SpaceShuttleđược sử dụng ở trên.
+
+Phương constructorthức là một phương thức đặc biệt để tạo và khởi tạo một đối tượng được tạo bằng một lớp. Bạn sẽ tìm hiểu thêm về nó trong phần Lập trình hướng đối tượng của Chứng nhận cấu trúc dữ liệu và thuật toán JavaScript.
+
+Sử dụng classtừ khóa và viết a constructorđể tạo Vegetablelớp.
+
+Lớp Vegetablenày cho phép bạn tạo một đối tượng thực vật với một thuộc tính nameđược chuyển đến constructor.
+*/
+// Only change code below this line
+class Vegetable{
+  constructor(name){
+    this.name = name;
+  }
+}
+// Only change code above this line
+
+const carrot = new Vegetable('carrot');
+console.log(carrot.name); // Should display 'carrot'

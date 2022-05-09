@@ -1,0 +1,43 @@
+/*
+Tạo chuỗi bằng chữ mẫu
+Một tính năng mới của ES6 là mẫu theo nghĩa đen . Đây là một loại chuỗi đặc biệt giúp tạo chuỗi phức tạp dễ dàng hơn.
+
+Các ký tự mẫu cho phép bạn tạo chuỗi nhiều dòng và sử dụng các tính năng nội suy chuỗi để tạo chuỗi.
+
+Hãy xem xét đoạn mã dưới đây:
+
+const person = {
+  name: "Zodiac Hasbro",
+  age: 56
+};
+
+const greeting = `Hello, my name is ${person.name}!
+I am ${person.age} years old.`;
+
+console.log(greeting);
+Bảng điều khiển sẽ hiển thị các chuỗi Hello, my name is Zodiac Hasbro!và I am 56 years old..
+
+Rất nhiều điều đã xảy ra ở đó. Thứ nhất, ví dụ sử dụng `dấu ngoặc kép (), không phải dấu ngoặc kép ( 'hoặc "), để bọc chuỗi. Thứ hai, lưu ý rằng chuỗi là nhiều dòng, cả trong mã và đầu ra. Điều này giúp tiết kiệm việc chèn \ntrong các chuỗi. Cú ${variable}pháp được sử dụng ở trên là một trình giữ chỗ. Về cơ bản, bạn sẽ không phải sử dụng nối với +toán tử nữa. Để thêm biến vào chuỗi, bạn chỉ cần thả biến vào một chuỗi mẫu và bọc nó bằng ${và }. Tương tự, bạn có thể bao gồm các biểu thức khác trong chuỗi ký tự của bạn, chẳng hạn ${a + b}. Cách tạo chuỗi mới này giúp bạn linh hoạt hơn để tạo ra các chuỗi chắc chắn.
+
+Sử dụng cú pháp chữ mẫu với dấu gạch ngược để tạo một mảng các chuỗi phần tử danh sách ( li). Văn bản của mỗi phần tử danh sách phải là một trong các phần tử mảng từ thuộc failuretính trên resultđối tượng và có một classthuộc tính có giá trị text-warning. Hàm makeListsẽ trả về mảng chuỗi mục danh sách.
+
+Sử dụng phương thức vòng lặp (bất kỳ loại vòng lặp nào) để có được kết quả đầu ra mong muốn (được hiển thị bên dưới).
+*/
+
+const result = {
+  success: ["max-length", "no-amd", "prefer-arrow-functions"],
+  failure: ["no-var", "var-on-top", "linebreak"],
+  skipped: ["no-extra-semi", "no-dup-keys"]
+};
+function makeList(arr) {
+  // Only change code below this line
+  const failureItems = [];
+  for(let i = 0; i < arr.length; i ++){
+    failureItems.push(`<li class="text-warning">${arr[i]}</li>`);
+  }
+  // Only change code above this line
+  return failureItems;
+}
+
+const failuresList = makeList(result.failure);
+console.log(failuresList);
