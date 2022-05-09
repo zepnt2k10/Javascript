@@ -1,0 +1,33 @@
+/*
+Sử dụng phép gán cấu trúc để chỉ định các biến từ các đối tượng lồng nhau
+Bạn có thể sử dụng các nguyên tắc tương tự từ hai bài học trước để hủy cấu trúc các giá trị từ các đối tượng lồng nhau.
+
+Sử dụng một đối tượng tương tự như các ví dụ trước:
+
+const user = {
+  johnDoe: { 
+    age: 34,
+    email: 'johnDoe@freeCodeCamp.com'
+  }
+};
+Dưới đây là cách trích xuất các giá trị của thuộc tính đối tượng và gán chúng cho các biến có cùng tên:
+
+const { johnDoe: { age, email }} = user;
+Và đây là cách bạn có thể gán giá trị của thuộc tính đối tượng cho các biến có tên khác nhau:
+
+const { johnDoe: { age: userAge, email: userEmail }} = user;
+Thay thế hai nhiệm vụ bằng một nhiệm vụ tái cấu trúc tương đương. Nó vẫn nên gán các biến lowTodayvà highTodaygiá trị của today.lowvà today.hightừ LOCAL_FORECASTđối tượng.
+
+
+*/
+
+const LOCAL_FORECAST = {
+  yesterday: { low: 61, high: 75 },
+  today: { low: 64, high: 77 },
+  tomorrow: { low: 68, high: 80 }
+};
+
+// Only change code below this line
+  
+const {today:{low:lowToday, high: highToday}} = LOCAL_FORECAST;
+// Only change code above this line
