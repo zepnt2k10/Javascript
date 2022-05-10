@@ -1,0 +1,13 @@
+/*Nhập một Xuất mặc định
+Trong thử thách cuối cùng, bạn đã tìm hiểu về export defaultvà cách sử dụng của nó. Để nhập một bản xuất mặc định, bạn cần sử dụng một importcú pháp khác. Trong ví dụ sau, addlà xuất mặc định của math_functions.jstệp. Đây là cách nhập nó:
+
+import add from "./math_functions.js";
+Cú pháp khác nhau ở một điểm chính. Giá trị đã nhập, addkhông được bao quanh bởi dấu ngoặc nhọn ( {}). addở đây chỉ đơn giản là một tên biến cho bất kỳ math_functions.jstệp xuất mặc định nào. Bạn có thể sử dụng bất kỳ tên nào tại đây khi nhập tên mặc định.
+
+Trong đoạn mã sau, hãy nhập tệp xuất mặc định từ math_functions.jstệp, được tìm thấy trong cùng thư mục với tệp này. Đặt tên cho nhập subtract.
+*/
+
+import subtract from './math_functions.js';
+// Only change code above this line
+
+subtract(7,4);

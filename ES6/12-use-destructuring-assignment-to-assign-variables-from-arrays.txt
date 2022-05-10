@@ -1,0 +1,24 @@
+/*
+Sử dụng Phép gán cấu trúc để Gán các biến từ Mảng
+ES6 làm cho việc tái cấu trúc mảng dễ dàng như việc cấu trúc các đối tượng.
+
+Một điểm khác biệt chính giữa toán tử lây lan và hủy cấu trúc mảng là toán tử trải phổ giải nén tất cả nội dung của một mảng vào một danh sách được phân tách bằng dấu phẩy. Do đó, bạn không thể chọn hoặc chọn phần tử nào bạn muốn gán cho các biến.
+
+Việc hủy cấu trúc một mảng cho phép chúng tôi thực hiện chính xác điều đó:
+
+const [a, b] = [1, 2, 3, 4, 5, 6];
+console.log(a, b);
+Bảng điều khiển sẽ hiển thị các giá trị của avà bdưới dạng 1, 2.
+
+Biến ađược gán giá trị đầu tiên của mảng và bđược gán giá trị thứ hai của mảng. Chúng tôi cũng có thể truy cập giá trị tại bất kỳ chỉ mục nào trong một mảng có cấu trúc hủy bằng cách sử dụng dấu phẩy để đạt được chỉ mục mong muốn:
+
+const [a, b,,, c] = [1, 2, 3, 4, 5, 6];
+console.log(a, b, c);
+Bảng điều khiển sẽ hiển thị các giá trị của a, bvà cnhư 1, 2, 5.
+
+Sử dụng phép gán hủy cấu trúc để hoán đổi các giá trị của avà bđể anhận giá trị được lưu trữ bvà bnhận giá trị được lưu trữ trong a.
+*/
+
+let a = 8, b = 6;
+// Only change code below this line
+[a,b] = [b,a];

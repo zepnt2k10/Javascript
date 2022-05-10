@@ -1,0 +1,32 @@
+/*
+Sử dụng Phép gán cấu trúc để chuyển một đối tượng làm tham số của hàm
+Trong một số trường hợp, bạn có thể hủy cấu trúc đối tượng trong chính đối số của hàm.
+
+Hãy xem xét đoạn mã dưới đây:
+
+const profileUpdate = (profileData) => {
+  const { name, age, nationality, location } = profileData;
+
+}
+Điều này sẽ hủy đối tượng được gửi vào hàm một cách hiệu quả. Điều này cũng có thể được thực hiện tại chỗ:
+
+const profileUpdate = ({ name, age, nationality, location }) => {
+
+}
+Khi profileDatađược chuyển đến hàm trên, các giá trị sẽ bị hủy khỏi tham số hàm để sử dụng trong hàm.
+
+Sử dụng phép gán hủy cấu trúc bên trong đối số cho hàm halfđể chỉ gửi maxvà minbên trong hàm.
+*/
+
+const stats = {
+  max: 56.78,
+  standard_deviation: 4.34,
+  median: 34.54,
+  mode: 23.87,
+  min: -0.75,
+  average: 35.85
+};
+
+// Only change code below this line
+const half = ({max, min}) => (max + min) / 2.0; 
+// Only change code above this line

@@ -1,0 +1,24 @@
+/*
+Xử lý một Lời hứa đã thực hiện với sau đó
+Lời hứa hữu ích nhất khi bạn có một quy trình chiếm một lượng thời gian không xác định trong mã của bạn (tức là thứ gì đó không đồng bộ), thường là một yêu cầu máy chủ. Khi bạn thực hiện một yêu cầu máy chủ, nó sẽ mất một khoảng thời gian và sau khi nó hoàn thành, bạn thường muốn làm điều gì đó với phản hồi từ máy chủ. Điều này có thể đạt được bằng cách sử dụng thenphương pháp này. Phương thenthức được thực thi ngay sau khi lời hứa của bạn được thực hiện với resolve. Đây là một ví dụ:
+
+myPromise.then(result => {
+  
+});
+resultđến từ đối số được cung cấp cho resolvephương thức.
+
+Thêm thenphương pháp vào lời hứa của bạn. Sử dụng resultlàm tham số của hàm gọi lại của nó và đăng nhập resultvào bảng điều khiển.
+*/
+
+const makeServerRequest = new Promise((resolve, reject) => {
+  // responseFromServer is set to true to represent a successful response from a server
+  let responseFromServer = true;
+    
+  if(responseFromServer) {
+    resolve("We got the data");
+  } else {  
+    reject("Data not received");
+  }
+});
+
+makeServerRequest.then(result => console.log(result));

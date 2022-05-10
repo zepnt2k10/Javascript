@@ -1,0 +1,25 @@
+/*
+Tạo Dự phòng xuất khẩu với mặc định xuất
+Trong exportbài học, bạn đã học về cú pháp được gọi là xuất có tên . Điều này cho phép bạn cung cấp nhiều hàm và biến để sử dụng trong các tệp khác.
+
+Có một exportcú pháp khác mà bạn cần biết, được gọi là xuất mặc định . Thông thường, bạn sẽ sử dụng cú pháp này nếu chỉ có một giá trị được xuất từ ​​một tệp. Nó cũng được sử dụng để tạo giá trị dự phòng cho một tệp hoặc mô-đun.
+
+Dưới đây là các ví dụ sử dụng export default:
+
+export default function add(x, y) {
+  return x + y;
+}
+
+export default function(x, y) {
+  return x + y;
+}
+Đầu tiên là một hàm được đặt tên và hàm thứ hai là một hàm ẩn danh.
+
+Vì export defaultđược sử dụng để khai báo giá trị dự phòng cho mô-đun hoặc tệp, bạn chỉ có thể có một giá trị làm xuất mặc định trong mỗi mô-đun hoặc tệp. Ngoài ra, bạn không thể sử dụng export defaultvới var, lethoặcconst
+
+Hàm sau đây phải là giá trị dự phòng cho mô-đun. Vui lòng thêm mã cần thiết để làm như vậy.
+*/
+
+export default function subtract(x, y) {
+  return x - y;
+}
