@@ -1,0 +1,21 @@
+/*
+Sao chép các mục trong mảng bằng cách sử dụng Slice ()
+Phương pháp tiếp theo mà chúng tôi sẽ đề cập là slice(). Thay vì sửa đổi một mảng, hãy slice()sao chép hoặc trích xuất một số phần tử nhất định vào một mảng mới, hãy giữ nguyên mảng mà nó được gọi khi không bị ảnh hưởng. slice()chỉ lấy 2 tham số - tham số đầu tiên là chỉ số bắt đầu trích xuất và tham số thứ hai là chỉ mục mà tại đó dừng trích xuất (trích xuất sẽ xảy ra tối đa, nhưng không bao gồm phần tử tại chỉ mục này). Xem xét điều này:
+
+let weatherConditions = ['rain', 'snow', 'sleet', 'hail', 'clear'];
+
+let todaysWeather = weatherConditions.slice(1, 3);
+todaysWeathersẽ có giá trị ['snow', 'sleet'], trong khi weatherConditionsvẫn có ['rain', 'snow', 'sleet', 'hail', 'clear'].
+
+Trên thực tế, chúng tôi đã tạo một mảng mới bằng cách trích xuất các phần tử từ một mảng hiện có.
+
+Chúng tôi đã định nghĩa một hàm, forecastlấy một mảng làm đối số. Sửa đổi hàm bằng cách sử dụng slice()để trích xuất thông tin từ mảng đối số và trả về một mảng mới có chứa các phần tử chuỗi warmvà sunny.
+*/
+function forecast(arr) {
+  // Only change code below this line
+  let ar= arr.slice(2,4);
+  return ar;
+}
+
+// Only change code above this line
+console.log(forecast(['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms']));

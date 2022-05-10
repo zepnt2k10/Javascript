@@ -1,0 +1,37 @@
+/*
+Sửa đổi một đối tượng được lồng trong một đối tượng
+Bây giờ chúng ta hãy xem xét một đối tượng phức tạp hơn một chút. Các thuộc tính đối tượng có thể được lồng vào một độ sâu tùy ý và giá trị của chúng có thể là bất kỳ loại dữ liệu nào được JavaScript hỗ trợ, bao gồm các mảng và thậm chí các đối tượng khác. Hãy xem xét những điều sau:
+
+let nestedObject = {
+  id: 28802695164,
+  date: 'December 31, 2016',
+  data: {
+    totalUsers: 99,
+    online: 80,
+    onlineStatus: {
+      active: 67,
+      away: 13,
+      busy: 8
+    }
+  }
+};
+nestedObjectcó ba thuộc tính: id(giá trị là một số), date(giá trị là một chuỗi) và data(giá trị là một đối tượng có cấu trúc lồng nhau của nó). Trong khi các cấu trúc có thể nhanh chóng trở nên phức tạp, chúng ta vẫn có thể sử dụng các ký hiệu tương tự để truy cập thông tin chúng ta cần. Để gán giá trị 10cho thuộc busytính của đối tượng lồng nhau onlineStatus, chúng tôi sử dụng ký hiệu dấu chấm để tham chiếu thuộc tính:
+
+nestedObject.data.onlineStatus.busy = 10;
+Ở đây chúng tôi đã xác định một đối tượng userActivity, bao gồm một đối tượng khác được lồng trong nó. Đặt giá trị của onlinekhóa thành 45.
+*/
+
+let userActivity = {
+  id: 23894201352,
+  date: 'January 1, 2017',
+  data: {
+    totalUsers: 51,
+    online: 42
+  }
+};
+
+// Only change code below this line
+userActivity.data.online = 45;
+// Only change code above this line
+
+console.log(userActivity);

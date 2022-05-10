@@ -1,0 +1,35 @@
+/*
+Sửa đổi một mảng được lưu trữ trong một đối tượng
+Bây giờ bạn đã thấy tất cả các thao tác cơ bản cho các đối tượng JavaScript. Bạn có thể thêm, sửa đổi và xóa các cặp khóa-giá trị, kiểm tra xem các khóa có tồn tại hay không và lặp lại tất cả các khóa trong một đối tượng. Khi bạn tiếp tục học JavaScript, bạn sẽ thấy các ứng dụng linh hoạt hơn của các đối tượng. Ngoài ra, các bài học về Cấu trúc dữ liệu nằm trong phần Chuẩn bị phỏng vấn mã hóa của chương trình giảng dạy cũng bao gồm các đối tượng Bản đồ và Tập hợp ES6 , cả hai đều tương tự như các đối tượng thông thường nhưng cung cấp thêm một số tính năng. Bây giờ bạn đã học được những kiến ​​thức cơ bản về mảng và đối tượng, bạn đã chuẩn bị đầy đủ để bắt đầu giải quyết các vấn đề phức tạp hơn bằng JavaScript!
+
+Hãy xem đối tượng mà chúng tôi đã cung cấp trong trình chỉnh sửa mã. Đối usertượng chứa ba chìa khóa. Khóa datachứa năm khóa, một trong số đó chứa một mảng friends. Từ đó, bạn có thể thấy các đối tượng linh hoạt như thế nào dưới dạng cấu trúc dữ liệu. Chúng tôi đã bắt đầu viết một hàm addFriend. Viết xong để nó nhận một userđối tượng và thêm tên của friendđối số vào mảng được lưu trong user.data.friendsvà trả về mảng đó.
+*/
+
+let user = {
+  name: 'Kenneth',
+  age: 28,
+  data: {
+    username: 'kennethCodesAllDay',
+    joinDate: 'March 26, 2016',
+    organization: 'freeCodeCamp',
+    friends: [
+      'Sam',
+      'Kira',
+      'Tomo'
+    ],
+    location: {
+      city: 'San Francisco',
+      state: 'CA',
+      country: 'USA'
+    }
+  }
+};
+
+function addFriend(userObj, friend) {
+  // Only change code below this line
+  userObj.data.friends.push(friend);
+  return userObj.data.friends;
+  // Only change code above this line
+}
+
+console.log(addFriend(user, 'Pete'));

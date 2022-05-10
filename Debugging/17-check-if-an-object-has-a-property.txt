@@ -1,0 +1,36 @@
+/*
+Kiểm tra xem một Đối tượng có Thuộc tính hay không
+Bây giờ chúng ta có thể thêm, sửa đổi và xóa khóa khỏi các đối tượng. Nhưng điều gì sẽ xảy ra nếu chúng ta chỉ muốn biết nếu một đối tượng có một thuộc tính cụ thể? JavaScript cung cấp cho chúng ta hai cách khác nhau để thực hiện việc này. Một người sử dụng hasOwnProperty()phương pháp và người kia sử dụng intừ khóa. Nếu chúng ta có một đối tượng userscó thuộc tính là Alan, chúng ta có thể kiểm tra sự hiện diện của nó theo một trong các cách sau:
+
+users.hasOwnProperty('Alan');
+'Alan' in users;
+Cả hai điều này sẽ trở lại true.
+
+Kết thúc việc viết hàm để nó trả về truenếu đối tượng được truyền cho nó chứa tất cả bốn tên, Alanvà Jeffvà Sarahtrả Ryanvề falsengược lại.
+*/
+let users = {
+  Alan: {
+    age: 27,
+    online: true
+  },
+  Jeff: {
+    age: 32,
+    online: true
+  },
+  Sarah: {
+    age: 48,
+    online: true
+  },
+  Ryan: {
+    age: 19,
+    online: true
+  }
+};
+
+function isEveryoneHere(userObj) {
+  // Only change code below this line
+  return 'Ryan' in userObj && 'Sarah' in userObj && 'Jeff' in userObj && 'Alan' in userObj; 
+  // Only change code above this line
+}
+
+console.log(isEveryoneHere(users));

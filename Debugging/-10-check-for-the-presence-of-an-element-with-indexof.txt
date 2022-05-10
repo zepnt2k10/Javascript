@@ -1,0 +1,23 @@
+/*
+Kiểm tra sự hiện diện của một phần tử với indexOf ()
+Vì các mảng có thể bị thay đổi hoặc đột biến , bất cứ lúc nào, nên không có gì đảm bảo về vị trí của một phần dữ liệu cụ thể trên một mảng nhất định hoặc liệu phần tử đó có còn tồn tại hay không. May mắn thay, JavaScript cung cấp cho chúng ta một phương thức tích hợp khác indexOf(), cho phép chúng ta nhanh chóng và dễ dàng kiểm tra sự hiện diện của một phần tử trên một mảng. indexOf()nhận một phần tử làm tham số và khi được gọi, nó trả về vị trí hoặc chỉ số của phần tử đó hoặc -1nếu phần tử không tồn tại trên mảng.
+
+Ví dụ:
+
+let fruits = ['apples', 'pears', 'oranges', 'peaches', 'pears'];
+
+fruits.indexOf('dates');
+fruits.indexOf('oranges');
+fruits.indexOf('pears');
+indexOf('dates')trả về -1, indexOf('oranges')trả về 2và indexOf('pears')trả về 1(chỉ mục đầu tiên mà mỗi phần tử tồn tại).
+
+indexOf()có thể cực kỳ hữu ích để nhanh chóng kiểm tra sự hiện diện của một phần tử trên một mảng. Chúng ta đã định nghĩa một hàm, quickChecklấy một mảng và một phần tử làm đối số. Sửa đổi hàm bằng cách sử dụng indexOf()để nó trả về truenếu phần tử đã truyền tồn tại trên mảng và falsenếu không.
+*/
+
+function quickCheck(arr, elem) {
+  // Only change code below this line
+  return arr.indexOf(elem) != -1 ? true : false;
+  // Only change code above this line
+}
+
+console.log(quickCheck(['squash', 'onions', 'shallots'], 'mushrooms'));

@@ -1,0 +1,25 @@
+/*
+Thêm mục bằng splice ()
+Hãy nhớ trong thử thách cuối cùng chúng tôi đã đề cập rằng splice()có thể sử dụng đến ba tham số? Bạn có thể sử dụng tham số thứ ba, bao gồm một hoặc nhiều phần tử, để thêm vào mảng. Điều này có thể cực kỳ hữu ích để nhanh chóng chuyển đổi một phần tử hoặc một tập hợp các phần tử cho một phần tử khác.
+
+const numbers = [10, 11, 12, 12, 15];
+const startIndex = 3;
+const amountToDelete = 1;
+
+numbers.splice(startIndex, amountToDelete, 13, 14);
+console.log(numbers);
+Lần xuất hiện thứ hai của 12được loại bỏ, và chúng tôi thêm 13và 14ở cùng một chỉ mục. Mảng numbersbây giờ sẽ là [ 10, 11, 12, 13, 14, 15 ].
+
+Ở đây, chúng ta bắt đầu với một mảng số. Sau đó, chúng tôi chuyển các thông tin sau cho splice(): Chỉ mục bắt đầu xóa các phần tử (3), số phần tử sẽ bị xóa (1) và các đối số còn lại (13, 14) sẽ được chèn bắt đầu tại cùng chỉ mục đó. Lưu ý rằng có thể có bất kỳ số phần tử nào (được phân tách bằng dấu phẩy) theo sau amountToDelete, mỗi phần tử sẽ được chèn.
+
+Chúng tôi đã định nghĩa một hàm, htmlColorNameslấy một mảng màu HTML làm đối số. Sửa đổi hàm bằng cách sử dụng splice()để loại bỏ hai phần tử đầu tiên của mảng và thêm 'DarkSalmon'và 'BlanchedAlmond'vào vị trí tương ứng của chúng.
+*/
+
+function htmlColorNames(arr) {
+  // Only change code below this line
+  arr.splice(0,2,'DarkSalmon', 'BlanchedAlmond');
+  // Only change code above this line
+  return arr;
+}
+
+console.log(htmlColorNames(['DarkGoldenRod', 'WhiteSmoke', 'LavenderBlush', 'PaleTurquoise', 'FireBrick']));

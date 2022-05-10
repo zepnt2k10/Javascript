@@ -1,0 +1,27 @@
+/*
+Thêm các mục vào một mảng bằng push () và unshift ()
+Độ dài của một mảng, giống như các kiểu dữ liệu mà nó có thể chứa, không cố định. Mảng có thể được xác định với độ dài bằng bất kỳ số phần tử nào, và các phần tử có thể được thêm vào hoặc loại bỏ theo thời gian; nói cách khác, mảng có thể thay đổi . Trong thử thách này, chúng ta sẽ xem xét hai phương pháp mà chúng ta có thể sửa đổi một mảng theo chương trình: Array.push()và Array.unshift().
+
+Cả hai phương thức đều nhận một hoặc nhiều phần tử làm tham số và thêm các phần tử đó vào mảng mà phương thức đang được gọi; phương push()thức thêm các phần tử vào cuối một mảng và unshift()thêm các phần tử vào đầu. Hãy xem xét những điều sau:
+
+let twentyThree = 'XXIII';
+let romanNumerals = ['XXI', 'XXII'];
+
+romanNumerals.unshift('XIX', 'XX');
+romanNumeralssẽ có giá trị ['XIX', 'XX', 'XXI', 'XXII'].
+
+romanNumerals.push(twentyThree);
+romanNumeralssẽ có giá trị ['XIX', 'XX', 'XXI', 'XXII', 'XXIII']. Lưu ý rằng chúng ta cũng có thể chuyển các biến, điều này cho phép chúng ta linh hoạt hơn trong việc sửa đổi động dữ liệu mảng của chúng ta.
+
+Chúng tôi đã định nghĩa một hàm, mixedNumbersmà chúng tôi đang truyền một mảng làm đối số. Sửa đổi hàm bằng cách sử dụng push()và unshift()thêm 'I', 2, 'three'vào đầu của mảng và 7, 'VIII', 9vào cuối để mảng được trả về chứa các đại diện của các số từ 1-9 theo thứ tự.
+*/
+
+function mixedNumbers(arr) {
+  // Only change code below this line
+  arr.push(7, 'VIII', 9);
+  arr.unshift('I', 2, 'three');
+  // Only change code above this line
+  return arr;
+}
+
+console.log(mixedNumbers(['IV', 5, 'six']));

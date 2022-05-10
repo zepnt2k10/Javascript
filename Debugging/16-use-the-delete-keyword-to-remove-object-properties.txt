@@ -1,0 +1,28 @@
+/*
+Sử dụng từ khoá xoá để Xoá Thuộc tính Đối tượng
+Bây giờ bạn đã biết các đối tượng là gì và các tính năng cơ bản và lợi thế của chúng. Nói tóm lại, chúng là những kho lưu trữ giá trị quan trọng cung cấp một cách linh hoạt, trực quan để cấu trúc dữ liệu và cung cấp thời gian tra cứu rất nhanh. Trong suốt phần còn lại của những thách thức này, chúng tôi sẽ mô tả một số thao tác phổ biến mà bạn có thể thực hiện trên các đối tượng để bạn có thể cảm thấy thoải mái khi áp dụng các cấu trúc dữ liệu hữu ích này trong chương trình của mình.
+
+Trong các thử thách trước đó, chúng tôi đã thêm và sửa đổi các cặp khóa-giá trị của đối tượng. Ở đây chúng ta sẽ thấy cách chúng ta có thể xóa một cặp khóa-giá trị khỏi một đối tượng.
+
+Hãy xem lại foodsví dụ đối tượng của chúng ta lần cuối. Nếu chúng tôi muốn xóa appleskhóa, chúng tôi có thể xóa nó bằng cách sử dụng deletetừ khóa như sau:
+
+delete foods.apples;
+Sử dụng từ khóa xóa để xóa oranges, plumsvà strawberriescác khóa khỏi foodsđối tượng.
+*/
+
+let foods = {
+  apples: 25,
+  oranges: 32,
+  plums: 28,
+  bananas: 13,
+  grapes: 35,
+  strawberries: 27
+};
+
+// Only change code below this line
+delete foods.oranges;
+delete foods.plums;
+delete foods.strawberries;
+// Only change code above this line
+
+console.log(foods);

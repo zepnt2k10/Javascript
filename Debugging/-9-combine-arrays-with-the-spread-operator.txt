@@ -1,0 +1,21 @@
+/*
+Kết hợp Mảng với Toán tử Spread
+Một lợi thế lớn khác của toán tử spread là khả năng kết hợp các mảng hoặc chèn tất cả các phần tử của mảng này vào mảng khác, tại bất kỳ chỉ mục nào. Với các cú pháp truyền thống hơn, chúng ta có thể nối các mảng, nhưng điều này chỉ cho phép chúng ta kết hợp các mảng khi kết thúc một mảng và ở đầu một mảng khác. Cú pháp Spread thực hiện thao tác sau cực kỳ đơn giản:
+
+let thisArray = ['sage', 'rosemary', 'parsley', 'thyme'];
+
+let thatArray = ['basil', 'cilantro', ...thisArray, 'coriander'];
+thatArraysẽ có giá trị ['basil', 'cilantro', 'sage', 'rosemary', 'parsley', 'thyme', 'coriander'].
+
+Sử dụng cú pháp lây lan, chúng ta vừa đạt được một hoạt động sẽ phức tạp hơn và dài dòng hơn nếu chúng ta sử dụng các phương pháp truyền thống.
+
+Chúng tôi đã định nghĩa một hàm spreadOuttrả về biến sentence. Sửa đổi hàm bằng toán tử spread để nó trả về mảng ['learning', 'to', 'code', 'is', 'fun'].
+*/
+
+function spreadOut() {
+  let fragment = ['to', 'code'];
+  let sentence=['learning',...fragment,'is','fun']; // Change this line
+  return sentence;
+}
+
+console.log(spreadOut());

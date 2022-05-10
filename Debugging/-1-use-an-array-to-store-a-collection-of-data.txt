@@ -1,0 +1,36 @@
+/*
+Sử dụng một mảng để lưu trữ một bộ sưu tập dữ liệu
+Dưới đây là một ví dụ về cách triển khai đơn giản nhất của cấu trúc dữ liệu mảng. Đây được gọi là mảng một chiều , có nghĩa là nó chỉ có một mức hoặc không có bất kỳ mảng nào khác được lồng trong nó. Lưu ý rằng nó chứa boolean , chuỗi và số , trong số các kiểu dữ liệu JavaScript hợp lệ khác:
+
+let simpleArray = ['one', 2, 'three', true, false, undefined, null];
+console.log(simpleArray.length);
+Cuộc console.loggọi hiển thị 7.
+
+Tất cả các mảng đều có thuộc tính độ dài, như được hiển thị ở trên, có thể được truy cập rất dễ dàng bằng cú pháp Array.length. Bạn có thể thấy cách triển khai mảng phức tạp hơn bên dưới. Đây được gọi là một mảng nhiều chiều hoặc một mảng chứa các mảng khác. Lưu ý rằng mảng này cũng chứa các đối tượng JavaScript , mà chúng ta sẽ xem xét rất kỹ trong phần tiếp theo của chúng ta, nhưng hiện tại, tất cả những gì bạn cần biết là mảng cũng có khả năng lưu trữ các đối tượng phức tạp.
+
+let complexArray = [
+  [
+    {
+      one: 1,
+      two: 2
+    },
+    {
+      three: 3,
+      four: 4
+    }
+  ],
+  [
+    {
+      a: "a",
+      b: "b"
+    },
+    {
+      c: "c",
+      d: "d"
+    }
+  ]
+];
+Chúng tôi đã xác định một biến được gọi là yourArray. Hoàn thành câu lệnh bằng cách gán một mảng có độ dài ít nhất 5 phần tử cho yourArraybiến. Mảng của bạn phải chứa ít nhất một chuỗi , một số và một boolean .
+*/
+
+let yourArray = [3,5 ,6,3,6,"Hiep", true]; // Change this line

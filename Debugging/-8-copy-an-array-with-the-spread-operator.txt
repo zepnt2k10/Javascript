@@ -1,0 +1,24 @@
+/*
+Sao chép một mảng bằng Toán tử Spread
+Mặc dù slice()cho phép chúng ta lựa chọn các phần tử của mảng để sao chép, trong số một số tác vụ hữu ích khác, toán tử spread mới của ES6 cho phép chúng ta dễ dàng sao chép tất cả các phần tử của mảng, theo thứ tự, với một cú pháp đơn giản và dễ đọc. Cú pháp spread đơn giản như sau:...
+
+Trong thực tế, chúng ta có thể sử dụng toán tử spread để sao chép một mảng như sau:
+
+let thisArray = [true, true, undefined, false, null];
+let thatArray = [...thisArray];
+thatArraybằng nhau [true, true, undefined, false, null]. thisArrayvẫn không thay đổi và thatArraychứa các phần tử giống như thisArray.
+
+Chúng tôi đã định nghĩa một hàm, copyMachinelấy arr(một mảng) và num(một số) làm đối số. Hàm phải trả về một mảng mới được tạo thành từ các numbản sao của arr. Chúng tôi đã thực hiện hầu hết công việc cho bạn, nhưng nó vẫn chưa hoạt động bình thường. Sửa đổi hàm bằng cách sử dụng cú pháp spread để nó hoạt động chính xác (gợi ý: một phương pháp khác mà chúng tôi đã đề cập có thể hữu ích ở đây!).
+*/
+function copyMachine(arr, num) {
+  let newArr = [];
+  while (num >= 1) {
+    // Only change code below this line
+      newArr.push([...arr]);
+    // Only change code above this line
+    num--;
+  }
+  return newArr;
+}
+
+console.log(copyMachine([true, false, true], 2));

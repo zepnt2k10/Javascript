@@ -1,0 +1,26 @@
+/*
+Truy cập nội dung của mảng bằng ký hiệu dấu ngoặc
+Tất nhiên, đặc điểm cơ bản của bất kỳ cấu trúc dữ liệu nào là khả năng không chỉ lưu trữ dữ liệu mà còn có thể truy xuất dữ liệu đó theo lệnh. Vì vậy, bây giờ chúng ta đã học cách tạo một mảng, chúng ta hãy bắt đầu suy nghĩ về cách chúng ta có thể truy cập thông tin của mảng đó.
+
+Khi chúng ta xác định một mảng đơn giản như bên dưới, có 3 mục trong đó:
+
+let ourArray = ["a", "b", "c"];
+Trong một mảng, mỗi mục của mảng có một chỉ mục . Chỉ mục này nhân đôi vị trí của mục đó trong mảng và cách bạn tham chiếu đến nó. Tuy nhiên, điều quan trọng cần lưu ý là các mảng JavaScript được lập chỉ mục bằng 0 , nghĩa là phần tử đầu tiên của mảng thực sự nằm ở vị trí thứ 0, không phải phần tử đầu tiên. Để truy xuất một phần tử từ một mảng, chúng ta có thể đặt một chỉ mục trong dấu ngoặc và nối nó vào cuối một mảng, hoặc phổ biến hơn, vào một biến tham chiếu đến một đối tượng mảng. Đây được gọi là ký hiệu dấu ngoặc . Ví dụ: nếu chúng ta muốn truy xuất atừ ourArray​​và gán nó cho một biến, chúng ta có thể làm như vậy với đoạn mã sau:
+
+let ourVariable = ourArray[0];
+Bây giờ ourVariablecó giá trị của a.
+
+Ngoài việc truy cập giá trị được liên kết với một chỉ mục, bạn cũng có thể đặt chỉ mục thành một giá trị bằng cách sử dụng cùng một ký hiệu:
+
+ourArray[1] = "not b anymore";
+Sử dụng ký hiệu ngoặc, bây giờ chúng tôi đã đặt lại mục ở chỉ mục 1 từ chuỗi b, thành not b anymore. Bây giờ ourArraylà ["a", "not b anymore", "c"].
+
+Để hoàn thành thử thách này, hãy đặt vị trí thứ 2 (chỉ mục 1) của myArraybất kỳ thứ gì bạn muốn, ngoài chữ cái b.
+
+
+*/
+let myArray = ["a", "b", "c", "d"];
+// Only change code below this line
+myArray[1]=2;
+// Only change code above this line
+console.log(myArray);

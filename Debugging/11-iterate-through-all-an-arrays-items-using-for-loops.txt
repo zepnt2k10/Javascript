@@ -1,0 +1,37 @@
+/*
+Lặp lại qua tất cả các mục của mảng bằng vòng lặp For
+Đôi khi khi làm việc với mảng, rất tiện lợi khi có thể lặp lại từng mục để tìm một hoặc nhiều phần tử mà chúng ta có thể cần hoặc thao tác với mảng dựa trên các mục dữ liệu đáp ứng một bộ tiêu chí nhất định. JavaScript cung cấp một số phương thức được tích hợp sẵn mà mỗi phương thức lặp lại các mảng theo những cách hơi khác nhau để đạt được các kết quả khác nhau (chẳng hạn như every(),, v.v.) forEach(), map()tuy nhiên, kỹ thuật linh hoạt nhất và cung cấp cho chúng ta lượng kiểm soát lớn nhất là một forvòng lặp đơn giản.
+
+Hãy xem xét những điều sau:
+
+function greaterThanTen(arr) {
+  let newArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > 10) {
+      newArr.push(arr[i]);
+    }
+  }
+  return newArr;
+}
+
+greaterThanTen([2, 12, 8, 14, 80, 0, 1]);
+Sử dụng một forvòng lặp, hàm này lặp lại và truy cập từng phần tử của mảng, đồng thời đưa nó vào một bài kiểm tra đơn giản mà chúng tôi đã tạo. Bằng cách này, chúng tôi có thể dễ dàng và lập trình xác định mục dữ liệu nào lớn hơn 10và trả về một mảng mới [12, 14, 80], chứa các mục đó.
+
+Chúng ta đã định nghĩa một hàm, hàm filteredArraynày nhận arrmột mảng lồng nhau và elemdưới dạng các đối số và trả về một mảng mới. elemđại diện cho một phần tử có thể có hoặc có thể không có trên một hoặc nhiều mảng được lồng trong arr. Sửa đổi hàm, bằng cách sử dụng một forvòng lặp, để trả về phiên bản đã lọc của mảng đã truyền sao cho bất kỳ mảng nào được lồng trong arrchứa elemđã bị loại bỏ.
+
+
+*/
+
+function filteredArray(arr, elem) {
+  let newArr = [];
+  // Only change code below this line
+  for(let i = 0; i < arr.length;i++){
+    if(arr[i].indexOf(elem) == -1){
+      newArr.push([...arr[i]]);
+    }
+  }
+  // Only change code above this line
+  return newArr;
+}
+
+console.log(filteredArray([[3, 2, 3], [1, 6, 3], [3, 13, 26], [19, 3, 9]], 3));

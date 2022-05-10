@@ -1,0 +1,46 @@
+/*
+Tạo mảng đa chiều phức tạp
+Tuyệt vời! Bạn vừa học được rất nhiều về mảng! Đây là một cái nhìn tổng quan ở cấp độ khá cao và còn rất nhiều điều cần tìm hiểu về cách làm việc với mảng, phần lớn trong số đó bạn sẽ thấy trong các phần sau. Nhưng trước khi chuyển sang xem xét Đối tượng , chúng ta hãy xem xét thêm một lần nữa và xem cách các mảng có thể trở nên phức tạp hơn một chút so với những gì chúng ta đã thấy trong các thử thách trước.
+
+Một trong những tính năng mạnh mẽ nhất khi coi mảng là cấu trúc dữ liệu là mảng có thể chứa, hoặc thậm chí hoàn toàn được tạo thành từ các mảng khác. Chúng ta đã từng thấy các mảng có chứa các mảng trong các thử thách trước đây, nhưng những thử thách khá đơn giản. Tuy nhiên, mảng có thể chứa độ sâu vô hạn của mảng có thể chứa các mảng khác, mỗi mảng có mức độ sâu tùy ý của riêng mình, v.v. Bằng cách này, một mảng có thể rất nhanh chóng trở thành một cấu trúc dữ liệu rất phức tạp, được gọi là một mảng đa chiều , hoặc mảng lồng nhau. Hãy xem xét ví dụ sau:
+
+let nestedArray = [
+  ['deep'],
+  [
+    ['deeper'], ['deeper'] 
+  ],
+  [
+    [
+      ['deepest'], ['deepest']
+    ],
+    [
+      [
+        ['deepest-est?']
+      ]
+    ]
+  ]
+];
+Mảng deepđược lồng sâu 2 cấp. Các deepermảng có độ sâu 3 cấp. Mảng deepestcó 4 cấp và deepest-est?là 5.
+
+Mặc dù ví dụ này có vẻ phức tạp, nhưng mức độ phức tạp này không phải là chưa từng thấy, hoặc thậm chí là bất thường, khi xử lý một lượng lớn dữ liệu. Tuy nhiên, chúng ta vẫn có thể dễ dàng truy cập các mức sâu nhất của một mảng phức tạp này với ký hiệu dấu ngoặc:
+
+console.log(nestedArray[2][1][0][0][0]);
+Điều này ghi nhật ký chuỗi deepest-est?. Và bây giờ chúng tôi biết phần dữ liệu đó ở đâu, chúng tôi có thể đặt lại nó nếu cần:
+
+nestedArray[2][1][0][0][0] = 'deeper still';
+
+console.log(nestedArray[2][1][0][0][0]);
+Bây giờ nó ghi nhật ký deeper still.
+
+Chúng tôi đã xác định một biến,, myNestedArrayđược đặt bằng một mảng. Sửa đổi myNestedArray, sử dụng bất kỳ tổ hợp chuỗi , số và boolean nào cho các phần tử dữ liệu để nó có chính xác năm cấp độ sâu (hãy nhớ rằng, mảng ngoài cùng nhất là cấp 1). Ở đâu đó ở cấp độ thứ ba, bao gồm chuỗi deep, ở cấp độ thứ tư, bao gồm chuỗi deepervà ở cấp độ thứ năm, bao gồm chuỗi deepest.
+*/
+
+let myNestedArray = [
+  // Only change code below this line
+  [[[['unshift', false, 1, 2, 3, 'complex', 'nested'],
+  ['loop', 'shift', 6, 7, 1000, 'deepest']],
+  ['concat', false, true, 'spread', 'deeper']],
+  ['mutate', 1327.98, 'splice', 'slice', 'deep']],
+  ['iterate', 1.3849, 7, '8.4876', 'arbitrary', 'depth']
+  // Only change code above this line
+];

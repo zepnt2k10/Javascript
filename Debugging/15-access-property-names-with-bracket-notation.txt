@@ -1,0 +1,26 @@
+/*
+Truy cập Tên thuộc tính với Ký hiệu Dấu ngoặc
+Trong thử thách đối tượng đầu tiên, chúng tôi đã đề cập đến việc sử dụng ký hiệu ngoặc như một cách để truy cập các giá trị thuộc tính bằng cách sử dụng đánh giá một biến. Ví dụ, hãy tưởng tượng rằng foodsđối tượng của chúng ta đang được sử dụng trong một chương trình cho máy tính tiền siêu thị. Chúng tôi có một số chức năng đặt selectedFoodvà chúng tôi muốn kiểm tra foodsđối tượng của chúng tôi để biết sự hiện diện của thực phẩm đó. Điều này có thể trông giống như:
+
+let selectedFood = getCurrentFood(scannedItem);
+let inventory = foods[selectedFood];
+Mã này sẽ đánh giá giá trị được lưu trữ trong selectedFoodbiến và trả về giá trị của khóa đó trong foodsđối tượng, hoặc undefinednếu nó không hiện diện. Ký hiệu dấu ngoặc rất hữu ích vì đôi khi các thuộc tính của đối tượng không được biết trước thời gian chạy hoặc chúng ta cần truy cập chúng theo cách năng động hơn.
+
+Chúng tôi đã xác định một hàm, hàm checkInventorynày nhận một mục được quét làm đối số. Trả về giá trị hiện tại của scannedItemkhóa trong foodsđối tượng. Bạn có thể giả định rằng chỉ các khóa hợp lệ mới được cung cấp làm đối số cho checkInventory.
+*/
+let foods = {
+  apples: 25,
+  oranges: 32,
+  plums: 28,
+  bananas: 13,
+  grapes: 35,
+  strawberries: 27
+};
+
+function checkInventory(scannedItem) {
+  // Only change code below this line
+  return foods[scannedItem];
+  // Only change code above this line
+}
+
+console.log(checkInventory("apples"));
