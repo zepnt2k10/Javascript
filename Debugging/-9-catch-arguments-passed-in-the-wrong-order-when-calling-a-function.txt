@@ -1,0 +1,14 @@
+/*
+Nắm bắt các đối số được chuyển theo thứ tự sai khi gọi một hàm
+Tiếp tục thảo luận về cách gọi các hàm, lỗi tiếp theo cần chú ý là khi các đối số của một hàm được cung cấp theo thứ tự không chính xác. Nếu các đối số là các kiểu khác nhau, chẳng hạn như một hàm mong đợi một mảng và một số nguyên, điều này có thể sẽ gây ra lỗi thời gian chạy. Nếu các đối số là cùng một kiểu (ví dụ: tất cả các số nguyên), thì logic của mã sẽ không có ý nghĩa. Đảm bảo cung cấp tất cả các đối số được yêu cầu, theo thứ tự thích hợp để tránh những vấn đề này.
+
+Hàm raiseToPowernâng cơ số lên thành số mũ. Thật không may, nó không được gọi đúng cách - hãy sửa mã để giá trị của powerlà giá trị 8 được mong đợi.
+*/
+function raiseToPower(b, e) {
+  return Math.pow(b, e);
+}
+
+let base = 2;
+let exp = 3;
+let power = raiseToPower(base, exp);
+console.log(power);

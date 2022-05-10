@@ -1,0 +1,21 @@
+/*
+Nắm bắt việc sử dụng hỗn hợp các trích dẫn đơn và báo giá kép
+JavaScript cho phép sử dụng cả dấu nháy đơn ( ') và "nháy kép () để khai báo một chuỗi. Quyết định sử dụng cái nào thường phụ thuộc vào sở thích cá nhân, với một số ngoại lệ.
+
+Có hai lựa chọn là điều tuyệt vời khi một chuỗi có các đoạn co lại hoặc một đoạn văn bản khác nằm trong dấu ngoặc kép. Chỉ cần lưu ý rằng bạn không đóng chuỗi quá sớm, điều này gây ra lỗi cú pháp.
+
+Dưới đây là một số ví dụ về trộn dấu ngoặc kép:
+
+const grouchoContraction = "I've had a perfectly wonderful evening, but this wasn't it.";
+const quoteInString = "Groucho Marx once said 'Quote me as saying I was mis-quoted.'";
+const uhOhGroucho = 'I've had a perfectly wonderful evening, but this wasn't it.';
+Hai điều đầu tiên đúng, nhưng điều thứ ba không chính xác.
+
+Tất nhiên, không sao cả nếu chỉ sử dụng một kiểu trích dẫn. Bạn có thể thoát khỏi các dấu ngoặc kép bên trong chuỗi bằng cách sử dụng dấu gạch chéo ngược ( \) ký tự thoát:
+
+const allSameQuotes = 'I\'ve had a perfectly wonderful evening, but this wasn\'t it.';
+Sửa chuỗi để nó sử dụng các dấu ngoặc kép khác nhau cho hrefgiá trị hoặc thoát khỏi các dấu ngoặc kép hiện có. Giữ các dấu ngoặc kép xung quanh toàn bộ chuỗi.
+*/
+
+let innerHtml = "<p>Click here to <a href=\"#Home\">return home</a></p>";
+console.log(innerHtml);

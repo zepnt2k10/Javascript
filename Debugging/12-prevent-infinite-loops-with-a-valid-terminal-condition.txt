@@ -1,0 +1,20 @@
+/*
+Ngăn chặn các vòng lặp vô hạn với một điều kiện đầu cuối hợp lệ
+Chủ đề cuối cùng là vòng lặp vô hạn đáng sợ. Vòng lặp là công cụ tuyệt vời khi bạn cần chương trình của mình chạy khối mã một số lần nhất định hoặc cho đến khi đáp ứng một điều kiện, nhưng chúng cần một điều kiện đầu cuối để kết thúc vòng lặp. Các vòng lặp vô hạn có khả năng đóng băng hoặc làm sập trình duyệt và gây ra tình trạng lộn xộn trong quá trình thực thi chương trình chung, điều mà không ai muốn.
+
+Có một ví dụ về vòng lặp vô hạn trong phần giới thiệu của phần này - nó không có điều kiện đầu cuối để thoát ra khỏi whilevòng lặp bên trong loopy(). KHÔNG gọi chức năng này!
+
+function loopy() {
+  while(true) {
+    console.log("Hello, world!");
+  }
+}
+Công việc của lập trình viên là đảm bảo rằng điều kiện đầu cuối, điều kiện cho chương trình biết khi nào cần thoát ra khỏi mã vòng lặp, cuối cùng cũng đạt được. Một lỗi là tăng hoặc giảm biến bộ đếm sai hướng so với điều kiện đầu cuối. Một người khác đang vô tình đặt lại một bộ đếm hoặc biến chỉ số trong mã vòng lặp, thay vì tăng hoặc giảm nó.
+
+Hàm myFunc()chứa một vòng lặp vô hạn vì điều kiện đầu cuối i != 4sẽ không bao giờ đánh giá đến false(và phá vỡ vòng lặp) - isẽ tăng lên 2 mỗi lần vượt qua và nhảy sang phải qua 4 vì ibắt đầu là số lẻ. Sửa toán tử so sánh trong điều kiện đầu cuối để vòng lặp chỉ chạy với giá trị inhỏ hơn hoặc bằng 4.
+*/
+function myFunc() {
+  for (let i = 1; i <= 4; i += 2) {
+    console.log("Still going!");
+  }
+}

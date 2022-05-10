@@ -1,0 +1,9 @@
+/*
+Nắm bắt các dấu ngoặc đơn, dấu ngoặc nhọn, dấu ngoặc nhọn và dấu ngoặc kép
+Một lỗi cú pháp khác cần lưu ý là tất cả các dấu ngoặc mở, dấu ngoặc nhọn, dấu ngoặc nhọn và dấu ngoặc kép đều có một cặp đóng. Việc quên một đoạn có xu hướng xảy ra khi bạn đang chỉnh sửa mã hiện có và chèn các mục bằng một trong các loại cặp. Ngoài ra, hãy cẩn thận khi lồng các khối mã vào các khối khác, chẳng hạn như thêm một hàm gọi lại làm đối số cho một phương thức.
+
+Một cách để tránh sai lầm này là ngay sau khi ký tự mở đầu được nhập, ngay lập tức bao gồm ký tự kết thúc, sau đó di chuyển con trỏ trở lại giữa chúng và tiếp tục viết mã. May mắn thay, hầu hết các trình soạn thảo mã hiện đại đều tự động tạo nửa sau của cặp.
+*/
+let myArray = [1, 2, 3];
+let arraySum = myArray.reduce((previous, current) =>  previous + current);
+console.log(`Sum of array values is: ${arraySum}`);

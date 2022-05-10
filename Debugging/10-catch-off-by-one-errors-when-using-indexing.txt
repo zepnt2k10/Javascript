@@ -1,0 +1,32 @@
+/*
+Xử lý một lỗi khi sử dụng lập chỉ mục
+Lỗi do một lỗi (đôi khi được gọi là OBOE) xuất hiện khi bạn đang cố gắng nhắm mục tiêu một chỉ mục cụ thể của một chuỗi hoặc mảng (để cắt hoặc truy cập một phân đoạn) hoặc khi lặp qua các chỉ số của chúng. Lập chỉ mục JavaScript bắt đầu từ 0, không phải một, có nghĩa là chỉ mục cuối cùng luôn nhỏ hơn độ dài của mục. Nếu bạn cố gắng truy cập một chỉ mục bằng độ dài, chương trình có thể gây ra lỗi tham chiếu "chỉ mục nằm ngoài phạm vi" hoặc lỗi in undefined.
+
+Khi bạn sử dụng các phương thức chuỗi hoặc mảng lấy phạm vi chỉ mục làm đối số, sẽ giúp đọc tài liệu và hiểu liệu chúng có bao gồm không (mục tại chỉ mục đã cho là một phần của những gì được trả về) hay không. Dưới đây là một số ví dụ về lỗi của một lỗi:
+
+let alphabet = "abcdefghijklmnopqrstuvwxyz";
+let len = alphabet.length;
+for (let i = 0; i <= len; i++) {
+  console.log(alphabet[i]);
+}
+for (let j = 1; j < len; j++) {
+  console.log(alphabet[j]);
+}
+for (let k = 0; k < len; k++) {
+  console.log(alphabet[k]);
+}
+Ví dụ đầu tiên ở đây lặp lại quá nhiều lần và ví dụ thứ hai lặp lại quá ít lần (thiếu chỉ mục đầu tiên, 0). Ví dụ thứ ba là đúng.
+
+Sửa hai lỗi lập chỉ mục trong hàm sau để tất cả các số từ 1 đến 5 được in ra bảng điều khiển.
+*/
+function countToFive() {
+  let firstFive = "12345";
+  let len = firstFive.length;
+  // Only change code below this line
+  for (let i = 0; i < len; i++) {
+  // Only change code above this line
+    console.log(firstFive[i]);
+  }
+}
+
+countToFive();

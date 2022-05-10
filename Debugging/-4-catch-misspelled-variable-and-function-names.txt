@@ -1,0 +1,12 @@
+/*
+Tìm tên biến và hàm sai chính tả
+Phương thức console.log()và typeoflà hai cách chính để kiểm tra các giá trị trung gian và kiểu đầu ra của chương trình. Bây giờ là lúc để tìm hiểu các hình thức phổ biến mà lỗi thực hiện. Một vấn đề ở cấp độ cú pháp mà những người đánh máy nhanh có thể mắc phải là lỗi chính tả khiêm tốn.
+
+Các ký tự bị hoán vị, bị thiếu hoặc viết hoa sai trong tên biến hoặc hàm sẽ khiến trình duyệt tìm kiếm một đối tượng không tồn tại - và khiếu nại dưới dạng lỗi tham chiếu. Tên biến và hàm JavaScript phân biệt chữ hoa chữ thường.
+
+Sửa hai lỗi chính tả trong mã để netWorkingCapitalphép tính hoạt động.
+*/
+let receivables = 10;
+let payables = 8;
+let netWorkingCapital = receivables - payables;
+console.log(`Net working capital is: ${netWorkingCapital}`);

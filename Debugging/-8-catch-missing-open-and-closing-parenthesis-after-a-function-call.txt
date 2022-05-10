@@ -1,0 +1,23 @@
+/*
+Bắt Thiếu dấu ngoặc đơn mở và đóng sau một lệnh gọi hàm
+Khi một hàm hoặc phương thức không nhận bất kỳ đối số nào, bạn có thể quên bao gồm dấu ngoặc đơn mở và đóng (trống) khi gọi nó. Thông thường, kết quả của một lệnh gọi hàm được lưu trong một biến để sử dụng cho mục đích khác trong mã của bạn. Lỗi này có thể được phát hiện bằng cách ghi các giá trị biến (hoặc loại của chúng) vào bảng điều khiển và thấy rằng một giá trị được đặt thành tham chiếu hàm, thay vì giá trị mong đợi mà hàm trả về.
+
+Các biến trong ví dụ sau là khác nhau:
+
+function myFunction() {
+  return "You rock!";
+}
+let varOne = myFunction;
+let varTwo = myFunction();
+Đây varOnelà hàm myFunction, và varTwolà chuỗi You rock!.
+
+Sửa mã để biến resultđược đặt thành giá trị trả về khi gọi hàm getNine.
+*/
+function getNine() {
+  let x = 6;
+  let y = 3;
+  return x + y;
+}
+
+let result = getNine();
+console.log(result);

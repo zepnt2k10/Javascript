@@ -1,0 +1,32 @@
+/*
+Bắt sử dụng toán tử chỉ định thay vì toán tử bình đẳng
+Các chương trình phân nhánh, tức là các chương trình thực hiện những việc khác nhau nếu đáp ứng các điều kiện nhất định, dựa vào ifvà else ifcác elsecâu lệnh trong JavaScript. Điều kiện đôi khi có dạng thử nghiệm xem một kết quả có bằng một giá trị hay không.
+
+Logic này được nói (ít nhất bằng tiếng Anh) là "nếu x bằng y, thì ..." có thể dịch theo nghĩa đen thành mã bằng cách sử dụng =, hoặc toán tử gán. Điều này dẫn đến luồng điều khiển không mong muốn trong chương trình của bạn.
+
+Như đã đề cập trong các thử thách trước, toán tử gán ( =) trong JavaScript sẽ gán giá trị cho một tên biến. Và toán tử ==và ===kiểm tra sự bình đẳng ( ===kiểm tra ba lần cho sự bình đẳng nghiêm ngặt, có nghĩa là cả giá trị và kiểu đều giống nhau).
+
+Đoạn mã dưới đây chỉ định xlà 2, đánh giá là true. Hầu hết mọi giá trị của riêng nó trong JavaScript đều đánh giá bằng true, ngoại trừ giá trị được gọi là các giá trị "giả": ,, false( một chuỗi trống) , và .0""NaNundefinednull
+
+let x = 1;
+let y = 2;
+if (x = y) {
+
+} else {
+
+}
+Trong ví dụ này, khối mã trong ifcâu lệnh sẽ chạy với bất kỳ giá trị nào y, trừ khi ylà sai. Khối else, mà chúng tôi mong đợi để chạy ở đây, sẽ không thực sự chạy.
+
+Sửa điều kiện để chương trình chạy nhánh bên phải và giá trị thích hợp được gán cho result.
+*/
+let x = 7;
+let y = 9;
+let result = "to come";
+
+if(x == y) {
+  result = "Equal!";
+} else {
+  result = "Not equal!";
+}
+
+console.log(result);

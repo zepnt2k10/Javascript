@@ -1,0 +1,21 @@
+/*
+Sử dụng bảng điều khiển JavaScript để kiểm tra giá trị của một biến
+Cả Chrome và Firefox đều có bảng điều khiển JavaScript tuyệt vời, còn được gọi là DevTools, để gỡ lỗi JavaScript của bạn.
+
+Bạn có thể tìm thấy Công cụ dành cho nhà phát triển trong trình đơn của Chrome hoặc Bảng điều khiển Web trong trình đơn của Firefox. Nếu bạn đang sử dụng một trình duyệt khác hoặc điện thoại di động, chúng tôi thực sự khuyên bạn nên chuyển sang Firefox hoặc Chrome dành cho máy tính để bàn.
+
+Phương console.log()thức, "in" đầu ra của những gì nằm trong dấu ngoặc đơn của nó ra bảng điều khiển, có thể sẽ là công cụ gỡ lỗi hữu ích nhất. Đặt nó ở các điểm chiến lược trong mã của bạn có thể hiển thị cho bạn các giá trị trung gian của các biến. Thực hành tốt là bạn nên có ý tưởng về kết quả đầu ra trước khi xem nó là gì. Có các điểm kiểm tra để xem trạng thái tính toán của bạn trong suốt mã của bạn sẽ giúp thu hẹp vấn đề ở đâu.
+
+Đây là một ví dụ để in chuỗi Hello world!vào bảng điều khiển:
+
+console.log('Hello world!');
+Sử dụng console.log()phương thức để in giá trị của biến aở vị trí được ghi chú trong mã.
+*/
+let a = 5;
+let b = 1;
+a++;
+// Only change code below this line
+console.log(a);
+
+let sumAB = a + b;
+console.log(sumAB);

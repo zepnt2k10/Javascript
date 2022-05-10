@@ -1,0 +1,13 @@
+/*
+Hiểu sự khác biệt giữa freeCodeCamp và Bảng điều khiển trình duyệt
+Bạn có thể nhận thấy rằng một số thử thách freeCodeCamp bao gồm bảng điều khiển của riêng chúng. Bảng điều khiển này hoạt động hơi khác một chút so với bảng điều khiển của trình duyệt.
+
+Có nhiều phương pháp để sử dụng consoleđể xuất ra thông báo. log, warnvà clearđể kể tên một số. Bảng điều khiển freeCodeCamp sẽ chỉ xuất ra logcác thông báo, trong khi bảng điều khiển của trình duyệt sẽ xuất ra tất cả các thông báo. Khi bạn thực hiện các thay đổi đối với mã của mình, mã sẽ tự động chạy và hiển thị nhật ký. Bảng điều khiển freeCodeCamp sau đó sẽ bị xóa mỗi khi mã của bạn chạy.
+
+Trước tiên, hãy mở bảng điều khiển trình duyệt của bạn để bạn có thể xem nhật ký. Để làm điều đó, bạn có thể nhấp chuột phải vào thanh điều hướng freeCodeCamp ở trên cùng và nhấp inspectvào hầu hết các trình duyệt. Sau đó tìm consoletab trong cửa sổ mở ra.
+
+Sau đó, sử dụng console.logđể ghi lại outputbiến. Xem hai bảng điều khiển để xem nhật ký. Cuối cùng, sử dụng console.clearsau nhật ký của bạn để xóa bảng điều khiển trình duyệt. Xem sự khác biệt trong hai bảng điều khiển.
+*/
+let output = "Get this to show once in the freeCodeCamp console and not at all in the browser console";
+console.log(output);
+console.clear();
