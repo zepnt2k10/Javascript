@@ -1,0 +1,12 @@
+/*
+Xác nhận kết thúc
+Kiểm tra xem một chuỗi (đối số đầu tiên, str) có kết thúc bằng chuỗi đích đã cho hay không (đối số thứ hai, target).
+
+Thách thức này có thể được giải quyết bằng .endsWith()phương pháp đã được giới thiệu trong ES2015. Nhưng với mục đích của thử thách này, chúng tôi muốn bạn sử dụng một trong các phương thức chuỗi con JavaScript để thay thế.
+*/
+function confirmEnding(str, target) {
+  let reGex =  new RegExp(target+'$','i');
+  return reGex.test(str);
+}
+
+confirmEnding("Bastian", "n");

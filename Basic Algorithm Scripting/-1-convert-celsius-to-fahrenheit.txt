@@ -1,0 +1,14 @@
+/*
+Chuyển đổi độ C sang độ F
+Công thức để chuyển đổi từ độ C sang độ F là nhiệt độ tính bằng độ C 9/5, cộng 32.
+
+Bạn được cung cấp một biến celsiusđại diện cho nhiệt độ tính bằng độ C. Sử dụng biến fahrenheitđã được xác định và gán cho nó nhiệt độ Fahrenheit tương đương với nhiệt độ C đã cho. Sử dụng công thức được đề cập ở trên để giúp chuyển đổi nhiệt độ độ C sang độ F.
+
+
+*/
+function convertToF(celsius) {
+  let fahrenheit = (9/5)*celsius + 32;
+  return fahrenheit;
+}
+
+convertToF(30);

@@ -1,0 +1,18 @@
+/*
+Đảo ngược một chuỗi
+Đảo ngược chuỗi được cung cấp.
+
+Bạn có thể cần chuyển chuỗi thành một mảng trước khi có thể đảo ngược nó.
+
+Kết quả của bạn phải là một chuỗi.
+*/
+
+function reverseString(str) {
+  let st= "";
+  for(let i = str.length -1 ; i >= 0 ; i--){
+    st+=str.charAt(i);
+  }
+  return st;
+}
+
+reverseString("hello");

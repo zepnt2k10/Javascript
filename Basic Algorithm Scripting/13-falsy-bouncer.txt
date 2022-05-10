@@ -1,0 +1,15 @@
+/*
+Xóa tất cả các giá trị sai khỏi một mảng.
+
+Các giá trị sai trong JavaScript là false,,, và .null0""undefinedNaN
+
+Gợi ý: Hãy thử chuyển đổi từng giá trị thành Boolean.
+*/
+function bouncer(arr) {
+  let newArray = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i]) newArray.push(arr[i]);
+  }
+  return newArray;
+}
+bouncer([7, "ate", "", false, 9]);

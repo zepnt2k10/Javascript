@@ -1,0 +1,14 @@
+/*
+Người giữ người tìm
+Tạo một hàm xem qua một mảng arrvà trả về phần tử đầu tiên trong đó vượt qua 'kiểm tra sự thật'. Điều này có nghĩa là đã cho một phần tử x, 'kiểm tra sự thật' sẽ được thông qua nếu func(x)đúng true. Nếu không có phần tử nào vượt qua bài kiểm tra, hãy quay lại undefined.
+*/
+function findElement(arr, func) {
+  for(let i = 0; i < arr.length; i++){
+    if(func(arr[i])){
+      return arr[i];
+    }
+  }
+  return undefined;
+}
+
+findElement([1, 2, 3, 4], num => num % 2 === 0);

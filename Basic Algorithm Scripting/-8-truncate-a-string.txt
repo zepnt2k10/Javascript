@@ -1,0 +1,13 @@
+/*
+Cắt ngắn một chuỗi
+Cắt bớt một chuỗi (đối số đầu tiên) nếu nó dài hơn độ dài chuỗi tối đa đã cho (đối số thứ hai). Trả về chuỗi bị cắt ngắn có ...đuôi.
+*/
+function truncateString(str, num) {
+    let max = str.length;
+    if(max > num){
+      return str.slice(0,num)+'...';
+    }
+    return str;
+}
+
+truncateString("A-tisket a-tasket A green and yellow basket", 8);

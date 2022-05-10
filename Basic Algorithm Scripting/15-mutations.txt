@@ -1,0 +1,24 @@
+/*
+Đột biến
+Trả về truenếu chuỗi trong phần tử đầu tiên của mảng chứa tất cả các chữ cái của chuỗi trong phần tử thứ hai của mảng.
+
+Ví dụ: ["hello", "Hello"]nên trả về truevì tất cả các ký tự trong chuỗi thứ hai đều có trong chuỗi đầu tiên, bỏ qua chữ hoa / thường.
+
+Các đối số ["hello", "hey"]sẽ trả về falsevì chuỗi hellokhông chứa a y.
+
+Cuối cùng, ["Alien", "line"]nên trả về truevì tất cả các chữ cái trong lineđều có trong Alien.
+
+
+*/
+function mutation(arr) {
+  const arr1 = arr[0].toLowerCase();
+  const arr2 = arr[1].toLowerCase();
+  for(let i = 0; i < arr2.length; i ++){
+      if(arr1.indexOf(arr2[i]) < 0){
+        return false;
+      }
+  }
+  return true;
+}
+
+mutation(["Hello", "hey"]);
