@@ -1,0 +1,10 @@
+/*
+Khớp tất cả các số
+Bạn đã học các phím tắt cho các mẫu chuỗi phổ biến như chữ và số. Một mô hình phổ biến khác là chỉ tìm kiếm các chữ số hoặc số.
+
+Phím tắt để tìm kiếm các ký tự chữ số là \dchữ thường d. Đây là lớp ký tự [0-9]tìm kiếm một ký tự duy nhất của bất kỳ số nào trong khoảng từ 0 đến 9.
+
+Sử dụng lớp ký tự tốc ký \dđể đếm có bao nhiêu chữ số trong tiêu đề phim. Các số được viết ra ("sáu" thay vì 6) không được tính.
+*/let movieName = "2001: A Space Odyssey";
+let numRegex = /\d/g; // Change this line
+let result = movieName.match(numRegex).length;

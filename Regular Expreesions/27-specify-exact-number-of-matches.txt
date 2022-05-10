@@ -1,0 +1,22 @@
+/*
+Chỉ định Số lượng Kết hợp Chính xác
+Bạn có thể chỉ định số lượng mẫu dưới và trên với các từ chỉ định số lượng bằng cách sử dụng dấu ngoặc nhọn. Đôi khi bạn chỉ muốn một số trận đấu cụ thể.
+
+Để chỉ định một số mẫu nhất định, chỉ cần có một số đó giữa các dấu ngoặc nhọn.
+
+Ví dụ, để chỉ đối sánh từ hahvới các ký tự a 3thời gian, regex của bạn sẽ là /ha{3}h/.
+
+let A4 = "haaaah";
+let A3 = "haaah";
+let A100 = "h" + "a".repeat(100) + "h";
+let multipleHA = /ha{3}h/;
+multipleHA.test(A4);
+multipleHA.test(A3);
+multipleHA.test(A100);
+Theo thứ tự, ba testcuộc gọi sẽ trả về false, truevà false.
+
+Thay đổi regex timRegexđể khớp với từ Timberchỉ khi nó có bốn chữ cái m.
+*/
+let timStr = "Timmmmber";
+let timRegex = /Tim{4}ber/; // Change this line
+let result = timRegex.test(timStr);

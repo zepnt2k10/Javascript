@@ -1,0 +1,26 @@
+/*
+Khớp một ký tự với nhiều khả năng
+Bạn đã học cách đối sánh giữa các mẫu chữ ( /literal/) và ký tự đại diện ( /./). Đó là những thái cực của biểu thức chính quy, trong đó một biểu thức tìm thấy các kết quả khớp chính xác và biểu thức kia khớp với mọi thứ. Có những lựa chọn là sự cân bằng giữa hai thái cực.
+
+Bạn có thể tìm kiếm một mẫu chữ với một số tính linh hoạt với các lớp ký tự . Các lớp ký tự cho phép bạn xác định một nhóm ký tự bạn muốn khớp bằng cách đặt chúng bên trong dấu ngoặc vuông ( [và ).]
+
+Ví dụ, bạn muốn so khớp bag, bignhưng bugkhông bog. Bạn có thể tạo regex /b[aiu]g/để thực hiện việc này. Là [aiu]lớp ký tự sẽ chỉ khớp với các ký tự a, ihoặc u.
+
+let bigStr = "big";
+let bagStr = "bag";
+let bugStr = "bug";
+let bogStr = "bog";
+let bgRegex = /b[aiu]g/;
+bigStr.match(bgRegex);
+bagStr.match(bgRegex);
+bugStr.match(bgRegex);
+bogStr.match(bgRegex);
+Theo thứ tự, bốn matchlệnh gọi sẽ trả về các giá trị ["big"], và .["bag"]["bug"]null
+
+Sử dụng một lớp ký tự với các nguyên âm (,,, ) atrong eregex của bạn để tìm tất cả các nguyên âm trong chuỗi .iouvowelRegexquoteSample
+Lưu ý: Đảm bảo khớp cả nguyên âm viết hoa và viết thường.
+*/
+
+let quoteSample = "Beware of bugs in the above code; I have only proved it correct, not tried it.";
+let vowelRegex = /[aeoui]/gi; // Change this line
+let result = quoteSample.match(vowelRegex); // Change this line

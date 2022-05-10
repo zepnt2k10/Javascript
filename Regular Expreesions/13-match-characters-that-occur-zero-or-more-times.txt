@@ -1,0 +1,22 @@
+/*
+Khớp các ký tự xuất hiện 0 hoặc nhiều lần hơn
+Thử thách cuối cùng sử dụng +dấu cộng để tìm kiếm các ký tự xuất hiện một hoặc nhiều lần. Ngoài ra còn có một tùy chọn khớp với các ký tự xuất hiện không hoặc nhiều lần.
+
+*Ký tự để thực hiện việc này là dấu sao hoặc dấu sao :.
+
+let soccerWord = "gooooooooal!";
+let gPhrase = "gut feeling";
+let oPhrase = "over the moon";
+let goRegex = /go*/;
+/*soccerWord.match(goRegex);
+gPhrase.match(goRegex);
+oPhrase.match(goRegex);
+Theo thứ tự, ba matchlệnh gọi sẽ trả về các giá ["goooooooo"]trị ["g"]và null.
+
+Đối với thử thách này, chewieQuoteđã được khởi tạo dưới dạng chuỗi Aaaaaaaaaaaaaaaarrrgh!đằng sau hậu trường. Tạo một regex chewieRegexsử dụng *ký tự này để khớp với một ký Atự viết hoa ngay sau đó là không hoặc nhiều ký atự viết thường trong chewieQuote. Regex của bạn không cần cờ hoặc lớp ký tự và nó không được khớp với bất kỳ dấu ngoặc kép nào khác.
+*/
+// Only change code below this line
+let chewieRegex = /Aa*/; // Change this line
+// Only change code above this line
+
+let result = chewieQuote.match(chewieRegex);

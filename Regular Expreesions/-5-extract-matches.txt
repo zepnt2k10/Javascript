@@ -1,0 +1,24 @@
+/*
+Trích xuất các trận đấu
+Cho đến nay, bạn chỉ kiểm tra xem một mẫu có tồn tại hay không trong một chuỗi. Bạn cũng có thể trích xuất các kết quả phù hợp thực tế mà bạn tìm thấy bằng .match()phương pháp này.
+
+Để sử dụng .match()phương thức, hãy áp dụng phương thức trên một chuỗi và chuyển vào regex bên trong dấu ngoặc đơn.
+
+Đây là một ví dụ:
+
+"Hello, World!".match(/Hello/);
+let ourStr = "Regular expressions";
+let ourRegex = /expressions/;
+ourStr.match(ourRegex);
+Ở đây cái đầu tiên matchsẽ quay lại ["Hello"]và cái thứ hai sẽ quay lại ["expressions"].
+
+Lưu ý rằng .matchcú pháp "đối lập" với .testphương pháp bạn đang sử dụng cho đến nay:
+
+'string'.match(/regex/);
+/regex/.test('string');
+Áp dụng .match()phương pháp để giải nén chuỗi coding.
+*/
+
+let extractStr = "Extract the word 'coding' from this string.";
+let codingRegex = /coding/; // Change this line
+let result = extractStr.match(codingRegex); // Change this line

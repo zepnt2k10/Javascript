@@ -1,0 +1,18 @@
+/*Hạn chế tên người dùng có thể có
+Tên người dùng được sử dụng ở khắp mọi nơi trên internet. Chúng là những gì mang lại cho người dùng một bản sắc riêng trên các trang web yêu thích của họ.
+
+Bạn cần kiểm tra tất cả tên người dùng trong cơ sở dữ liệu. Dưới đây là một số quy tắc đơn giản mà người dùng phải tuân theo khi tạo tên người dùng của họ.
+
+Tên người dùng chỉ có thể sử dụng các ký tự chữ và số.
+
+Các số duy nhất trong tên người dùng phải ở cuối. Có thể có 0 hoặc nhiều hơn ở cuối. Tên người dùng không được bắt đầu bằng số.
+
+Chữ cái tên người dùng có thể là chữ thường và chữ hoa.
+
+Tên người dùng phải dài ít nhất hai ký tự. Tên người dùng có hai ký tự chỉ có thể sử dụng các ký tự trong bảng chữ cái làm ký tự.
+
+Thay đổi regex userCheckđể phù hợp với các ràng buộc được liệt kê ở trên.
+*/
+let username = "JackOfAllTrades";
+let userCheck = /^[a-z][a-z]+\d*$|^[a-z]\d\d+$/i; // Change this line
+let result = userCheck.test(username);

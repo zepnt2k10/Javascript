@@ -1,0 +1,21 @@
+/*
+Kiểm tra nhóm hỗn hợp các ký tự
+Đôi khi chúng tôi muốn kiểm tra các nhóm ký tự bằng Biểu thức chính quy và để đạt được điều đó, chúng tôi sử dụng dấu ngoặc đơn ().
+
+Nếu bạn muốn tìm một trong hai Penguinhoặc Pumpkintrong một chuỗi, bạn có thể sử dụng Biểu thức chính quy sau:/P(engu|umpk)in/g
+
+Sau đó, kiểm tra xem các nhóm chuỗi mong muốn có trong chuỗi kiểm tra hay không bằng cách sử dụng test()phương pháp này.
+
+let testStr = "Pumpkin";
+let testRegex = /P(engu|umpk)in/;
+testRegex.test(testStr);
+Phương testthức ở đây sẽ trả về true.
+
+Sửa regex để nó kiểm tra tên của Franklin Roosevelthoặc Eleanor Roosevelttheo cách phân biệt chữ hoa chữ thường và nó phải nhượng bộ cho tên đệm.
+
+Sau đó, sửa mã để regex mà bạn đã tạo được kiểm tra myStringvà trả về một trong hai truehoặc falseđược trả về tùy thuộc vào việc regex có khớp hay không.
+*/
+let myString = "Eleanor Roosevelt";
+let myRegex = /(Franklin|Eleanor).*Roosevelt/; // Change this line
+let result = myRegex.test(myString); // Change this line
+// After passing the challenge experiment with myString and see how the grouping works

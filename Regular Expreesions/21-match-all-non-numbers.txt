@@ -1,0 +1,11 @@
+/*
+Khớp tất cả không phải số
+Thử thách cuối cùng cho thấy cách tìm kiếm các chữ số bằng phím tắt \dvới chữ thường d. Bạn cũng có thể tìm kiếm các chữ số không bằng cách sử dụng một phím tắt tương tự sử dụng chữ hoa Dđể thay thế.
+
+Phím tắt để tìm các ký tự không phải chữ số là \D. Đây là lớp ký tự [^0-9]tìm kiếm một ký tự đơn lẻ không phải là một số từ 0 đến 9.
+
+Sử dụng lớp ký tự viết tắt cho các chữ số không phải là chữ số \Dđể đếm có bao nhiêu chữ số không có trong tiêu đề phim.
+*/
+let movieName = "2001: A Space Odyssey";
+let noNumRegex = /\D/g; // Change this line
+let result = movieName.match(noNumRegex).length;

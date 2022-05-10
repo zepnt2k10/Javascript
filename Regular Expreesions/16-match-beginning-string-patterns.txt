@@ -1,0 +1,19 @@
+/*
+Khớp các mẫu chuỗi bắt đầu
+Các thử thách trước đó cho thấy rằng biểu thức chính quy có thể được sử dụng để tìm kiếm một số kết quả phù hợp. Chúng cũng được sử dụng để tìm kiếm các mẫu ở các vị trí cụ thể trong chuỗi.
+
+Trong một thử thách trước đó, bạn đã sử dụng ký tự dấu mũ ( ^) bên trong một bộ ký tự để tạo một bộ ký tự bị phủ định trong biểu mẫu [^thingsThatWillNotBeMatched]. Bên ngoài bộ ký tự, dấu mũ được sử dụng để tìm kiếm các mẫu ở đầu chuỗi.
+
+let firstString = "Ricky is first and can be found.";
+let firstRegex = /^Ricky/;
+firstRegex.test(firstString);
+let notFirst = "You can't find Ricky now.";
+firstRegex.test(notFirst);
+Cuộc testgọi đầu tiên sẽ quay lại true, trong khi cuộc gọi thứ hai sẽ quay lại false.
+
+Sử dụng ký tự dấu mũ trong một regex để Calchỉ tìm thấy ở phần đầu của chuỗi rickyAndCal.
+*/
+
+let rickyAndCal = "Cal and Ricky both like racing.";
+let calRegex = /^Cal/; // Change this line
+let result = calRegex.test(rickyAndCal);

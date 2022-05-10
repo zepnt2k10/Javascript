@@ -1,0 +1,13 @@
+/*
+Bỏ qua trường hợp trong khi đối sánh
+Cho đến bây giờ, bạn đã xem xét regexes để thực hiện các đối sánh theo nghĩa đen của chuỗi. Nhưng đôi khi, bạn cũng có thể muốn so khớp các trường hợp khác biệt.
+
+Chữ hoa (hoặc đôi khi chữ hoa) là sự khác biệt giữa chữ hoa và chữ thường. Ví dụ về chữ hoa là A, Bvà C. Ví dụ về chữ thường là a, bvà c.
+
+Bạn có thể so khớp cả hai trường hợp bằng cách sử dụng cái được gọi là cờ. Có các cờ khác nhưng ở đây bạn sẽ tập trung vào cờ bỏ qua chữ hoa - icờ. Bạn có thể sử dụng nó bằng cách thêm nó vào regex. Một ví dụ về việc sử dụng cờ này là /ignorecase/i. Regex này có thể khớp với các chuỗi ignorecasevà .igNoreCaseIgnoreCase
+
+Viết một regex fccRegexđể đối sánh freeCodeCamp, bất kể trường hợp của nó. Regex của bạn không được khớp với bất kỳ chữ viết tắt hoặc biến thể nào có dấu cách.
+*/
+let myString = "freeCodeCamp";
+let fccRegex = /freecodecamp/i; // Change this line
+let result = fccRegex.test(myString);

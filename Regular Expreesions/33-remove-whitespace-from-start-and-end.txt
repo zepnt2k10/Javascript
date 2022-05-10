@@ -1,0 +1,11 @@
+/*
+Xóa khoảng trắng khỏi Bắt đầu và Kết thúc
+Đôi khi các ký tự khoảng trắng xung quanh chuỗi không được mong muốn nhưng vẫn có. Xử lý điển hình của chuỗi là loại bỏ khoảng trắng ở đầu và cuối của nó.
+
+Viết regex và sử dụng các phương thức chuỗi thích hợp để loại bỏ khoảng trắng ở đầu và cuối chuỗi.
+
+Lưu ý: Phương String.prototype.trim()pháp sẽ hoạt động ở đây, nhưng bạn sẽ cần hoàn thành thử thách này bằng cách sử dụng biểu thức chính quy.
+*/
+let hello = "   Hello, World!  ";
+let wsRegex = /^\s+|\s+$/g; // Change this line
+let result = hello.replace(wsRegex,""); // Change this line

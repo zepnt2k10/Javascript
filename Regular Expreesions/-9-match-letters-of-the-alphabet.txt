@@ -1,0 +1,25 @@
+/*
+Khớp các chữ cái trong bảng chữ cái
+Bạn đã thấy cách bạn có thể sử dụng các bộ ký tự để chỉ định một nhóm ký tự để khớp, nhưng đó là cách gõ rất nhiều khi bạn cần khớp một loạt ký tự (ví dụ: mọi chữ cái trong bảng chữ cái). May mắn thay, có một tính năng tích hợp giúp việc này trở nên ngắn gọn và đơn giản.
+
+Bên trong một bộ ký tự, bạn có thể xác định một dải ký tự để khớp bằng cách sử dụng ký tự gạch nối -:.
+
+Ví dụ, để khớp các chữ cái thường, abạn esẽ sử dụng [a-e].
+
+let catStr = "cat";
+let batStr = "bat";
+let matStr = "mat";
+let bgRegex = /[a-e]at/;
+catStr.match(bgRegex);
+batStr.match(bgRegex);
+matStr.match(bgRegex);
+Theo thứ tự, ba matchlệnh gọi sẽ trả về các giá ["cat"]trị ["bat"]và null.
+
+Khớp tất cả các chữ cái trong chuỗi quoteSample.
+
+Lưu ý : Đảm bảo khớp cả chữ hoa và chữ thường.
+*/
+let quoteSample = "The quick brown fox jumps over the lazy dog.";
+let alphabetRegex = /[a-z]/gi; // Change this line
+let result = quoteSample.match(alphabetRegex); // Change this line
+console.log(result);

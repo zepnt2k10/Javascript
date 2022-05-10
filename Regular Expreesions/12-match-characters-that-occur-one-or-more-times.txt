@@ -1,0 +1,16 @@
+/*
+Khớp các ký tự xuất hiện một hoặc nhiều lần
+Đôi khi, bạn cần phải khớp một ký tự (hoặc nhóm ký tự) xuất hiện một hoặc nhiều lần liên tiếp. Điều này có nghĩa là nó xảy ra ít nhất một lần và có thể lặp lại.
+
+Bạn có thể sử dụng +ký tự để kiểm tra xem có đúng như vậy không. Hãy nhớ rằng, ký tự hoặc mẫu phải xuất hiện liên tiếp. Tức là nhân vật phải lặp đi lặp lại cái này đến cái kia.
+
+Ví dụ, /a+/gsẽ tìm thấy một kết quả phù hợp abcvà trả về ["a"]. Bởi vì +, nó cũng sẽ tìm thấy một trận đấu duy nhất ở aabcvà về ["aa"].
+
+Nếu thay vào đó, nó đang kiểm tra chuỗi abab, nó sẽ tìm thấy hai kết quả phù hợp và trả về ["a", "a"]vì các aký tự không nằm trong một hàng - có một bgiữa chúng. Cuối cùng, vì không có atrong chuỗi bcd, nó sẽ không tìm thấy kết quả phù hợp.
+
+Bạn muốn tìm các kết quả phù hợp khi chữ cái sxuất hiện một hoặc nhiều lần trong Mississippi. Viết một regex có sử dụng +dấu hiệu.
+*/
+let difficultSpelling = "Mississippi";
+let myRegex = /s+/g; // Change this line
+let result = difficultSpelling.match(myRegex);
+console.log(result);

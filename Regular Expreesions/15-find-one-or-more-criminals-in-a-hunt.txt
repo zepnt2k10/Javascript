@@ -1,0 +1,21 @@
+/*
+Tìm một hoặc nhiều tội phạm trong một cuộc săn
+Đã đến lúc tạm dừng và kiểm tra kỹ năng viết regex mới của bạn. Một nhóm tội phạm trốn thoát khỏi nhà tù và bỏ chạy, nhưng bạn không biết bao nhiêu. Tuy nhiên, bạn có biết rằng họ luôn ở gần nhau khi ở cạnh những người khác. Bạn có trách nhiệm tìm ra tất cả những tên tội phạm cùng một lúc.
+
+Dưới đây là một ví dụ để xem lại cách thực hiện việc này:
+
+Regex /z+/khớp với chữ cái zkhi nó xuất hiện một hoặc nhiều lần liên tiếp. Nó sẽ tìm thấy các kết quả phù hợp trong tất cả các chuỗi sau:
+
+"z"
+"zzzzzz"
+"ABCzzzz"
+"zzzzABC"
+"abczzzzzzzzzzzzzzzzzzzzzabc"
+Nhưng nó không tìm thấy kết quả phù hợp trong các chuỗi sau vì không có zký tự chữ cái:
+
+""
+"ABC"
+"abcabc"
+Viết một regex tham lam tìm ra một hoặc nhiều tội phạm trong một nhóm người khác. Một tên tội phạm được thể hiện bằng chữ in hoa C.
+*/
+let reCriminals = /C+/; // Change this line

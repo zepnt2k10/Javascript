@@ -1,0 +1,23 @@
+/*
+Sử dụng lại các mẫu bằng cách sử dụng nhóm chụp
+Giả sử bạn muốn nối một từ xuất hiện nhiều lần như bên dưới.
+
+let repeatStr = "row row row your boat";
+Bạn có thể sử dụng /row row row/, nhưng nếu bạn không biết từ cụ thể được lặp lại thì sao? Nhóm thu thập có thể được sử dụng để tìm các chuỗi con lặp lại.
+
+Các nhóm thu thập được xây dựng bằng cách đặt mẫu regex được ghi lại trong dấu ngoặc đơn. Trong trường hợp này, mục tiêu là chụp một từ bao gồm các ký tự chữ và số nên nhóm bắt sẽ được bao \w+bởi dấu ngoặc:./(\w+)/
+
+Chuỗi con được so khớp bởi nhóm được lưu vào một "biến" tạm thời, có thể được truy cập trong cùng một regex bằng cách sử dụng dấu gạch chéo ngược và số của nhóm nắm bắt (ví dụ \1). Các nhóm chụp được đánh số tự động theo vị trí của dấu ngoặc đơn mở của chúng (từ trái sang phải), bắt đầu từ 1.
+
+Ví dụ dưới đây đối sánh với một từ xuất hiện ba lần được phân tách bằng dấu cách:
+
+let repeatRegex = /(\w+) \1 \1/;
+repeatRegex.test(repeatStr); // Returns true
+repeatStr.match(repeatRegex); // Returns ["row row row", "row"]
+Việc sử dụng .match()phương thức trên một chuỗi sẽ trả về một mảng có chuỗi con phù hợp, cùng với các nhóm được bắt của nó.
+
+Sử dụng các nhóm nắm bắt reRegexđể so khớp một chuỗi chỉ bao gồm cùng một số được lặp lại chính xác ba lần được phân tách bằng dấu cách đơn.
+*/
+let repeatNum = "42 42 42";
+let reRegex = /^(\d+) \1 \1$/; // Change this line
+let result = reRegex.test(repeatNum);

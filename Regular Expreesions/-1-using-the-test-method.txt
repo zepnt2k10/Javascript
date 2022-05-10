@@ -1,0 +1,17 @@
+/*
+Sử dụng phương pháp thử nghiệm
+Biểu thức chính quy được sử dụng trong ngôn ngữ lập trình để khớp các phần của chuỗi. Bạn tạo ra các mẫu để giúp bạn thực hiện việc đối sánh đó.
+
+Nếu bạn muốn tìm từ thetrong chuỗi The dog chased the cat, bạn có thể sử dụng biểu thức chính quy sau /the/:. Lưu ý rằng dấu ngoặc kép không bắt buộc trong biểu thức chính quy.
+
+JavaScript có nhiều cách để sử dụng regexes. Một cách để kiểm tra regex là sử dụng .test()phương pháp này. Phương .test()thức này lấy regex, áp dụng nó cho một chuỗi (được đặt bên trong dấu ngoặc đơn) và trả về truehoặc falsenếu mẫu của bạn có tìm thấy thứ gì đó hay không.
+
+let testStr = "freeCodeCamp";
+let testRegex = /Code/;
+testRegex.test(testStr);
+Phương testthức ở đây trả về true.
+*/
+
+let myString = "Hello, World!";
+let myRegex = /Hello/;
+let result = myRegex.test(myString); // Change this line

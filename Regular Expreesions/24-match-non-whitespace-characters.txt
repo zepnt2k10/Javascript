@@ -1,0 +1,16 @@
+/*
+Khớp các ký tự không có khoảng trắng
+Bạn đã học về cách tìm kiếm khoảng trắng bằng cách sử dụng \schữ thường s. Bạn cũng có thể tìm kiếm mọi thứ ngoại trừ khoảng trắng.
+
+Tìm kiếm không có khoảng trắng bằng cách sử dụng \S, là một chữ hoa s. Mẫu này sẽ không khớp với khoảng trắng, ký tự xuống dòng, tab, nguồn cấp dữ liệu biểu mẫu và các ký tự dòng mới. Bạn có thể nghĩ rằng nó tương tự như lớp nhân vật [^ \r\t\f\n\v].
+
+let whiteSpace = "Whitespace. Whitespace everywhere!"
+let nonSpaceRegex = /\S/g;
+whiteSpace.match(nonSpaceRegex).length;
+Giá trị được trả về bởi .lengthphương thức sẽ là 32.
+
+Thay đổi regex countNonWhiteSpaceđể tìm kiếm nhiều ký tự không có khoảng trắng trong một chuỗi.
+*/
+let sample = "Whitespace is important in separating words";
+let countNonWhiteSpace = /\S/g; // Change this line
+let result = sample.match(countNonWhiteSpace);

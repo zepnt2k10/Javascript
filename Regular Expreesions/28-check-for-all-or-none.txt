@@ -1,0 +1,21 @@
+/*
+Kiểm tra tất cả hoặc không
+Đôi khi các mẫu bạn muốn tìm kiếm có thể có các phần của nó có thể tồn tại hoặc không. Tuy nhiên, điều quan trọng là phải kiểm tra chúng.
+
+Bạn có thể chỉ định sự tồn tại có thể có của một phần tử bằng dấu chấm hỏi ?,. Điều này kiểm tra số không hoặc một trong các phần tử trước đó. Bạn có thể nghĩ về biểu tượng này như nói rằng phần tử trước đó là tùy chọn.
+
+Ví dụ: có sự khác biệt nhỏ trong tiếng Anh Mỹ và Anh và bạn có thể sử dụng dấu chấm hỏi để khớp cả hai cách viết.
+
+let american = "color";
+let british = "colour";
+let rainbowRegex= /colou?r/;
+rainbowRegex.test(american);
+rainbowRegex.test(british);
+Cả hai cách sử dụng testphương thức sẽ trả về true.
+
+Thay đổi regex favRegexđể khớp với cả phiên bản tiếng Anh Mỹ ( favorite) và tiếng Anh Anh ( favourite) của từ.
+*/
+
+let favWord = "favorite";
+let favRegex = /favou?rite/; // Change this line
+let result = favRegex.test(favWord);

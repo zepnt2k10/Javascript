@@ -1,0 +1,24 @@
+/*
+Khớp tất cả các chữ cái và số
+Sử dụng các lớp ký tự, bạn có thể tìm kiếm tất cả các chữ cái trong bảng chữ cái với [a-z]. Loại lớp ký tự này đủ phổ biến để có một phím tắt cho nó, mặc dù nó cũng bao gồm một vài ký tự phụ.
+
+Lớp ký tự gần nhất trong JavaScript để khớp với bảng chữ cái là \w. Phím tắt này bằng [A-Za-z0-9_]. Lớp ký tự này khớp với chữ hoa và chữ thường cộng với số. Lưu ý, lớp ký tự này cũng bao gồm cả ký tự gạch dưới ( _).
+
+let longHand = /[A-Za-z0-9_]+/;
+let shortHand = /\w+/;
+let numbers = "42";
+let varNames = "important_var";
+longHand.test(numbers);
+shortHand.test(numbers);
+longHand.test(varNames);
+shortHand.test(varNames);
+Tất cả bốn testcuộc gọi này sẽ trở lại true.
+
+Các lớp ký tự tắt này còn được gọi là các lớp ký tự tốc ký .
+
+Sử dụng lớp ký tự viết tắt \wđể đếm số ký tự chữ và số trong các dấu ngoặc kép và chuỗi khác nhau.
+*/
+
+let quoteSample = "The five boxing wizards jump quickly.";
+let alphabetRegexV2 = /\w/gi; // Change this line
+let result = quoteSample.match(alphabetRegexV2).length;

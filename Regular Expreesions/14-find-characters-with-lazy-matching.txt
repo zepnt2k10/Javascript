@@ -1,0 +1,19 @@
+/*
+Tìm nhân vật với Lazy Matching
+Trong biểu thức chính quy, so khớp tham lam tìm phần dài nhất có thể của chuỗi phù hợp với mẫu regex và trả về nó dưới dạng khớp. Phương pháp thay thế được gọi là kết hợp lười biếng , tìm phần nhỏ nhất có thể của chuỗi thỏa mãn mẫu regex.
+
+Bạn có thể áp dụng regex /t[a-z]*i/cho chuỗi "titanic". Regex này về cơ bản là một mẫu bắt đầu bằng t, kết thúc bằng ivà có một số chữ cái ở giữa.
+
+Biểu thức chính quy theo mặc định là tham lam, vì vậy kết quả khớp sẽ trả về ["titani"]. Nó tìm thấy chuỗi con lớn nhất có thể để phù hợp với mẫu.
+
+Tuy nhiên, bạn có thể sử dụng ?ký tự để thay đổi nó thành kết hợp lười biếng. "titanic"khớp với tỷ lệ /t[a-z]*?i/lợi nhuận đã điều chỉnh ["ti"].
+
+Lưu ý: Nên tránh phân tích cú pháp HTML với các biểu thức chính quy, nhưng mẫu đối sánh chuỗi HTML với các biểu thức chính quy là hoàn toàn tốt.
+
+Sửa regex /<.*>/để trả về thẻ HTML <h1>chứ không phải văn bản "<h1>Winter is coming</h1>". Hãy nhớ ký tự đại diện .trong một biểu thức chính quy khớp với bất kỳ ký tự nào.
+
+
+*/
+let text = "<h1>Winter is coming</h1>";
+let myRegex = /<h*?1>/; // Change this line
+let result = text.match(myRegex);

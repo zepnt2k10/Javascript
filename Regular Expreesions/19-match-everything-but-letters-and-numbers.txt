@@ -1,0 +1,18 @@
+/*
+Khớp mọi thứ trừ các chữ cái và con số
+Bạn đã biết rằng bạn có thể sử dụng một phím tắt để đối sánh chữ và số [A-Za-z0-9_]bằng cách sử dụng \w. Một mẫu tự nhiên mà bạn có thể muốn tìm kiếm đối lập với chữ và số.
+
+Bạn có thể tìm kiếm đối diện \wvới với \W. Lưu ý, mẫu ngược lại sử dụng chữ in hoa. Phím tắt này giống như [^A-Za-z0-9_].
+
+let shortHand = /\W/;
+let numbers = "42%";
+let sentence = "Coding!";
+numbers.match(shortHand);
+sentence.match(shortHand);
+Cuộc matchgọi đầu tiên sẽ trả về giá trị ["%"]và cuộc gọi thứ hai sẽ trả về ["!"].
+
+Sử dụng lớp ký tự viết tắt \Wđể đếm số ký tự không phải chữ và số trong các dấu ngoặc kép và chuỗi khác nhau.
+*/
+let quoteSample = "The five boxing wizards jump quickly.";
+let nonAlphabetRegex = /\W/gi; // Change this line
+let result = quoteSample.match(nonAlphabetRegex).length;

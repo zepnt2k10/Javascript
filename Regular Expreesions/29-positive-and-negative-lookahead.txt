@@ -1,0 +1,33 @@
+/*
+Cái nhìn tích cực và tiêu cực
+Lookahead là các mẫu yêu cầu JavaScript nhìn về phía trước trong chuỗi của bạn để kiểm tra các mẫu xa hơn. Điều này có thể hữu ích khi bạn muốn tìm kiếm nhiều mẫu trên cùng một chuỗi.
+
+Có hai loại hình nhìn trước: kiểu nhìn tích cực và kiểu nhìn tiêu cực .
+
+Một cái nhìn tích cực sẽ giúp đảm bảo phần tử trong mẫu tìm kiếm có ở đó, nhưng sẽ không thực sự khớp với phần tử đó. Một cái nhìn tích cực được sử dụng khi (?=...)phần ...bắt buộc không được khớp.
+
+Mặt khác, một lookahead phủ định sẽ xem xét để đảm bảo rằng phần tử trong mẫu tìm kiếm không có ở đó. Một cái nhìn tiêu cực được sử dụng làm (?!...)nơi ...có hình mẫu mà bạn không muốn ở đó. Phần còn lại của mẫu sẽ được trả về nếu phần tiêu cực không có mặt.
+
+Những cái nhìn đầu hơi khó hiểu nhưng một số ví dụ sẽ hữu ích.
+
+let quit = "qu";
+let noquit = "qt";
+let quRegex= /q(?=u)/;
+let qRegex = /q(?!u)/;
+quit.match(quRegex);
+noquit.match(qRegex);
+Cả hai matchcuộc gọi này sẽ trở lại ["q"].
+
+Một cách sử dụng thực tế hơn của lookahead là kiểm tra hai hoặc nhiều mẫu trong một chuỗi. Đây là một trình kiểm tra mật khẩu đơn giản (nguyên bản) tìm kiếm từ 3 đến 6 ký tự và ít nhất một số:
+
+let password = "abc123";
+let checkPass = /(?=\w{3,6})(?=\D*\d)/;
+checkPass.test(password);
+Sử dụng trang đầu trong pwRegexđể đối sánh mật khẩu dài hơn 5 ký tự và có hai chữ số liên tiếp.
+
+
+*/
+
+let sampleWord = "astronaut";
+let pwRegex = /(?=\w{6,})(?=\w*\d{2})/; // Change this line
+let result = pwRegex.test(sampleWord);

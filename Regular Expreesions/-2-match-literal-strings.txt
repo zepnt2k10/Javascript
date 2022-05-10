@@ -1,0 +1,23 @@
+/*
+Match Literal Strings
+Trong thử thách cuối cùng, bạn đã tìm kiếm từ Hellobằng cách sử dụng cụm từ thông dụng /Hello/. Regex đó đã tìm kiếm kết quả khớp theo nghĩa đen của chuỗi Hello. Đây là một ví dụ khác tìm kiếm kết hợp theo nghĩa đen của chuỗi Kevin:
+
+let testStr = "Hello, my name is Kevin.";
+let testRegex = /Kevin/;
+testRegex.test(testStr);
+Cuộc testgọi này sẽ trở lại true.
+
+Bất kỳ hình thức nào khác của Kevinsẽ không phù hợp. Ví dụ: regex /Kevin/sẽ không khớp kevinhoặc KEVIN.
+
+let wrongRegex = /kevin/;
+wrongRegex.test(testStr);
+Cuộc testgọi này sẽ trở lại false.
+
+Một thử thách trong tương lai cũng sẽ chỉ ra cách đối sánh với các hình thức khác đó.
+
+Hoàn thành regex waldoRegexđể tìm "Waldo"trong chuỗi waldoIsHidingcó khớp theo nghĩa đen.
+*/
+
+let waldoIsHiding = "Somewhere Waldo is hiding in this text.";
+let waldoRegex = /Waldo/; // Change this line
+let result = waldoRegex.test(waldoIsHiding);

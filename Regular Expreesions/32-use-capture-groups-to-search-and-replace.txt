@@ -1,0 +1,24 @@
+/*
+Sử dụng Capture Groups để tìm kiếm và thay thế
+Tìm kiếm rất hữu ích. Tuy nhiên, bạn có thể làm cho việc tìm kiếm trở nên mạnh mẽ hơn khi nó cũng thay đổi (hoặc thay thế) văn bản bạn khớp.
+
+Bạn có thể tìm kiếm và thay thế văn bản trong một chuỗi bằng cách sử dụng .replace()trên một chuỗi. Đầu vào cho .replace()trước tiên là mẫu regex bạn muốn tìm kiếm. Tham số thứ hai là chuỗi để thay thế khớp hoặc một hàm để thực hiện điều gì đó.
+
+let wrongText = "The sky is silver.";
+let silverRegex = /silver/;
+wrongText.replace(silverRegex, "blue");
+Lệnh replacegọi sẽ trả về chuỗi The sky is blue..
+
+Bạn cũng có thể truy cập các nhóm nắm bắt trong chuỗi thay thế bằng các dấu đô la ( $).
+
+"Code Camp".replace(/(\w+)\s(\w+)/, '$2 $1');
+Lệnh replacegọi sẽ trả về chuỗi Camp Code.
+
+Viết regex fixRegexbằng cách sử dụng ba nhóm bắt sẽ tìm kiếm từng từ trong chuỗi one two three. Sau đó cập nhật replaceTextbiến để thay thế one two threebằng chuỗi three two onevà gán kết quả cho resultbiến. Đảm bảo rằng bạn đang sử dụng các nhóm nắm bắt trong chuỗi thay thế bằng $cú pháp ký hiệu đô la ().
+*/
+
+let str = "one two three";
+let fixRegex = /(\w+)\s(\w+)\s(\w+)/; // Change this line
+let replaceText = "$3 $2 $1"; // Change this line
+let result = str.replace(fixRegex, replaceText);
+console.log(result);

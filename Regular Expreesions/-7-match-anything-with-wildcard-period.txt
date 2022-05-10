@@ -1,0 +1,18 @@
+/*
+Khớp mọi thứ với Dấu chấm ký tự đại diện
+Đôi khi bạn sẽ không (hoặc không cần) biết các ký tự chính xác trong các mẫu của mình. Suy nghĩ của tất cả các từ phù hợp, nói rằng, một lỗi chính tả sẽ mất một thời gian dài. May mắn thay, bạn có thể tiết kiệm thời gian bằng cách sử dụng ký tự đại diện:.
+
+Ký tự đại diện .sẽ khớp với bất kỳ một ký tự nào. Ký tự đại diện cũng được gọi là dotvà period. Bạn có thể sử dụng ký tự đại diện giống như bất kỳ ký tự nào khác trong regex. Ví dụ: nếu bạn muốn đối sánh hug, và huh, bạn có thể sử dụng regex để đối sánh tất cả bốn từ.huthum/hu./
+
+let humStr = "I'll hum a song";
+let hugStr = "Bear hug";
+let huRegex = /hu./;
+huRegex.test(humStr);
+huRegex.test(hugStr);
+Cả hai testcuộc gọi này sẽ trở lại true.
+
+Hoàn thành regex để unRegexnó khớp với các chuỗi run,,, sunvà . Regex của bạn nên sử dụng ký tự đại diện.funpunnunbun
+*/
+let exampleStr = "Let's have fun with regular expressions!";
+let unRegex = /.un/; // Change this line
+let result = unRegex.test(exampleStr);

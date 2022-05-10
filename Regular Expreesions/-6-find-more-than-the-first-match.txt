@@ -1,0 +1,23 @@
+/*
+Tìm nhiều hơn so với trận đấu đầu tiên
+Cho đến nay, bạn chỉ có thể trích xuất hoặc tìm kiếm một mẫu một lần.
+
+let testStr = "Repeat, Repeat, Repeat";
+let ourRegex = /Repeat/;
+testStr.match(ourRegex);
+Ở đây matchsẽ trở lại ["Repeat"].
+
+Để tìm kiếm hoặc trích xuất một mẫu nhiều lần, bạn có thể sử dụng gcờ.
+
+let repeatRegex = /Repeat/g;
+testStr.match(repeatRegex);
+Và ở đây matchtrả về giá trị["Repeat", "Repeat", "Repeat"]
+
+Sử dụng regex starRegex, tìm và trích xuất cả hai Twinkletừ từ chuỗi twinkleStar.
+
+Lưu ý
+Bạn có thể có nhiều cờ trên regex của mình như/search/gi
+*/
+let twinkleStar = "Twinkle, twinkle, little star";
+let starRegex = /Twinkle/gi; // Change this line
+let result = twinkleStar.match(starRegex); // Change this line

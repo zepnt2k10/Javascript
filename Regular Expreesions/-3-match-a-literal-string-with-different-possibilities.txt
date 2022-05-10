@@ -1,0 +1,16 @@
+/*
+Khớp một chuỗi chữ với các khả năng khác nhau
+Bằng cách sử dụng regexes /coding/, bạn có thể tìm kiếm mẫu codingtrong một chuỗi khác.
+
+Điều này rất hữu ích để tìm kiếm các chuỗi đơn lẻ, nhưng nó chỉ giới hạn ở một mẫu. Bạn có thể tìm kiếm nhiều mẫu bằng toán tử alternationhoặc OR:.|
+
+Toán tử này khớp với các mẫu trước hoặc sau nó. Ví dụ: nếu bạn muốn so khớp các chuỗi yeshoặc no, regex bạn muốn là /yes|no/.
+
+Bạn cũng có thể tìm kiếm nhiều hơn chỉ hai mẫu. Bạn có thể thực hiện việc này bằng cách thêm nhiều mẫu hơn với nhiều ORtoán tử phân tách chúng hơn, chẳng hạn như /yes|no|maybe/.
+
+Hoàn thành regex petRegexđể khớp với vật nuôi dog, hoặc .catbirdfish
+*/
+
+let petString = "James has a pet cat.";
+let petRegex = /dog|cat|bird|fish/; // Change this line
+let result = petRegex.test(petString);

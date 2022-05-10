@@ -1,0 +1,22 @@
+/*
+Chỉ chỉ định số lượng kết hợp thấp hơn
+Bạn có thể chỉ định số lượng mẫu dưới và trên với các từ chỉ định số lượng bằng cách sử dụng dấu ngoặc nhọn. Đôi khi bạn chỉ muốn chỉ định số lượng mẫu thấp hơn mà không có giới hạn trên.
+
+Để chỉ xác định số lượng mẫu thấp hơn, hãy giữ số đầu tiên theo sau là dấu phẩy.
+
+Ví dụ: để chỉ khớp chuỗi hahcó ký tự axuất hiện ít nhất 3lần, thì regex của bạn sẽ là /ha{3,}h/.
+
+let A4 = "haaaah";
+let A2 = "haah";
+let A100 = "h" + "a".repeat(100) + "h";
+let multipleA = /ha{3,}h/;
+multipleA.test(A4);
+multipleA.test(A2);
+multipleA.test(A100);
+Theo thứ tự, ba testcuộc gọi sẽ trả về true, falsevà true.
+
+Thay đổi regex haRegexđể khớp với từ Hazzahchỉ khi nó có bốn chữ cái trở lên z.
+*/
+let haStr = "Hazzzzah";
+let haRegex = /Haz{4,}ah/; // Change this line
+let result = haRegex.test(haStr);
