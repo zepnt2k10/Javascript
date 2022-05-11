@@ -1,0 +1,27 @@
+/*
+Tạo một phương pháp trên một đối tượng
+Các đối tượng có thể có một loại thuộc tính đặc biệt, được gọi là một phương thức .
+
+Các phương thức là các thuộc tính là các hàm. Điều này bổ sung các hành vi khác nhau cho một đối tượng. Đây là duckví dụ với một phương pháp:
+
+let duck = {
+  name: "Aflac",
+  numLegs: 2,
+  sayName: function() {return "The name of this duck is " + duck.name + ".";}
+};
+duck.sayName();
+Ví dụ thêm sayNamephương thức, là một hàm trả về một câu có tên của duck. Lưu ý rằng phương thức đã truy cập thuộc nametính trong câu lệnh trả về bằng cách sử dụng duck.name. Thử thách tiếp theo sẽ đề cập đến một cách khác để thực hiện điều này.
+
+Sử dụng dogđối tượng, cung cấp cho nó một phương thức được gọi sayLegs. Phương thức sẽ trả về câuThis dog has 4 legs.
+
+
+*/
+let dog = {
+  name: "Spot",
+  numLegs: 4,
+  sayLegs: function(){
+    return `This dog has ${dog.numLegs} legs.`;
+  }
+};
+
+dog.sayLegs();

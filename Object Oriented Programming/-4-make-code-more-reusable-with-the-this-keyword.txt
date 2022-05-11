@@ -1,0 +1,25 @@
+/*
+Làm cho mã có thể tái sử dụng nhiều hơn với Từ khóa này
+Thử thách cuối cùng đã giới thiệu một phương pháp cho duckđối tượng. Nó sử dụng duck.nameký hiệu dấu chấm để truy cập giá trị cho thuộc nametính trong câu lệnh trả về:
+
+sayName: function() {return "The name of this duck is " + duck.name + ".";}
+Mặc dù đây là một cách hợp lệ để truy cập tài sản của đối tượng, nhưng có một cạm bẫy ở đây. Nếu tên biến thay đổi, bất kỳ mã nào tham chiếu đến tên gốc cũng cần được cập nhật. Trong một định nghĩa đối tượng ngắn gọn, đó không phải là vấn đề, nhưng nếu một đối tượng có nhiều tham chiếu đến các thuộc tính của nó thì khả năng mắc lỗi sẽ cao hơn.
+
+Một cách để tránh những vấn đề này là với thistừ khóa:
+
+let duck = {
+  name: "Aflac",
+  numLegs: 2,
+  sayName: function() {return "The name of this duck is " + this.name + ".";}
+};
+thislà một chủ đề sâu, và ví dụ trên chỉ là một cách để sử dụng nó. Trong ngữ cảnh hiện tại, tham chiếu đến đối tượng mà phương thức được liên kết thisvới:. duckNếu tên của đối tượng được thay đổi thành mallard, không cần thiết phải tìm tất cả các tham chiếu đến ducktrong mã. Nó làm cho mã có thể tái sử dụng và dễ đọc hơn.
+
+Sửa đổi dog.sayLegsphương pháp để xóa mọi tham chiếu đến dog. Sử dụng duckví dụ để được hướng dẫn.
+*/
+let dog = {
+  name: "Spot",
+  numLegs: 4,
+  sayLegs: function() {return "This dog has " + this.numLegs + " legs.";}
+};
+
+dog.sayLegs();

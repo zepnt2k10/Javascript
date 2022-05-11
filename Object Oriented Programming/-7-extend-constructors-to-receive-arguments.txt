@@ -1,0 +1,31 @@
+/*
+Mở rộng hàm tạo để nhận đối số
+Những người xây dựng Birdvà Dogxây dựng từ thử thách vừa qua đã hoạt động tốt. Tuy nhiên, hãy lưu ý rằng tất cả những Birdsgì được tạo bằng hàm Birdtạo đều được đặt tên tự động là Albert, có màu xanh lam và có hai chân. Điều gì sẽ xảy ra nếu bạn muốn những con chim có các giá trị khác nhau về tên và màu sắc? Có thể thay đổi các thuộc tính của từng loài chim theo cách thủ công nhưng đó sẽ là rất nhiều công việc:
+
+let swan = new Bird();
+swan.name = "Carlos";
+swan.color = "white";
+Giả sử bạn đang viết một chương trình để theo dõi hàng trăm hoặc thậm chí hàng nghìn con chim khác nhau trong chuồng chim. Sẽ mất rất nhiều thời gian để tạo tất cả các con chim, sau đó thay đổi các thuộc tính thành các giá trị khác nhau cho mỗi con. Để dễ dàng tạo các Birdđối tượng khác nhau, bạn có thể thiết kế hàm tạo Bird của mình để chấp nhận các tham số:
+
+function Bird(name, color) {
+  this.name = name;
+  this.color = color;
+  this.numLegs = 2;
+}
+Sau đó, truyền các giá trị dưới dạng đối số để xác định từng con chim duy nhất vào hàm Birdtạo: let cardinal = new Bird("Bruce", "red");Điều này cung cấp một thể hiện mới của Birdvới namevà colorcác thuộc tính được đặt thành Brucevà red, tương ứng. Thuộc numLegstính vẫn được đặt thành 2. Có cardinalcác thuộc tính sau:
+
+cardinal.name
+cardinal.color
+cardinal.numLegs
+Hàm tạo linh hoạt hơn. Giờ đây, có thể xác định các thuộc tính cho từng thuộc tính Birdtại thời điểm nó được tạo, đó là một cách mà các hàm tạo JavaScript rất hữu ích. Họ nhóm các đối tượng lại với nhau dựa trên các đặc điểm và hành vi được chia sẻ và xác định một bản thiết kế để tự động hóa việc tạo ra chúng.
+
+Tạo một phương thức khởi tạo khác Dog. Lần này, hãy thiết lập nó để lấy các tham số namevà colorđặt thuộc tính numLegscố định ở mức 4. Sau đó, tạo một biến mới được Doglưu trong một biến terrier. Chuyển cho nó hai chuỗi làm đối số cho thuộc tính namevà color.
+*/
+
+function Dog(name, color) {
+  this.name = name,
+  this.color = color,
+  this.numLegs = 4
+}
+
+const terrier = new Dog("Bn", "Ye");

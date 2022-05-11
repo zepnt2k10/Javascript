@@ -1,0 +1,32 @@
+/*
+Sử dụng một hàm tạo để tạo đối tượng
+Đây là hàm Birdtạo từ thử thách trước:
+
+function Bird() {
+  this.name = "Albert";
+  this.color  = "blue";
+  this.numLegs = 2;
+}
+
+let blueBird = new Bird();
+LƯU Ý: this bên trong hàm tạo luôn tham chiếu đến đối tượng đang được tạo.
+
+Chú ý rằng newtoán tử được sử dụng khi gọi một phương thức khởi tạo. Điều này yêu cầu JavaScript tạo một phiên bản mới của Birdđược gọi blueBird. Nếu không có newtoán tử, thisbên trong hàm tạo sẽ không trỏ đến đối tượng mới được tạo, cho kết quả không mong muốn. Bây giờ blueBirdcó tất cả các thuộc tính được xác định bên trong hàm Birdtạo:
+
+blueBird.name;
+blueBird.color;
+blueBird.numLegs;
+Cũng giống như bất kỳ đối tượng nào khác, các thuộc tính của nó có thể được truy cập và sửa đổi:
+
+blueBird.name = 'Elvira';
+blueBird.name;
+Sử dụng hàm Dogtạo từ bài học trước để tạo một phiên bản mới của Dog, gán nó cho một biến hound.
+*/
+
+function Dog() {
+  this.name = "Rupert";
+  this.color = "brown";
+  this.numLegs = 4;
+}
+// Only change code below this line
+let hound = new Dog();

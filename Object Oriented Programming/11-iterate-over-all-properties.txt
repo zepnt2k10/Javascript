@@ -1,0 +1,50 @@
+/*
+Lặp lại tất cả các thuộc tính
+Bây giờ bạn đã thấy hai loại thuộc tính: thuộc tính riêng và prototypethuộc tính. Các thuộc tính riêng được định nghĩa trực tiếp trên chính cá thể đối tượng. Và các thuộc tính nguyên mẫu được xác định trên prototype.
+
+function Bird(name) {
+  this.name = name;  //own property
+}
+
+Bird.prototype.numLegs = 2; // prototype property
+
+let duck = new Bird("Donald");
+Đây là cách bạn thêm duckthuộc tính của riêng mình vào mảng ownPropsvà prototypethuộc tính vào mảng prototypeProps:
+
+let ownProps = [];
+let prototypeProps = [];
+
+for (let property in duck) {
+  if(duck.hasOwnProperty(property)) {
+    ownProps.push(property);
+  } else {
+    prototypeProps.push(property);
+  }
+}
+
+console.log(ownProps);
+console.log(prototypeProps);
+console.log(ownProps)sẽ hiển thị ["name"]trong bảng điều khiển và console.log(prototypeProps)sẽ hiển thị ["numLegs"].
+
+Thêm tất cả các thuộc tính riêng của beaglemảng ownProps. Thêm tất cả các prototypethuộc tính của Dogvào mảng prototypeProps.
+*/
+
+function Dog(name) {
+  this.name = name;
+}
+
+Dog.prototype.numLegs = 4;
+
+let beagle = new Dog("Snoopy");
+
+let ownProps = [];
+let prototypeProps = [];
+
+// Only change code below this line
+for (let property in beagle) {
+  if(beagle.hasOwnProperty(property)) {
+    ownProps.push(property);
+  } else {
+    prototypeProps.push(property);
+  }
+}

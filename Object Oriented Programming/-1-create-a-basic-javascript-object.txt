@@ -1,0 +1,24 @@
+/*
+Tạo một đối tượng JavaScript cơ bản
+Hãy nghĩ về những thứ mọi người nhìn thấy hàng ngày, như ô tô, cửa hàng và chim. Đây đều là những đối tượng : những thứ hữu hình mà mọi người có thể quan sát và tương tác.
+
+Một số phẩm chất của những đồ vật này là gì? Một chiếc ô tô có bánh xe. Các cửa hàng bán các mặt hàng. Chim có cánh.
+
+Những phẩm chất hoặc thuộc tính này xác định những gì tạo nên một đối tượng. Lưu ý rằng các đối tượng tương tự chia sẻ các thuộc tính giống nhau, nhưng có thể có các giá trị khác nhau cho các thuộc tính đó. Ví dụ, tất cả các ô tô đều có bánh xe, nhưng không phải tất cả các ô tô đều có cùng một số bánh xe.
+
+Các đối tượng trong JavaScript được sử dụng để mô hình hóa các đối tượng trong thế giới thực, tạo cho chúng các thuộc tính và hành vi giống như các đối tượng trong thế giới thực của chúng. Dưới đây là một ví dụ sử dụng các khái niệm này để tạo một duckđối tượng:
+
+let duck = {
+  name: "Aflac",
+  numLegs: 2
+};
+Đối tượng này duckcó hai cặp thuộc tính / giá trị: a namecủa Aflacvà a numLegslà 2.
+
+Tạo một dogđối tượng với namevà numLegscác thuộc tính, và đặt chúng thành một chuỗi và một số, tương ứng.
+
+
+*/
+let dog = {
+  name: "Bon",
+  numLegs: 4
+};

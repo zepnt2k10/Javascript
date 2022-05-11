@@ -1,0 +1,24 @@
+/*
+Xác định một hàm tạo
+Constructors là hàm tạo các đối tượng mới. Chúng xác định các thuộc tính và hành vi sẽ thuộc về đối tượng mới. Hãy coi chúng như một bản thiết kế để tạo ra các đối tượng mới.
+
+Đây là một ví dụ về một hàm tạo:
+
+function Bird() {
+  this.name = "Albert";
+  this.color = "blue";
+  this.numLegs = 2;
+}
+Hàm tạo này xác định một Birdđối tượng có các thuộc tính và được đặt thành Albert name, blue và 2, tương ứng. Các trình xây dựng tuân theo một số quy ước:colornumLegs
+
+Các hàm tạo được định nghĩa với tên viết hoa để phân biệt chúng với các hàm khác không có constructors.
+Các trình xây dựng sử dụng từ khóa thisđể thiết lập các thuộc tính của đối tượng mà họ sẽ tạo. Bên trong hàm tạo, thistham chiếu đến đối tượng mới mà nó sẽ tạo.
+Các hàm tạo xác định các thuộc tính và hành vi thay vì trả về một giá trị như các hàm khác có thể.
+Tạo một phương thức khởi tạo , Dogvới các thuộc tính và được đặt thành một chuỗi, một chuỗi và một số, tương ứng.namecolornumLegs
+*/
+
+function Dog(){
+  this.name = "Bon",
+  this.color = "Yellow",
+  this.numLegs = 4
+}

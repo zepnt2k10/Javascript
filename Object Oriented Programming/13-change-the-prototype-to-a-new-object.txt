@@ -1,0 +1,44 @@
+/*
+Thay đổi nguyên mẫu thành một đối tượng mới
+Cho đến bây giờ, bạn đã thêm các thuộc tính vào từng thuộc tính prototype:
+
+Bird.prototype.numLegs = 2;
+Điều này trở nên tẻ nhạt sau nhiều hơn một vài tài sản.
+
+Bird.prototype.eat = function() {
+  console.log("nom nom nom");
+}
+
+Bird.prototype.describe = function() {
+  console.log("My name is " + this.name);
+}
+Một cách hiệu quả hơn là đặt prototypeđối tượng mới đã chứa các thuộc tính. Bằng cách này, tất cả các thuộc tính được thêm vào cùng một lúc:
+
+Bird.prototype = {
+  numLegs: 2, 
+  eat: function() {
+    console.log("nom nom nom");
+  },
+  describe: function() {
+    console.log("My name is " + this.name);
+  }
+};
+Thêm thuộc tính numLegsvà hai phương thức eat()và describe()vào prototypecủa Dogbằng cách đặt thành prototypemột đối tượng mới.
+
+
+*/
+
+function Dog(name) {
+  this.name = name;
+}
+
+Dog.prototype = {
+  // Only change code below this line
+  numLegs: 4,
+  eat: function() {
+    console.log("nom nom nom");
+  },
+  describe: function() {
+    console.log("My name is " + this.name);
+  }
+};

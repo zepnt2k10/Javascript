@@ -1,0 +1,36 @@
+/*
+Hiểu thuộc tính cấu tạo
+Có một constructorthuộc tính đặc biệt nằm trên các cá thể đối tượng duckvà beagleđã được tạo trong các thử thách trước:
+
+let duck = new Bird();
+let beagle = new Dog();
+
+console.log(duck.constructor === Bird); 
+console.log(beagle.constructor === Dog);
+Cả hai console.logcuộc gọi này sẽ hiển thị truetrong bảng điều khiển.
+
+Lưu ý rằng thuộc constructortính là một tham chiếu đến hàm khởi tạo đã tạo phiên bản. Ưu điểm của thuộc constructortính là có thể kiểm tra thuộc tính này để biết đó là loại vật thể nào. Dưới đây là một ví dụ về cách có thể sử dụng điều này:
+
+function joinBirdFraternity(candidate) {
+  if (candidate.constructor === Bird) {
+    return true;
+  } else {
+    return false;
+  }
+}
+Lưu ý: Vì thuộc constructortính có thể bị ghi đè (sẽ được đề cập trong hai thử thách tiếp theo) nên thường tốt hơn nên sử dụng instanceofphương pháp này để kiểm tra loại đối tượng.
+
+Viết một joinDogFraternityhàm nhận một candidatetham số và, sử dụng thuộc constructortính, trả về truenếu ứng viên là a Dog, nếu không thì trả về false.
+*/
+function Dog(name) {
+  this.name = name;
+}
+
+// Only change code below this line
+function joinDogFraternity(candidate) {
+  if (candidate.constructor === Dog) {
+    return true;
+  } else {
+    return false;
+  }
+}

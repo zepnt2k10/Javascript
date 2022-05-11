@@ -1,0 +1,39 @@
+/*
+Hiểu các thuộc tính riêng
+Trong ví dụ sau, hàm Birdtạo định nghĩa hai thuộc tính: namevà numLegs:
+
+function Bird(name) {
+  this.name = name;
+  this.numLegs = 2;
+}
+
+let duck = new Bird("Donald");
+let canary = new Bird("Tweety");
+namevà numLegsđược gọi là các thuộc tính riêng , vì chúng được định nghĩa trực tiếp trên đối tượng instance. Điều đó có nghĩa là duckvà canarymỗi cái đều có bản sao riêng biệt của những thuộc tính này. Trên thực tế, mỗi phiên bản của Birdsẽ có bản sao của riêng nó của các thuộc tính này. Đoạn mã sau thêm tất cả các thuộc tính riêng của duckmảng ownProps:
+
+let ownProps = [];
+
+for (let property in duck) {
+  if(duck.hasOwnProperty(property)) {
+    ownProps.push(property);
+  }
+}
+
+console.log(ownProps);
+Bảng điều khiển sẽ hiển thị giá trị ["name", "numLegs"].
+
+Thêm các thuộc tính riêng của canary vào mảng ownProps.
+*/
+function Bird(name) {
+  this.name = name;
+  this.numLegs = 2;
+}
+
+let canary = new Bird("Tweety");
+let ownProps = [];
+// Only change code below this line
+for(let prop in canary){
+  if(canary.hasOwnProperty(prop)){
+    ownProps.push(prop);
+  }
+}

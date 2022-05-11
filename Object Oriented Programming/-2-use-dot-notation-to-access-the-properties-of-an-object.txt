@@ -1,0 +1,20 @@
+/*
+Sử dụng ký hiệu dấu chấm để truy cập các thuộc tính của một đối tượng
+Thử thách cuối cùng đã tạo ra một đối tượng với các thuộc tính khác nhau. Bây giờ bạn sẽ thấy cách truy cập các giá trị của các thuộc tính đó. Đây là một ví dụ:
+
+let duck = {
+  name: "Aflac",
+  numLegs: 2
+};
+console.log(duck.name);
+Ký hiệu dấu chấm được sử dụng trên tên đối tượng duck, theo sau là tên của thuộc tính name, để truy cập giá trị của Aflac.
+
+In cả hai thuộc tính của dogđối tượng vào bảng điều khiển của bạn.
+*/
+let dog = {
+  name: "Spot",
+  numLegs: 4
+};
+// Only change code below this line
+console.log(dog.name);
+console.log(dog.numLegs);

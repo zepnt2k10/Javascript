@@ -1,0 +1,25 @@
+/*
+Sử dụng thuộc tính nguyên mẫu để giảm mã trùng lặp
+Vì numLegscó thể sẽ có cùng một giá trị cho tất cả các trường hợp Bird, về cơ bản bạn có một biến trùng lặp numLegsbên trong mỗi Birdtrường hợp.
+
+Đây có thể không phải là vấn đề khi chỉ có hai trường hợp, nhưng hãy tưởng tượng nếu có hàng triệu trường hợp. Đó sẽ là rất nhiều biến trùng lặp.
+
+Một cách tốt hơn là sử dụng prototypecủa Bird. Thuộc tính trong prototypeđược chia sẻ giữa TẤT CẢ các phiên bản của Bird. Đây là cách thêm numLegsvào Bird prototype:
+
+Bird.prototype.numLegs = 2;
+Bây giờ tất cả các phiên bản của Birdcó numLegstài sản.
+
+console.log(duck.numLegs);
+console.log(canary.numLegs);
+Vì tất cả các phiên bản đều tự động có các thuộc tính trên prototype, hãy coi a prototypenhư một "công thức" để tạo các đối tượng. Lưu ý rằng prototypefor duckvà canarylà một phần của hàm Birdtạo như Bird.prototype. Gần như mọi đối tượng trong JavaScript đều có thuộc prototypetính là một phần của hàm khởi tạo đã tạo ra nó.
+
+Thêm một numLegsthuộc tính vào prototypecủaDog
+*/
+function Dog(name) {
+  this.name = name;
+}
+
+
+Dog.prototype.numLegs = 4;
+// Only change code above this line
+let beagle = new Dog("Snoopy");

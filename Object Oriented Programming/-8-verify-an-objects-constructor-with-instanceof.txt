@@ -1,0 +1,35 @@
+/*
+Xác minh hàm tạo đối tượng với instanceof
+Bất cứ khi nào một hàm khởi tạo tạo một đối tượng mới, đối tượng đó được cho là một thể hiện của hàm tạo của nó. JavaScript cung cấp một cách thuận tiện để xác minh điều này với instanceofnhà điều hành. instanceofcho phép bạn so sánh một đối tượng với một phương thức khởi tạo, trả về truehoặc falsedựa trên việc đối tượng đó có được tạo với phương thức khởi tạo hay không. Đây là một ví dụ:
+
+let Bird = function(name, color) {
+  this.name = name;
+  this.color = color;
+  this.numLegs = 2;
+}
+
+let crow = new Bird("Alexis", "black");
+
+crow instanceof Bird;
+Phương instanceofthức này sẽ trả về true.
+
+Nếu một đối tượng được tạo mà không sử dụng một hàm tạo, instanceofsẽ xác minh rằng nó không phải là một thể hiện của hàm tạo đó:
+
+let canary = {
+  name: "Mildred",
+  color: "Yellow",
+  numLegs: 2
+};
+
+canary instanceof Bird;
+Phương instanceofthức này sẽ trả về false.
+
+Tạo một thể hiện mới của phương thức Housekhởi tạo, gọi nó myHousevà chuyển một số phòng ngủ. Sau đó, sử dụng instanceofđể xác minh rằng nó là một phiên bản của House.
+*/
+function House(numBedrooms) {
+  this.numBedrooms = numBedrooms;
+}
+
+// Only change code below this line
+const myHouse = new House(4);
+myHouse instanceof House;
