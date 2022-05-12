@@ -1,0 +1,38 @@
+/*
+Hãy nhớ đặt thuộc tính mã lệnh khi thay đổi nguyên mẫu
+Có một tác dụng phụ quan trọng của việc thiết lập thủ công nguyên mẫu cho một đối tượng mới. Nó xóa constructortài sản! Thuộc tính này có thể được sử dụng để kiểm tra hàm khởi tạo nào đã tạo cá thể, nhưng vì thuộc tính đã bị ghi đè nên bây giờ nó cho kết quả sai:
+
+duck.constructor === Bird;
+duck.constructor === Object;
+duck instanceof Bird;
+Theo thứ tự, các biểu thức này sẽ đánh giá false, truevà true.
+
+Để khắc phục điều này, bất cứ khi nào một nguyên mẫu được đặt theo cách thủ công thành một đối tượng mới, hãy nhớ xác định thuộc constructortính:
+
+Bird.prototype = {
+  constructor: Bird,
+  numLegs: 2,
+  eat: function() {
+    console.log("nom nom nom");
+  },
+  describe: function() {
+    console.log("My name is " + this.name); 
+  }
+};
+Xác định thuộc constructortính trên Dog prototype.
+*/
+function Dog(name) {
+  this.name = name;
+}
+
+// Only change code below this line
+Dog.prototype = {
+  constructor: Dog,
+  numLegs: 4,
+  eat: function() {
+    console.log("nom nom nom");
+  },
+  describe: function() {
+    console.log("My name is " + this.name);
+  }
+};
