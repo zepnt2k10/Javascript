@@ -1,0 +1,55 @@
+/*
+Sử dụng Mixin để thêm hành vi phổ biến giữa các đối tượng không liên quan
+Như bạn đã thấy, hành vi được chia sẻ thông qua kế thừa. Tuy nhiên, có những trường hợp thừa kế không phải là giải pháp tốt nhất. Tính năng thừa kế không hoạt động tốt đối với các đối tượng không liên quan như Birdvà Airplane. Cả hai đều có thể bay, nhưng a Birdkhông phải là một loại Airplanevà ngược lại.
+
+Đối với các đối tượng không liên quan, tốt hơn là sử dụng mixin . Một mixin cho phép các đối tượng khác sử dụng một tập hợp các chức năng.
+
+let flyMixin = function(obj) {
+  obj.fly = function() {
+    console.log("Flying, wooosh!");
+  }
+};
+Lấy flyMixinbất kỳ đối tượng nào và cung cấp cho nó flyphương thức.
+
+let bird = {
+  name: "Donald",
+  numLegs: 2
+};
+
+let plane = {
+  model: "777",
+  numPassengers: 524
+};
+
+flyMixin(bird);
+flyMixin(plane);
+Tại đây birdvà planeđược chuyển vào flyMixin, sau đó gán flychức năng cho từng đối tượng. Bây giờ birdvà planecả hai đều có thể bay:
+
+bird.fly();
+plane.fly();
+Bảng điều khiển sẽ hiển thị chuỗi Flying, wooosh!hai lần, một lần cho mỗi .fly()cuộc gọi.
+
+Lưu ý cách mixin cho phép flysử dụng lại cùng một phương thức bởi các đối tượng không liên quan birdvà plane.
+
+Tạo một mixin có tên glideMixinxác định một phương thức có tên glide. Sau đó, sử dụng glideMixinđể cung cấp cho cả hai birdvà boatkhả năng lướt.
+*/
+
+let bird = {
+  name: "Donald",
+  numLegs: 2
+};
+
+let boat = {
+  name: "Warrior",
+  type: "race-boat"
+};
+
+// Only change code below this line
+let glideMixin = function(obj) {
+  obj.glide = function() {
+    console.log("Gliding, wooosh!");
+  }
+};
+
+glideMixin(bird);
+glideMixin(boat);

@@ -1,0 +1,33 @@
+/*
+Đặt lại thuộc tính cấu tạo được kế thừa
+Khi một đối tượng kế thừa nó prototypetừ một đối tượng khác, nó cũng kế thừa thuộc tính phương thức khởi tạo của supertype.
+
+Đây là một ví dụ:
+
+function Bird() { }
+Bird.prototype = Object.create(Animal.prototype);
+let duck = new Bird();
+duck.constructor
+Nhưng duckvà tất cả các trường hợp của Birdphải cho thấy rằng chúng được xây dựng bởi Birdvà không phải Animal. Để làm như vậy, bạn có thể đặt thuộc tính hàm tạo của Birdđối Birdtượng theo cách thủ công:
+
+Bird.prototype.constructor = Bird;
+duck.constructor
+Sửa mã như vậy duck.constructorvà beagle.constructortrả về các hàm tạo tương ứng của chúng.
+
+
+*/
+
+function Animal() { }
+function Bird() { }
+function Dog() { }
+
+Bird.prototype = Object.create(Animal.prototype);
+Dog.prototype = Object.create(Animal.prototype);
+
+// Only change code below this line
+Bird.prototype.constructor = Bird;
+Dog.prototype.constructor = Dog;
+
+
+let duck = new Bird();
+let beagle = new Dog();

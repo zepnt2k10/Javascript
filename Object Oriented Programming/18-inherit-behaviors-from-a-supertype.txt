@@ -1,0 +1,35 @@
+/*
+Kế thừa Hành vi từ một Siêu kiểu
+Trong thử thách trước, bạn đã tạo một supertypetên gọi Animalxác định các hành vi được chia sẻ bởi tất cả các loài động vật:
+
+function Animal() { }
+Animal.prototype.eat = function() {
+  console.log("nom nom nom");
+};
+Điều này và thách thức tiếp theo sẽ bao gồm cách sử dụng lại các phương pháp Animalbên trong Birdmà Dogkhông cần xác định lại chúng. Nó sử dụng một kỹ thuật được gọi là kế thừa. Thử thách này bao gồm bước đầu tiên: tạo một phiên bản của supertype(hoặc cha). Bạn đã biết một cách để tạo một phiên bản Animalbằng cách sử dụng newtoán tử:
+
+let animal = new Animal();
+Có một số nhược điểm khi sử dụng cú pháp này để kế thừa, nó quá phức tạp đối với phạm vi của thử thách này. Thay vào đó, đây là một cách tiếp cận thay thế mà không có những nhược điểm đó:
+
+let animal = Object.create(Animal.prototype);
+Object.create(obj)tạo một đối tượng mới và đặt objlàm đối tượng mới prototype. Nhớ lại rằng cái prototypegiống như "công thức" để tạo một đối tượng. Bằng cách đặt prototypecủa animallà prototypecủa Animal, bạn đang cung cấp cho animalphiên bản một "công thức" giống như bất kỳ trường hợp nào khác Animal.
+
+animal.eat();
+animal instanceof Animal;
+Phương instanceofthức ở đây sẽ trả về true.
+
+Sử dụng Object.createđể tạo hai trường hợp Animalđược đặt tên duckvà beagle.
+*/
+function Animal() { }
+
+Animal.prototype = {
+  constructor: Animal,
+  eat: function() {
+    console.log("nom nom nom");
+  }
+};
+
+// Only change code below this line
+
+let duck = Object.create(Animal.prototype); // Change this line
+let beagle = Object.create(Animal.prototype); // Change this line

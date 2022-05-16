@@ -1,0 +1,24 @@
+/*
+Hiểu nguyên mẫu của một đối tượng đến từ đâu
+Cũng giống như mọi người thừa hưởng gen từ cha mẹ của họ, một đối tượng kế thừa prototypetrực tiếp từ hàm khởi tạo đã tạo ra nó. Ví dụ, ở đây hàm Birdtạo tạo duckđối tượng:
+
+function Bird(name) {
+  this.name = name;
+}
+
+let duck = new Bird("Donald");
+duckkế thừa nó prototypetừ Birdhàm khởi tạo. Bạn có thể hiển thị mối quan hệ này bằng isPrototypeOfphương pháp:
+
+Bird.prototype.isPrototypeOf(duck);
+Điều này sẽ trở lại true.
+
+Sử dụng isPrototypeOfđể kiểm tra prototypecủa beagle.
+*/
+function Dog(name) {
+  this.name = name;
+}
+
+let beagle = new Dog("Snoopy");
+
+// Only change code below this line
+Dog.prototype.isPrototypeOf(beagle);

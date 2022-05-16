@@ -1,0 +1,48 @@
+/*
+Ghi đè các phương thức được kế thừa
+Trong các bài học trước, bạn đã học được rằng một đối tượng có thể kế thừa hành vi (phương thức) của nó từ một đối tượng khác bằng cách tham chiếu đến prototypeđối tượng của nó:
+
+ChildObject.prototype = Object.create(ParentObject.prototype);
+Sau đó, ChildObjectnó nhận được các phương thức riêng của nó bằng cách xâu chuỗi chúng vào prototype:
+
+ChildObject.prototype.methodName = function() {...};
+Có thể ghi đè một phương thức kế thừa. Nó được thực hiện theo cùng một cách - bằng cách thêm một phương thức để ChildObject.prototypesử dụng cùng một tên phương thức với tên phương thức cần ghi đè. Đây là một ví dụ về Birdghi đè eat()phương thức được kế thừa từ Animal:
+
+function Animal() { }
+Animal.prototype.eat = function() {
+  return "nom nom nom";
+};
+function Bird() { }
+
+Bird.prototype = Object.create(Animal.prototype);
+
+Bird.prototype.eat = function() {
+  return "peck peck peck";
+};
+Nếu bạn có một phiên bản let duck = new Bird();và bạn gọi duck.eat(), đây là cách JavaScript tìm kiếm phương thức trên prototypechuỗi duck:
+
+duck=> Được eat()định nghĩa ở đây? Không.
+Bird=> Được eat()định nghĩa ở đây? => Có. Thực thi nó và ngừng tìm kiếm.
+Animal=> eat()cũng được xác định, nhưng JavaScript đã ngừng tìm kiếm trước khi đạt đến cấp độ này.
+Đối tượng => JavaScript đã ngừng tìm kiếm trước khi đạt đến cấp độ này.
+Ghi đè fly()phương thức cho Penguinđể nó trả về chuỗiAlas, this is a flightless bird.
+*/
+
+function Bird() { }
+
+Bird.prototype.fly = function() { return "I am flying!"; };
+
+function Penguin() { }
+Penguin.prototype = Object.create(Bird.prototype);
+Penguin.prototype.constructor = Penguin;
+
+// Only change code below this line
+
+Penguin.prototype.fly = function(){
+  return "Alas, this is a flightless bird.";
+}
+
+// Only change code above this line
+
+let penguin = new Penguin();
+console.log(penguin.fly());

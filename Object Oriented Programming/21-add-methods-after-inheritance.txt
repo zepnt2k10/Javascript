@@ -1,0 +1,44 @@
+/*
+Thêm phương pháp sau khi kế thừa
+Một hàm khởi tạo kế thừa prototypeđối tượng của nó từ một hàm tạo siêu kiểu vẫn có thể có các phương thức riêng của nó ngoài các phương thức kế thừa.
+
+Ví dụ: Birdlà một phương thức khởi tạo kế thừa nó prototypetừ Animal:
+
+function Animal() { }
+Animal.prototype.eat = function() {
+  console.log("nom nom nom");
+};
+function Bird() { }
+Bird.prototype = Object.create(Animal.prototype);
+Bird.prototype.constructor = Bird;
+Ngoài những gì được kế thừa từ Animalđó, bạn muốn thêm hành vi dành riêng cho Birdcác đối tượng. Tại đây, Birdsẽ nhận được một fly()chức năng. Các hàm được thêm vào Bird's prototypecùng một cách với bất kỳ hàm khởi tạo nào:
+
+Bird.prototype.fly = function() {
+  console.log("I'm flying!");
+};
+Bây giờ các trường hợp của Birdwill có cả hai eat()và fly()các phương thức:
+
+let duck = new Bird();
+duck.eat();
+duck.fly();
+duck.eat()sẽ hiển thị chuỗi nom nom nomtrong bảng điều khiển và duck.fly()sẽ hiển thị chuỗi I'm flying!.
+
+Thêm tất cả mã cần thiết để Dogđối tượng kế thừa Animalvà phương Dogthức prototypekhởi tạo của được đặt thành Dog. Sau đó, thêm một bark()phương thức vào Dogđối tượng để beaglecó thể vừa eat()và bark(). Phương bark()thức sẽ được in Woof!ra bảng điều khiển.
+*/
+function Animal() { }
+Animal.prototype.eat = function() { console.log("nom nom nom"); };
+
+function Dog() { }
+  Dog.prototype = Object.create(Animal.prototype);
+  Dog.prototype.constructor = Dog;
+  Dog.prototype.bark = function(){
+    console.log("Woof!");
+  }
+// Only change code below this line
+
+
+
+
+// Only change code above this line
+
+let beagle = new Dog();

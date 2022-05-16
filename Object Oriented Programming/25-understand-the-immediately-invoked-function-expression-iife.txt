@@ -1,0 +1,16 @@
+/*
+Hiểu biểu thức hàm được gọi ngay lập tức (IIFE)
+Một mẫu phổ biến trong JavaScript là thực thi một hàm ngay sau khi nó được khai báo:
+
+(function () {
+  console.log("Chirp, chirp!");
+})();
+Đây là một biểu thức hàm ẩn danh thực thi ngay lập tức và xuất ra Chirp, chirp!ngay lập tức.
+
+Lưu ý rằng hàm không có tên và không được lưu trữ trong một biến. Hai dấu ngoặc đơn () ở cuối biểu thức hàm làm cho nó được thực thi hoặc gọi ngay lập tức. Mẫu này được gọi là một biểu thức hàm được gọi ngay lập tức hoặc IIFE .
+
+Viết lại hàm makeNestvà loại bỏ lời gọi của nó để thay vào đó nó là một biểu thức hàm được gọi ngay lập tức ẩn danh (IIFE).
+*/
+(function () {
+  console.log("A cozy nest is ready");
+})();

@@ -1,0 +1,30 @@
+/*
+Đặt Nguyên mẫu của Trẻ thành Mẫu của Bố mẹ
+Trong thử thách trước, bạn đã thấy bước đầu tiên để kế thừa hành vi từ supertype (hoặc cha) Animal: tạo một phiên bản mới của Animal.
+
+Thử thách này bao gồm bước tiếp theo: đặt prototypekiểu con (hoặc kiểu con) —trong trường hợp này, Bird—để là một trường hợp của Animal.
+
+Bird.prototype = Object.create(Animal.prototype);
+Hãy nhớ rằng cái prototypegiống như "công thức" để tạo một đối tượng. Theo một cách nào đó, công thức cho Birdbây giờ bao gồm tất cả các "thành phần" chính từ Animal.
+
+let duck = new Bird("Donald");
+duck.eat();
+duckkế thừa tất cả các Animalthuộc tính của, bao gồm cả eatphương thức.
+
+Sửa đổi mã để các trường hợp Dog kế thừa từ Animal.
+*/
+function Animal() { }
+
+Animal.prototype = {
+  constructor: Animal,
+  eat: function() {
+    console.log("nom nom nom");
+  }
+};
+
+function Dog() { }
+Dog.prototype = Object.create(Animal.prototype);
+// Only change code below this line
+
+
+let beagle = new Dog();

@@ -1,0 +1,30 @@
+/*
+Sử dụng Đóng cửa để bảo vệ các thuộc tính bên trong một đối tượng khỏi bị sửa đổi bên ngoài
+Trong thử thách trước, birdcó một tài sản công cộng name. Nó được coi là công khai vì nó có thể được truy cập và thay đổi bên ngoài birdđịnh nghĩa của 's.
+
+bird.name = "Duffy";
+Do đó, bất kỳ phần nào trong mã của bạn đều có thể dễ dàng thay đổi tên của birdthành bất kỳ giá trị nào. Hãy nghĩ về những thứ như mật khẩu và tài khoản ngân hàng có thể dễ dàng thay đổi bởi bất kỳ phần nào trong cơ sở mã của bạn. Điều đó có thể gây ra rất nhiều vấn đề.
+
+Cách đơn giản nhất để đặt thuộc tính công cộng này là riêng tư là tạo một biến trong hàm khởi tạo. Điều này thay đổi phạm vi của biến đó thành trong hàm khởi tạo so với khả dụng trên toàn cầu. Bằng cách này, biến chỉ có thể được truy cập và thay đổi bằng các phương thức cũng trong hàm khởi tạo.
+
+function Bird() {
+  let hatchedEgg = 10;
+
+  this.getHatchedEggCount = function() { 
+    return hatchedEgg;
+  };
+}
+let ducky = new Bird();
+ducky.getHatchedEggCount();
+Đây getHatchedEggCountlà một phương thức đặc quyền, vì nó có quyền truy cập vào biến private hatchedEgg. Điều này là có thể vì hatchedEggđược khai báo trong cùng ngữ cảnh với getHatchedEggCount. Trong JavaScript, một hàm luôn có quyền truy cập vào ngữ cảnh mà nó được tạo. Cái này được gọi là closure.
+
+Thay đổi cách weightkhai báo trong Birdhàm để nó là một biến riêng. Sau đó, tạo một phương thức getWeighttrả về giá trị là weight15.
+*/
+
+function Bird() {
+  let weight = 15;
+  this.getWeight = function(){
+    return weight;
+  }
+
+}

@@ -1,0 +1,30 @@
+/*
+Hiểu chuỗi nguyên mẫu
+Tất cả các đối tượng trong JavaScript (với một vài ngoại lệ) đều có a prototype. Ngoài ra, prototypebản thân của một đối tượng là một đối tượng.
+
+function Bird(name) {
+  this.name = name;
+}
+
+typeof Bird.prototype;
+Bởi vì a prototypelà một đối tượng, a prototypecó thể có cái riêng của nó prototype! Trong trường hợp này prototype, Bird.prototypelà Object.prototype:
+
+Object.prototype.isPrototypeOf(Bird.prototype);
+Làm thế nào là điều này hữu ích? Bạn có thể nhớ lại hasOwnPropertyphương pháp từ thử thách trước:
+
+let duck = new Bird("Donald");
+duck.hasOwnProperty("name");
+Phương hasOwnPropertythức được định nghĩa trong Object.prototype, có thể được truy cập bằng Bird.prototype, sau đó có thể được truy cập bằng duck. Đây là một ví dụ về prototypechuỗi. Trong prototypechuỗi này, Birdlà supertypecho duck, trong khi ducklà subtype. Objectlà một supertypecho cả hai Birdvà duck. Objectlà một supertypecho tất cả các đối tượng trong JavaScript. Do đó, bất kỳ đối tượng nào cũng có thể sử dụng hasOwnPropertyphương thức.
+
+Sửa đổi mã để hiển thị chuỗi nguyên mẫu chính xác.
+*/
+function Dog(name) {
+  this.name = name;
+}
+
+let beagle = new Dog("Snoopy");
+
+Dog.prototype.isPrototypeOf(beagle);  // yields true
+
+// Fix the code below so that it evaluates to true
+Object.prototype.isPrototypeOf(Dog.prototype);
