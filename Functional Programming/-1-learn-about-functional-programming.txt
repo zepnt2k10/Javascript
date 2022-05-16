@@ -1,0 +1,38 @@
+/*
+Tìm hiểu về lập trình chức năng
+Lập trình hàm là một phong cách lập trình trong đó các giải pháp là các hàm đơn giản, riêng biệt, không có bất kỳ tác dụng phụ nào bên ngoài phạm vi hàm:INPUT -> PROCESS -> OUTPUT
+
+Lập trình hàm là về:
+
+Các hàm biệt lập - không phụ thuộc vào trạng thái của chương trình, bao gồm các biến toàn cục có thể thay đổi
+
+Các chức năng thuần túy - cùng một đầu vào luôn cho cùng một đầu ra
+
+Các chức năng có tác dụng phụ hạn chế - bất kỳ thay đổi hoặc đột biến nào đối với trạng thái của chương trình bên ngoài chức năng đều được kiểm soát cẩn thận
+
+Các thành viên của freeCodeCamp tình cờ yêu trà.
+
+Trong trình soạn thảo mã, các hàm prepareTeavà getTeachức năng đã được xác định cho bạn. Gọi getTeahàm lấy 40 tách trà cho đội và cất vào tea4TeamFCCbiến.
+*/
+
+// Function that returns a string representing a cup of green tea
+const prepareTea = () => 'greenTea';
+
+/*
+Given a function (representing the tea type) and number of cups needed, the
+following function returns an array of strings (each representing a cup of
+a specific type of tea).
+*/
+const getTea = (numOfCups) => {
+  const teaCups = [];
+
+  for(let cups = 1; cups <= numOfCups; cups += 1) {
+    const teaCup = prepareTea();
+    teaCups.push(teaCup);
+  }
+  return teaCups;
+};
+
+// Only change code below this line
+const tea4TeamFCC = getTea(40);
+// Only change code above this line

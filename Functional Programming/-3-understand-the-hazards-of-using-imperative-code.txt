@@ -1,0 +1,66 @@
+/*
+Hiểu các nguy cơ của việc sử dụng mã mệnh lệnh
+Lập trình chức năng là một thói quen tốt. Nó giúp mã của bạn dễ quản lý và giúp bạn tránh khỏi những lỗi lén lút. Nhưng trước khi đến đó, chúng ta hãy xem xét một cách tiếp cận bắt buộc đối với lập trình để làm nổi bật bạn có thể gặp vấn đề ở đâu.
+
+Trong tiếng Anh (và nhiều ngôn ngữ khác), thì mệnh lệnh được sử dụng để ra lệnh. Tương tự, kiểu mệnh lệnh trong lập trình là kiểu cung cấp cho máy tính một tập hợp các câu lệnh để thực hiện một tác vụ.
+
+Thường thì các câu lệnh thay đổi trạng thái của chương trình, giống như cập nhật các biến toàn cục. Một ví dụ cổ điển là viết một forvòng lặp cung cấp các hướng chính xác để lặp qua các chỉ số của một mảng.
+
+Ngược lại, lập trình hàm là một dạng của lập trình khai báo. Bạn cho máy tính biết bạn muốn làm gì bằng cách gọi một phương thức hoặc hàm.
+
+JavaScript cung cấp nhiều phương thức được xác định trước để xử lý các tác vụ phổ biến, do đó bạn không cần phải viết ra cách máy tính sẽ thực hiện chúng. Ví dụ: thay vì sử dụng forvòng lặp được đề cập ở trên, bạn có thể gọi mapphương thức xử lý các chi tiết của việc lặp qua một mảng. Điều này giúp tránh các lỗi ngữ nghĩa, chẳng hạn như "Lỗi do một lỗi" đã được đề cập trong phần Gỡ lỗi.
+
+Hãy xem xét tình huống: bạn đang duyệt web trong trình duyệt của mình và muốn theo dõi các tab bạn đã mở. Hãy thử mô hình hóa điều này bằng cách sử dụng một số mã hướng đối tượng đơn giản.
+
+Đối tượng Cửa sổ được tạo thành từ các tab và bạn thường mở nhiều Cửa sổ. Tiêu đề của mỗi trang web đang mở trong mỗi đối tượng Window được tổ chức trong một mảng. Sau khi làm việc trên trình duyệt (mở tab mới, hợp nhất cửa sổ và đóng tab), bạn muốn in các tab vẫn đang mở. Các tab đã đóng sẽ bị xóa khỏi mảng và các tab mới (để đơn giản hơn) sẽ được thêm vào cuối mảng.
+
+Trình chỉnh sửa mã hiển thị việc triển khai chức năng này với các chức năng cho tabOpen(), tabClose()và join(). Mảng tabslà một phần của đối tượng Window lưu trữ tên của các trang đang mở.
+
+Kiểm tra mã trong trình chỉnh sửa. Đó là sử dụng một phương pháp có tác dụng phụ trong chương trình, gây ra hành vi không chính xác. Danh sách cuối cùng của các tab đang mở, được lưu trữ trong finalTabs.tabs, nên có ['FB', 'Gitter', 'Reddit', 'Twitter', 'Medium', 'new tab', 'Netflix', 'YouTube', 'Vine', 'GMail', 'Work mail', 'Docs', 'freeCodeCamp', 'new tab']nhưng danh sách do mã tạo ra hơi khác một chút.
+
+Thay đổi Window.prototype.tabCloseđể nó loại bỏ đúng tab.
+*/
+
+// tabs is an array of titles of each site open within the window
+const Window = function(tabs) {
+  this.tabs = tabs; // We keep a record of the array inside the object
+};
+
+// When you join two windows into one window
+Window.prototype.join = function(otherWindow) {
+  this.tabs = this.tabs.concat(otherWindow.tabs);
+  return this;
+};
+
+// When you open a new tab at the end
+Window.prototype.tabOpen = function(tab) {
+  this.tabs.push('new tab'); // Let's open a new tab for now
+  return this;
+};
+
+// When you close a tab
+Window.prototype.tabClose = function(index) {
+
+  // Only change code below this line
+
+  const tabsBeforeIndex = this.tabs.slice(0, index); // Get the tabs before the tab
+  const tabsAfterIndex = this.tabs.slice(index + 1); // Get the tabs after the tab
+
+  this.tabs = tabsBeforeIndex.concat(tabsAfterIndex); // Join them together
+
+  // Only change code above this line
+
+  return this;
+ };
+
+// Let's create three browser windows
+const workWindow = new Window(['GMail', 'Inbox', 'Work mail', 'Docs', 'freeCodeCamp']); // Your mailbox, drive, and other work sites
+const socialWindow = new Window(['FB', 'Gitter', 'Reddit', 'Twitter', 'Medium']); // Social sites
+const videoWindow = new Window(['Netflix', 'YouTube', 'Vimeo', 'Vine']); // Entertainment sites
+
+// Now perform the tab opening, closing, and other operations
+const finalTabs = socialWindow
+  .tabOpen() // Open a new tab for cat memes
+  .join(videoWindow.tabClose(2)) // Close third tab in video window, and join
+  .join(workWindow.tabClose(1).tabOpen());
+console.log(finalTabs.tabs);

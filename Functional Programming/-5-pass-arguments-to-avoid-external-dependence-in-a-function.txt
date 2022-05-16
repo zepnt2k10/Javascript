@@ -1,0 +1,28 @@
+/*
+Thông qua các đối số để tránh sự phụ thuộc bên ngoài vào một hàm
+Thử thách cuối cùng là một bước tiến gần hơn đến các nguyên tắc lập trình chức năng, nhưng vẫn còn thiếu một thứ gì đó.
+
+Chúng tôi đã không thay đổi giá trị biến toàn cục, nhưng hàm incrementersẽ không hoạt động nếu không có biến toàn cục fixedValueở đó.
+
+Một nguyên tắc khác của lập trình hàm là luôn khai báo các phụ thuộc của bạn một cách rõ ràng. Điều này có nghĩa là nếu một hàm phụ thuộc vào một biến hoặc đối tượng đang có, thì hãy truyền trực tiếp biến hoặc đối tượng đó vào hàm dưới dạng một đối số.
+
+Có một số hệ quả tốt từ nguyên tắc này. Chức năng này dễ kiểm tra hơn, bạn biết chính xác đầu vào mà nó cần và nó sẽ không phụ thuộc vào bất kỳ thứ gì khác trong chương trình của bạn.
+
+Điều này có thể giúp bạn tự tin hơn khi thay đổi, xóa hoặc thêm mã mới. Bạn sẽ biết những gì bạn có thể hoặc không thể thay đổi và bạn có thể thấy những cái bẫy tiềm ẩn ở đâu.
+
+Cuối cùng, hàm sẽ luôn tạo ra cùng một đầu ra cho cùng một bộ đầu vào, bất kể phần nào của mã thực thi nó.
+
+Hãy cập nhật incrementerhàm để khai báo rõ ràng các phụ thuộc của nó.
+
+Viết incrementerhàm để nó nhận một đối số, rồi trả về một kết quả sau khi tăng giá trị lên một.
+*/
+
+// The global variable
+let fixedValue = 4;
+
+// Only change code below this line
+function incrementer(fixedValue) {
+    return fixedValue +1; 
+
+  // Only change code above this line
+}

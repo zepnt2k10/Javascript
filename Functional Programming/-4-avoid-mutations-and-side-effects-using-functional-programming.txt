@@ -1,0 +1,26 @@
+/*
+Tránh đột biến và tác dụng phụ bằng cách sử dụng lập trình chức năng
+Nếu bạn vẫn chưa tìm ra, thì vấn đề trong thử thách trước là với lệnh splicegọi trong tabClose()hàm. Thật không may, splicethay đổi mảng ban đầu mà nó được gọi, vì vậy lần gọi thứ hai tới nó đã sử dụng một mảng đã sửa đổi và cho kết quả không mong muốn.
+
+Đây là một ví dụ nhỏ về một mẫu lớn hơn nhiều - bạn gọi một hàm trên một biến, mảng hoặc một đối tượng và hàm sẽ thay đổi biến hoặc một cái gì đó trong đối tượng.
+
+Một trong những nguyên tắc cốt lõi của lập trình chức năng là không thay đổi mọi thứ. Thay đổi dẫn đến lỗi. Sẽ dễ dàng hơn để ngăn chặn lỗi khi biết rằng các hàm của bạn không thay đổi bất kỳ điều gì, bao gồm cả các đối số của hàm hoặc bất kỳ biến toàn cục nào.
+
+Ví dụ trước không có bất kỳ thao tác phức tạp nào nhưng splicephương thức này đã thay đổi mảng ban đầu và dẫn đến lỗi.
+
+Nhớ lại rằng trong lập trình chức năng, thay đổi hoặc thay đổi mọi thứ được gọi là đột biến , và kết quả được gọi là tác dụng phụ . Một chức năng, lý tưởng, phải là một chức năng thuần túy , có nghĩa là nó không gây ra bất kỳ tác dụng phụ nào.
+
+Hãy cố gắng nắm vững kỷ luật này và không thay đổi bất kỳ biến hoặc đối tượng nào trong mã của chúng tôi.
+
+Điền mã cho hàm incrementerđể nó trả về giá trị của biến toàn cục fixedValuetăng lên một.
+*/
+
+// The global variable
+let fixedValue = 4;
+
+function incrementer() {
+  // Only change code below this line
+    let result = fixedValue + 1;
+    return result;
+  // Only change code above this line
+}

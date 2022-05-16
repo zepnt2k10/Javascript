@@ -1,0 +1,50 @@
+/*
+Hiểu thuật ngữ lập trình chức năng
+Nhóm FCC đã có một tâm trạng bất ổn và bây giờ muốn có hai loại trà: trà xanh và trà đen. Sự thật chung: Sự thay đổi tâm trạng của thân chủ là điều khá phổ biến.
+
+Với thông tin đó, chúng tôi sẽ cần phải truy cập lại getTeachức năng từ thử thách cuối cùng để xử lý các yêu cầu trà khác nhau. Chúng tôi có thể sửa đổi getTeađể chấp nhận một chức năng làm tham số để có thể thay đổi loại trà mà nó chuẩn bị. Điều này làm cho getTealinh hoạt hơn và cho phép lập trình viên kiểm soát nhiều hơn khi các yêu cầu của khách hàng thay đổi.
+
+Nhưng trước tiên, hãy đề cập đến một số thuật ngữ chức năng:
+
+Gọi lại là các hàm được trượt hoặc chuyển sang một hàm khác để quyết định lệnh gọi của hàm đó. Bạn có thể đã thấy chúng được chuyển cho các phương thức khác, chẳng hạn như trong filterhàm gọi lại cho JavaScript biết các tiêu chí về cách lọc một mảng.
+
+Các hàm có thể được gán cho một biến, được truyền vào một hàm khác hoặc trả về từ một hàm khác giống như bất kỳ giá trị bình thường nào khác, được gọi là các hàm lớp đầu tiên . Trong JavaScript, tất cả các hàm đều là hàm hạng nhất.
+
+Các hàm nhận một hàm làm đối số hoặc trả về một hàm dưới dạng giá trị trả về được gọi là các hàm bậc cao hơn .
+
+Khi các hàm được chuyển vào hoặc trả về từ một hàm khác, thì những hàm được chuyển vào hoặc trả về có thể được gọi là lambda .
+
+Chuẩn bị 27 tách trà xanh và 13 tách trà đen và cất giữ chúng lần lượt vào tea4GreenTeamFCCvà tea4BlackTeamFCCbiến. Lưu ý rằng getTeahàm đã được sửa đổi nên bây giờ nó nhận một hàm làm đối số đầu tiên.
+
+Lưu ý: Dữ liệu (số tách trà) được cung cấp làm đối số cuối cùng. Chúng ta sẽ thảo luận nhiều hơn về vấn đề này trong các bài học sau.*/
+
+// Function that returns a string representing a cup of green tea
+const prepareGreenTea = () => 'greenTea';
+
+// Function that returns a string representing a cup of black tea
+const prepareBlackTea = () => 'blackTea';
+
+/*
+Given a function (representing the tea type) and number of cups needed, the
+following function returns an array of strings (each representing a cup of
+a specific type of tea).
+*/
+const getTea = (prepareTea, numOfCups) => {
+  const teaCups = [];
+
+  for(let cups = 1; cups <= numOfCups; cups += 1) {
+    const teaCup = prepareTea();
+    teaCups.push(teaCup);
+  }
+  return teaCups;
+};
+
+// Only change code below this line
+const tea4GreenTeamFCC = getTea(prepareGreenTea, 27);
+const tea4BlackTeamFCC = getTea(prepareBlackTea, 13);
+// Only change code above this line
+
+console.log(
+  tea4GreenTeamFCC,
+  tea4BlackTeamFCC
+);

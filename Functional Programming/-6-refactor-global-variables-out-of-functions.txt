@@ -1,0 +1,38 @@
+/*
+Refactor Biến toàn cục ngoài chức năng
+Cho đến nay, chúng ta đã thấy hai nguyên tắc riêng biệt để lập trình hàm:
+
+Không thay đổi một biến hoặc đối tượng - tạo các biến và đối tượng mới và trả lại chúng nếu cần từ một hàm. Gợi ý: sử dụng một cái gì đó như const newArr = arrVar, ở đâu arrVarlà một mảng sẽ chỉ tạo một tham chiếu đến biến hiện có chứ không phải một bản sao. Vì vậy, thay đổi một giá trị trong newArrsẽ thay đổi giá trị trong arrVar.
+
+Khai báo các tham số của hàm - bất kỳ tính toán nào bên trong một hàm chỉ phụ thuộc vào các đối số được truyền cho hàm chứ không phụ thuộc vào bất kỳ đối tượng hoặc biến toàn cục nào.
+
+Việc thêm một vào một số không thú vị lắm, nhưng chúng ta có thể áp dụng những nguyên tắc này khi làm việc với mảng hoặc các đối tượng phức tạp hơn.
+
+Viết lại mã để mảng toàn cục bookListkhông bị thay đổi bên trong một trong hai hàm. Hàm addsẽ thêm giá trị đã cho bookNamevào cuối mảng được truyền cho nó và trả về một mảng (danh sách) mới. Hàm removesẽ xóa giá trị đã cho bookNamekhỏi mảng được truyền cho nó.
+
+Lưu ý: Cả hai hàm phải trả về một mảng và bất kỳ tham số mới nào phải được thêm vào trước bookNametham số.
+*/
+
+// The global variable
+const bookList = ["The Hound of the Baskervilles", "On The Electrodynamics of Moving Bodies", "Philosophiæ Naturalis Principia Mathematica", "Disquisitiones Arithmeticae"];
+
+// Change code below this line
+function add(arr,bookName) {
+  const list = [...arr];
+  list.push(bookName);
+  return list;
+  
+  // Change code above this line
+}
+
+// Change code below this line
+function remove(arr, bookName) {
+  const book_index = arr.indexOf(bookName);
+  if (book_index >= 0) {
+    const list = [...arr];
+    list.splice(book_index, 1);
+    return list;
+
+    // Change code above this line
+    }
+}
