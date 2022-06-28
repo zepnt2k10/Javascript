@@ -1,0 +1,24 @@
+/*Thêm các phần tử vào cuối mảng bằng cách sử dụng concat thay vì đẩy
+Lập trình hàm là tất cả về việc tạo và sử dụng các hàm không đột biến.
+
+Thử thách cuối cùng đã giới thiệu concatphương pháp này như một cách để kết hợp các mảng thành một mảng mới mà không làm thay đổi các mảng ban đầu. So sánh concatvới pushphương pháp. pushthêm một mục vào cuối cùng của mảng mà nó được gọi, mục này sẽ thay đổi mảng đó. Đây là một ví dụ:
+
+const arr = [1, 2, 3];
+arr.push([4, 5, 6]);
+arrsẽ có một giá trị được sửa đổi [1, 2, 3, [4, 5, 6]], đây không phải là cách lập trình hàm.
+
+concatcung cấp một cách để thêm các mục mới vào cuối một mảng mà không có bất kỳ tác dụng phụ nào gây đột biến.
+
+Thay đổi nonMutatingPushchức năng để nó sử dụng concatđể thêm newItemvào cuối originalthay vì push. Hàm sẽ trả về một mảng.
+*/
+
+function nonMutatingPush(original, newItem) {
+  // Only change code below this line
+  return original.concat(newItem);
+
+  // Only change code above this line
+}
+
+const first = [1, 2, 3];
+const second = [4, 5];
+nonMutatingPush(first, second);

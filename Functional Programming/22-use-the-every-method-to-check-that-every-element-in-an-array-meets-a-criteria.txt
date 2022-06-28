@@ -1,0 +1,23 @@
+/*
+Sử dụng mọi phương pháp để kiểm tra xem mọi thành phần trong một mảng đều đáp ứng tiêu chí
+Phương everypháp này hoạt động với các mảng để kiểm tra xem mọi phần tử có vượt qua một bài kiểm tra cụ thể hay không. Nó trả về một giá trị Boolean - truenếu tất cả các giá trị đáp ứng tiêu chí, falsenếu không.
+
+Ví dụ: đoạn mã sau sẽ kiểm tra xem mọi phần tử trong numbersmảng có nhỏ hơn 10 hay không:
+
+const numbers = [1, 5, 8, 0, 10, 11];
+
+numbers.every(function(currentValue) {
+  return currentValue < 10;
+});
+Phương everythức sẽ trở lại falseđây.
+
+Sử dụng everyphương thức bên trong checkPositivehàm để kiểm tra xem mọi phần tử trong arrđều dương. Hàm phải trả về giá trị Boolean.
+*/
+
+function checkPositive(arr) {
+  // Only change code below this line
+  return arr.every(current => current > 0);
+  // Only change code above this line
+}
+
+checkPositive([1, 2, 3, -4, 5]);

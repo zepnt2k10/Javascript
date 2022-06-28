@@ -1,0 +1,26 @@
+
+/*
+Áp dụng lập trình chức năng để chuyển đổi chuỗi thành chuỗi URL
+Một số thách thức cuối cùng bao gồm một số phương thức chuỗi và mảng hữu ích tuân theo các nguyên tắc lập trình chức năng. Chúng tôi cũng đã tìm hiểu về reduce, đó là một phương pháp mạnh mẽ được sử dụng để giảm các vấn đề thành các dạng đơn giản hơn. Từ tính toán trung bình đến sắp xếp, bất kỳ hoạt động mảng nào đều có thể đạt được bằng cách áp dụng nó. Nhớ lại rằng mapvà filterlà những trường hợp đặc biệt của reduce.
+
+Hãy kết hợp những gì chúng ta đã học để giải quyết một vấn đề thực tế.
+
+Nhiều trang web quản lý nội dung (CMS) có tiêu đề của một bài đăng được thêm vào một phần của URL với mục đích đánh dấu trang đơn giản. Ví dụ: nếu bạn viết một bài đăng trên Phương tiện có tiêu đề Stop Using Reduce, có thể URL sẽ có một số dạng chuỗi tiêu đề trong đó ( .../stop-using-reduce). Bạn có thể đã nhận thấy điều này trên trang web freeCodeCamp.
+
+Điền vào urlSlughàm để nó chuyển đổi một chuỗi titlevà trả về phiên bản được gạch nối cho URL. Bạn có thể sử dụng bất kỳ phương pháp nào được đề cập trong phần này và không sử dụng replace. Dưới đây là các yêu cầu:
+
+Đầu vào là một chuỗi có dấu cách và các từ có tiêu đề
+
+Đầu ra là một chuỗi với khoảng cách giữa các từ được thay thế bằng dấu gạch ngang ( -)
+
+Đầu ra phải là tất cả các chữ cái viết thường
+
+Đầu ra không được có bất kỳ khoảng trắng nào
+*/
+// Only change code below this line
+function urlSlug(title) {
+  console.log(title.toLowerCase().split(" ").filter(string => string !== ""));
+  return title.toLowerCase().split(" ").filter(string => string !== "").join("-");
+}
+// Only change code above this line
+urlSlug("A Mind Needs Books Like A Sword Needs A Whetstone");

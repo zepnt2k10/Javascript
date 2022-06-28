@@ -1,0 +1,22 @@
+/*
+Trả về một phần của mảng bằng phương pháp lát cắt
+Phương slicethức này trả về một bản sao của các phần tử nhất định của một mảng. Nó có thể cần hai đối số, đối số đầu tiên cung cấp chỉ mục về nơi bắt đầu lát cắt, đối số thứ hai là chỉ số cho nơi kết thúc lát (và nó không bao gồm). Nếu các đối số không được cung cấp, thì mặc định là bắt đầu từ đầu mảng đến cuối, đây là một cách dễ dàng để tạo bản sao của toàn bộ mảng. Phương slicethức này không thay đổi mảng ban đầu, nhưng trả về một mảng mới.
+
+Đây là một ví dụ:
+
+const arr = ["Cat", "Dog", "Tiger", "Zebra"];
+const newArray = arr.slice(1, 3);
+newArraysẽ có giá trị ["Dog", "Tiger"].
+
+Sử dụng slicephương thức trong sliceArrayhàm để trả về một phần của animmảng với các chỉ số beginSlicevà endSlicechỉ số được cung cấp. Hàm sẽ trả về một mảng.
+*/
+
+function sliceArray(anim, beginSlice, endSlice) {
+  // Only change code below this line
+  return anim.slice(beginSlice, endSlice);
+
+  // Only change code above this line
+}
+
+const inputAnim = ["Cat", "Dog", "Tiger", "Zebra", "Ant"];
+sliceArray(inputAnim, 1, 3);

@@ -1,0 +1,24 @@
+/*
+Loại bỏ các phần tử khỏi một mảng bằng cách sử dụng lát cắt Thay vì ghép nối
+Một mẫu phổ biến khi làm việc với mảng là khi bạn muốn xóa các mục và giữ phần còn lại của mảng. JavaScript cung cấp splicephương thức cho việc này, phương thức này nhận các đối số cho chỉ mục về nơi bắt đầu xóa các mục, sau đó là số lượng các mục cần xóa. Nếu đối số thứ hai không được cung cấp, thì mặc định là loại bỏ các mục cho đến hết. Tuy nhiên, splicephương thức này sẽ thay đổi mảng ban đầu mà nó được gọi. Đây là một ví dụ:
+
+const cities = ["Chicago", "Delhi", "Islamabad", "London", "Berlin"];
+cities.splice(3, 1);
+Ở đây splicetrả về chuỗi Londonvà xóa nó khỏi mảng thành phố. citiessẽ có giá trị ["Chicago", "Delhi", "Islamabad", "Berlin"].
+
+Như chúng ta đã thấy trong thử thách cuối cùng, slicephương thức này không làm thay đổi mảng ban đầu, nhưng trả về một mảng mới có thể được lưu vào một biến. Nhớ lại rằng slicephương thức nhận hai đối số cho các chỉ số để bắt đầu và kết thúc lát cắt (phần cuối là không bao hàm) và trả về các mục đó trong một mảng mới. Sử dụng slicephương pháp này thay vì splicegiúp tránh mọi tác dụng phụ gây đột biến mảng.
+
+Viết lại hàm nonMutatingSplicebằng cách sử dụng slicethay vì splice. Nó sẽ giới hạn citiesmảng được cung cấp có độ dài là 3 và trả về một mảng mới chỉ có ba mục đầu tiên.
+
+Không làm thay đổi mảng ban đầu được cung cấp cho hàm.
+*/
+
+function nonMutatingSplice(cities) {
+  // Only change code below this line
+  return cities.slice(0,3);
+
+  // Only change code above this line
+}
+
+const inputCities = ["Chicago", "Delhi", "Islamabad", "London", "Berlin"];
+nonMutatingSplice(inputCities);

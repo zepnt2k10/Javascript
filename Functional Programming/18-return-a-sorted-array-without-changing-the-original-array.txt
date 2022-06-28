@@ -1,0 +1,19 @@
+/*
+Trả về một mảng đã sắp xếp mà không thay đổi mảng ban đầu
+Một tác dụng phụ của sortphương pháp là nó thay đổi thứ tự của các phần tử trong mảng ban đầu. Nói cách khác, nó làm thay đổi mảng tại chỗ. Một cách để tránh điều này là trước tiên nối một mảng trống với mảng đang được sắp xếp (hãy nhớ điều đó slicevà concattrả về một mảng mới), sau đó chạy sortphương thức.
+
+Sử dụng sortphương thức trong nonMutatingSorthàm để sắp xếp các phần tử của mảng theo thứ tự tăng dần. Hàm phải trả về một mảng mới và không globalArraythay đổi biến.
+
+
+*/
+
+const globalArray = [5, 6, 3, 2, 9];
+
+function nonMutatingSort(arr) {
+  // Only change code below this line
+let newArr = arr.concat([]);
+  return newArr.sort((a,b) => a-b);
+  // Only change code above this line
+}
+
+nonMutatingSort(globalArray);

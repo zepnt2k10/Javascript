@@ -1,0 +1,27 @@
+/*
+Triển khai bản đồ trên một mẫu thử nghiệm
+Như bạn đã thấy khi áp dụng Array.prototype.map(), hoặc đơn giản map()trước đó, mapphương thức này trả về một mảng có cùng độ dài với độ dài mà nó được gọi. Nó cũng không làm thay đổi mảng ban đầu, miễn là hàm gọi lại của nó không.
+
+Nói cách khác, maplà một chức năng thuần túy, và đầu ra của nó chỉ phụ thuộc vào đầu vào của nó. Thêm vào đó, nó có một chức năng khác làm đối số của nó.
+
+Bạn có thể học được nhiều điều về mapphương pháp này nếu bạn triển khai phiên bản của riêng mình. Bạn nên sử dụng một forvòng lặp hoặc Array.prototype.forEach().
+
+Viết của riêng bạn Array.prototype.myMap(), mà sẽ hoạt động chính xác như thế nào Array.prototype.map(). Bạn không nên sử dụng mapphương pháp tích hợp sẵn. Cá Arraythể có thể được truy cập trong myMapphương thức bằng cách sử dụng this.
+*/
+
+// The global variable
+const s = [23, 65, 98, 5];
+
+Array.prototype.myMap = function(callback) {
+  const newArray = [];
+  // Only change code below this line
+  for(let i = 0; i < this.length; i++){
+    newArray.push(callback(this[i]));
+  }
+  // Only change code above this line
+  return newArray;
+};
+
+const new_s = s.myMap(function(item) {
+  return item * 2;
+});

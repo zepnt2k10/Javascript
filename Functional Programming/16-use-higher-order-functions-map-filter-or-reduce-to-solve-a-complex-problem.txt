@@ -1,0 +1,17 @@
+/*
+Sử dụng bản đồ, bộ lọc hoặc rút gọn của các Hàm bậc cao hơn để Giải quyết một vấn đề phức tạp
+Bây giờ bạn đã vượt qua một số thử thách bằng cách sử dụng các hàm bậc cao hơn như map(), filter()và reduce()bây giờ bạn có thể áp dụng chúng để giải quyết một thử thách phức tạp hơn.
+
+Hoàn thành mã cho squareListhàm bằng cách sử dụng bất kỳ kết hợp nào của map(), filter()và reduce(). Hàm sẽ trả về một mảng mới chỉ chứa các bình phương của các số nguyên dương (các số thập phân không phải là số nguyên) khi một mảng các số thực được chuyển đến nó. Một ví dụ về mảng số thực là [-3, 4.8, 5, 3, -3.2].
+
+Lưu ý: Hàm của bạn không nên sử dụng bất kỳ loại vòng lặp hoặc forhàm nào.whileforEach()
+*/
+const squareList = arr => {
+  // Only change code below this line
+  return arr.filter(num => num > 0 && num == num.toFixed(0))
+  .map(num => Math.pow(num,2));
+  // Only change code above this line
+};
+
+const squaredIntegers = squareList([-3, 4.8, 5, 3, -3.2]);
+console.log(squaredIntegers);

@@ -1,0 +1,40 @@
+
+/*Thuật toán JavaScript và cấu trúc dữ liệu
+Lập trình chức năng
+Sắp xếp một mảng theo thứ tự bảng chữ cái bằng cách sử dụng phương pháp sắp xếp
+Phương sortthức sắp xếp các phần tử của một mảng theo hàm gọi lại.
+
+Ví dụ:
+
+function ascendingOrder(arr) {
+  return arr.sort(function(a, b) {
+    return a - b;
+  });
+}
+
+ascendingOrder([1, 5, 2, 3, 4]);
+Điều này sẽ trả về giá trị [1, 2, 3, 4, 5].
+
+function reverseAlpha(arr) {
+  return arr.sort(function(a, b) {
+    return a === b ? 0 : a < b ? 1 : -1;
+  });
+}
+
+reverseAlpha(['l', 'h', 'z', 'b', 's']);
+Điều này sẽ trả về giá trị ['z', 's', 'l', 'h', 'b'].
+
+Phương pháp sắp xếp mặc định của JavaScript là theo chuỗi giá trị điểm Unicode, có thể trả về kết quả không mong muốn. Do đó, chúng tôi khuyến khích cung cấp một hàm gọi lại để chỉ định cách sắp xếp các mục mảng. Khi một hàm gọi lại, thường được gọi như compareFunctionvậy, được cung cấp, các phần tử mảng được sắp xếp theo giá trị trả về của compareFunction: Nếu compareFunction(a,b)trả về giá trị nhỏ hơn 0 cho hai phần tử avà bthì asẽ đến trước b. Nếu compareFunction(a,b)trả về giá trị lớn hơn 0 cho hai phần tử avà b, thì bsẽ đến trước a. Nếu compareFunction(a,b)trả về giá trị bằng 0 cho hai phần tử avà bthì avà bsẽ không thay đổi.
+
+Sử dụng sortphương thức trong alphabeticalOrderhàm để sắp xếp các phần tử của arrtheo thứ tự bảng chữ cái. Hàm sẽ trả về mảng đã sắp xếp.
+*/
+function alphabeticalOrder(arr) {
+  // Only change code below this line
+
+  return arr.sort(function(a, b) {
+    return a === b ? 0 : a < b ? -1 : 1;
+  });
+  // Only change code above this line
+}
+
+alphabeticalOrder(["a", "d", "c", "a", "z", "g"]);
