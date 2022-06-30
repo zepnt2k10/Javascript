@@ -1,0 +1,12 @@
+/*
+Tìm kiếm và tiêu diệt
+Bạn sẽ được cung cấp một mảng ban đầu (đối số đầu tiên trong destroyerhàm), tiếp theo là một hoặc nhiều đối số. Xóa tất cả các phần tử khỏi mảng ban đầu có cùng giá trị với các đối số này.
+
+Lưu ý: Bạn phải sử dụng argumentsđối tượng.
+*/
+
+function destroyer(arr,...argum) {
+  return arr.filter(element => !argum.includes(element));
+}
+
+destroyer([1, 2, 3, 1, 2, 3], 2, 3);

@@ -1,0 +1,26 @@
+/*
+Khác biệt hai mảng
+So sánh hai mảng và trả về một mảng mới với bất kỳ mục nào chỉ được tìm thấy trong một trong hai mảng đã cho, chứ không phải cả hai. Nói cách khác, trả về hiệu số đối xứng của hai mảng.
+
+Lưu ý: Bạn có thể trả về mảng với các phần tử của nó theo bất kỳ thứ tự nào.
+*/
+
+
+function diffArray(arr1, arr2) {
+  const newArr = [];
+  const newList = arr1.concat(arr2);
+  for(let i = 0; i < newList.length; i ++){
+    let count = 0;
+    for(let j = 0; j < newList.length; j++){
+      if(newList[i] === newList[j]){
+        count++;
+      }
+    }
+    if(count == 1){
+      newArr.push(newList[i]);
+    }
+  }
+  return newArr;
+}
+
+diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);
